@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="utf-8" ?><response code='0' date='2011-11-25T15:56:45+08:00' message='Ok'>
+<deals>
+    <data>
+        <deal id="1">
+		     <globalid>sadwqewqrwqer3r3</globalid>
+            <website>美团网</website>
+            <city_name>全国</city_name>
+            <city_url>http://www.meituan.com</city_url>
+            <deal_id>PSVITA</deal_id>
+            <deal_title>美梦成真：索尼最新掌机PSVITA 10台，美团网免费送</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://www.meituan.com/deal/PSVITA.html</deal_url>
+            <deal_img>http://p0.meituan.net/275.168/deal/201111/24/choujiangshotu123.jpg</deal_img>
+            <deal_cate></deal_cate>
+            <deal_subcate></deal_subcate>
+            <deal_desc>美梦成真：索尼最新发布，最潮掌机PSP接班人PSVITA 10台免费送！超大5英寸OLED多点触控屏幕，6轴陀螺仪体感控制，Wifi+GPS+3G超强合体！你还在等什么？快来美团免费抢一台！邀请1个新用户参加或绑定新浪微博多1个抽奖号码，中奖概率翻倍！</deal_desc>
+            <value>-</value>
+            <price>0</price>
+            <rebate>-0</rebate>
+            <sales_min>1</sales_min>
+            <sales_num>125554</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1322150400</start_time>
+            <end_time>1322755199</end_time>
+            <coupon_start_time></coupon_start_time>
+            <coupon_end_time></coupon_end_time>
+            <deal_tips><![CDATA[活动时间：11月25日-12月1日; 
+抽奖时间：11月28日-12月2日; 
+每天2台，共计10台; 
+每邀请1个朋友多1个抽奖号码; 
+每人最多可得500个抽奖号码; 
+开奖期间请务必保持手机畅通; 本单低于10元，没有邀请返利; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>美团品质，诚信至上</li>
+<li>第一时间，就在美团</li>
+<li>5英寸OLED多点触摸超大屏</li>
+<li>支持3G+GPS+wifi</li>
+<li>A9 4核处理器</li>
+<li>全国人民皆可参与</li>]]></deal_wow>
+        </deal>
+
+    </data>
+    <data>
+        <deal id="2">
+		 <globalid>34fasefewr423532</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>762956</deal_id>
+            <deal_title>仅售35元！价值65元的美珍香迷你金钱猪肉干1份</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/762956.html</deal_url>
+            <deal_img>http://p0.meituan.net/275.168/deal/201111/21/2_1121165101.jpg</deal_img>
+            <deal_cate>零售</deal_cate>
+            <deal_subcate>食品</deal_subcate>
+            <deal_desc>仅售35元！价值65元的美珍香迷你金钱猪肉干1份（50片）。新加坡知名品牌，遍布八大国家与地区。色香味俱全，吮吮手指，再来一片~</deal_desc>
+            <value>65</value>
+            <price>35</price>
+            <rebate>5.4</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>6822</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1321891200</start_time>
+            <end_time>1322323199</end_time>
+            <coupon_start_time>1321891200</coupon_start_time>
+            <coupon_end_time>1324569599</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.22 至 2011.12.22; 营业时间：11:00-20:00; 
+无需预约，咨询请致电各分店; 
+仅限自提，不支持物流配送; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>新加坡名牌，全球畅销</li>
+<li>10店通用，就近选择</li>
+<li>独立包装，方便易携</li>
+<li>优质猪肉，健康味美</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>西单购物中心店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-66053291</shop_tel>
+                <shop_addr>西城区西单北大街132号1层西门西南角</shop_addr>
+                <shop_area>西城区</shop_area>
+                <shop_long>39.911264</shop_long>
+                <shop_lat>116.374182</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>世贸天阶店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-65871314</shop_tel>
+                <shop_addr>朝阳区光华路9号世贸商业中心地下1层B135号美珍香</shop_addr>
+                <shop_area>朝阳区</shop_area>
+                <shop_long>39.9162</shop_long>
+                <shop_lat>116.450808</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>君太店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-66157535</shop_tel>
+                <shop_addr>西城区西单北大街133号君太百货B1层</shop_addr>
+                <shop_area>西城区</shop_area>
+                <shop_long>39.909521</shop_long>
+                <shop_lat>116.373602</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>五道口购物中心店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-62666089</shop_tel>
+                <shop_addr>海淀区成府路28号优盛大厦5层5-12号</shop_addr>
+                <shop_area>海淀区</shop_area>
+                <shop_long>39.992279</shop_long>
+                <shop_lat>116.338887</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>望京嘉茂店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-84717395</shop_tel>
+                <shop_addr>朝阳区广顺北大街33号B1-SPk10铺位</shop_addr>
+                <shop_area>朝阳区</shop_area>
+                <shop_long>39.993341</shop_long>
+                <shop_lat>116.46859</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>来福士广场店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-84094978</shop_tel>
+                <shop_addr>东城区东直门南大街1号B1层18号</shop_addr>
+                <shop_area>东城区</shop_area>
+                <shop_long>39.937651</shop_long>
+                <shop_lat>116.433221</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>蓝色港湾店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-59056364</shop_tel>
+                <shop_addr>朝阳区朝阳公园西路1号DS-07铺位</shop_addr>
+                <shop_area>朝阳区</shop_area>
+                <shop_long>39.941405</shop_long>
+                <shop_lat>116.471128</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>银座店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-84476584</shop_tel>
+                <shop_addr>东城区东直门外大街48号北京东方银座商场B1层12A店</shop_addr>
+                <shop_area>东城区</shop_area>
+                <shop_long>39.940119</shop_long>
+                <shop_lat>116.435951</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>国瑞店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-87555280</shop_tel>
+                <shop_addr>崇文区崇文门外大街18号国瑞购物中心B1层G-12铺位</shop_addr>
+                <shop_area>崇文区</shop_area>
+                <shop_long>39.898045</shop_long>
+                <shop_lat>116.419775</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>东方广场店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-85185751</shop_tel>
+                <shop_addr>东城区东长安街1号东方广场东方新天地地铁层CC06号</shop_addr>
+                <shop_area>东城区</shop_area>
+                <shop_long>39.908577</shop_long>
+                <shop_lat>116.417668</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="3">
+		 <globalid>34fasefewr4235wqewqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>920110</deal_id>
+            <deal_title>仅售79元！最高价值880元的三大难高音爆笑演唱秀门票1张</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/920110.html</deal_url>
+            <deal_img>http://p1.meituan.net/275.168/deal/201111/24/_1124174338.jpg</deal_img>
+            <deal_cate>文体娱乐</deal_cate>
+            <deal_subcate>音乐会/演唱会</deal_subcate>
+            <deal_desc>仅售79元！最高价值880元的2011三大“难”高音爆笑演唱秀门票1张，首次巡演，北京开唱。在这里，既能欣赏到经典老歌，还能感受到“高音很难唱上去”的三个男人的搞笑功力。吴宗宪、高凌风、康康摩拳擦掌为您奉上一场难忘的爆笑秀。</deal_desc>
+            <value>880</value>
+            <price>79</price>
+            <rebate>0.9</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>281</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1322150400</start_time>
+            <end_time>1322287200</end_time>
+            <coupon_start_time></coupon_start_time>
+            <coupon_end_time>1322323199</coupon_end_time>
+            <deal_tips><![CDATA[有效期截止至2011年11月26日; 兑票时间：11月26日16:30-19:00; 
+兑票地点：首都体育馆南门; 
+演出时间：11月26日19:30-22:00; 
+演出地点：首都体育馆; 
+无需预约，咨询请致电13691199757/15110254624; 
+1.2米（不含）以下儿童不可入场; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>奥运班底助阵三大难高音</li>
+<li>以脱口秀搞笑的综合性演出</li>
+<li>3D全息呈像＂邓丽君＂与吴宗宪同台演唱</li>
+<li>笑动京城，拉丁舞后现场助阵</li>
+<li>神秘嘉宾到场，助推精彩演出</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>2011三大“难”高音爆笑演唱秀</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>13691199757（姜先生）15110254624（汤先生）</shop_tel>
+                <shop_addr>首都体育馆
+海淀区西直门外白石桥5号</shop_addr>
+                <shop_area>魏公村</shop_area>
+                <shop_long>39.939609</shop_long>
+                <shop_lat>116.32713</shop_lat>
+                <shop_trafficinfo>乘209/105/107/111/206/319/27/334/347/332/360/360快/362/482/534/563/608/614/632/697/714/87/运通104/特4/运通105/特5/运通106/运通205路公交车至白石桥东站下车步行约200米即是</shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="4">
+		    <globalid>34fasefewr4235wqewq343</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>467741</deal_id>
+            <deal_title>仅25元！价值80元CGV星星影城单人电影票1张，可看3D</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/467741.html</deal_url>
+            <deal_img>http://p0.meituan.net/275.168/deal/201111/16/_1116153142.jpg</deal_img>
+            <deal_cate>文体娱乐</deal_cate>
+            <deal_subcate>电影院</deal_subcate>
+            <deal_desc>便宜看电影，鸟巢旁的好影院。仅售25元！价值80元的CGV星星国际影城单人电影票1张，普通、3D电影通兑（影院震动厅/4D厅需补差价），附赠电影票买一送一券+10元卖品抵用券，免费停车。岁末好戏连连，观影前后还能去奥林匹克森林公园转一转。</deal_desc>
+            <value>80</value>
+            <price>25</price>
+            <rebate>3.1</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>6971</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1321632000</start_time>
+            <end_time>1322236799</end_time>
+            <coupon_start_time>1321632000</coupon_start_time>
+            <coupon_end_time>1325347199</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.19 至 2011.12.31; 营业时间：09:30-22:30; 
+无需预约，咨询请致电84372280; 
+每人限购6张美团券，每次最多兑换6张; 
+仅限兑换当日场次电影票; 
+不可观看首映礼、见面会; 
+不可使用VIP厅、宝贝厅; 
+不可同时享受影城其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>绝佳画质，逼真声效</li>
+<li>附赠影票买一赠一券</li>
+<li>凭影票可免费停车</li>
+<li>拥有北京首家4D厅，用全身看电影</li>
+<li>近森林公园，环境优美，交通方便</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>CGV星星国际影城</shop_name>
+                <shop_dpid>4225037</shop_dpid>
+                <shop_tel>010-84372280</shop_tel>
+                <shop_addr>朝阳区湖景东路11号新奥购物中心B1-B2楼</shop_addr>
+                <shop_area>亚运村</shop_area>
+                <shop_long>40.002177</shop_long>
+                <shop_lat>116.396595</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="5">
+			 <globalid>34fasefewr423dfqewqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>363292</deal_id>
+            <deal_title>仅售1888元！价值5888元的高端婚纱礼服馆定制款婚纱1件</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/363292.html</deal_url>
+            <deal_img>http://p0.meituan.net/275.168/deal/201111/14/1_1114192321.jpg</deal_img>
+            <deal_cate>生活服务</deal_cate>
+            <deal_subcate>服装定制</deal_subcate>
+            <deal_desc>仅售1888元！价值5888元的『August Sposa』高端婚纱礼服馆量身定制款婚纱1件（3款齐地嫁纱任选其一），可升级为奢华拖尾款婚纱1件。2012年春季全球婚纱高端鉴赏，只为幸福的你！多款明星嫁纱任您选，这一切都只为万众瞩目的你——最美的新娘！</deal_desc>
+            <value>5888</value>
+            <price>1888</price>
+            <rebate>3.2</rebate>
+            <sales_min>1</sales_min>
+            <sales_num>53</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1321372800</start_time>
+            <end_time>1322236799</end_time>
+            <coupon_start_time>1321372800</coupon_start_time>
+            <coupon_end_time>1330444799</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.16 至 2012.2.28; 营业时间：09:00-21:00; 
+请务必提前2天致电400-6520-888-2预约; 
+春节期间（初一至十五）不可使用美团券; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>高端礼服定制，多款婚纱任选</li>
+<li>量身16处制作，体验嫁纱美感</li>
+<li>专业服务团队，全程贴身服务</li>
+<li>高品质的材质，尽享高端品质</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>八月照相馆</shop_name>
+                <shop_dpid>2105710</shop_dpid>
+                <shop_tel>客服专线：400-6520-88824小时预约手机：15011585213/15110001156/15210395078</shop_tel>
+                <shop_addr>朝阳区CBD东三环北路38号北京国际中心C座安联大厦5/6层</shop_addr>
+                <shop_area>国贸</shop_area>
+                <shop_long>39.921316</shop_long>
+                <shop_lat>116.463545</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="6">
+				 <globalid>34fasefewr423dwer234wqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>819998</deal_id>
+            <deal_title>仅售99元五环免费配送！价值209元十一时纯正欧式蛋糕2选1</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/819998.html</deal_url>
+            <deal_img>http://p1.meituan.net/275.168/deal/201111/22/shotu11.jpg</deal_img>
+            <deal_cate>餐饮</deal_cate>
+            <deal_subcate>面包蛋糕甜点</deal_subcate>
+            <deal_desc>仅售99元五环内免费配送！价值209元的十一时纯正欧式蛋糕2选1（地中海芝士/比利时黑方蛋糕），约1.5磅，适合4-5人分享。进口原料，纯手工精心烘焙，这个冬天，不出门也可以感受正宗欧式蛋糕的醇美滋味。</deal_desc>
+            <value>209</value>
+            <price>99</price>
+            <rebate>4.7</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>420</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1322064000</start_time>
+            <end_time>1322495999</end_time>
+            <coupon_start_time>1322064000</coupon_start_time>
+            <coupon_end_time>1327420799</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.24 至 2012.1.24; 营业时间：09:00-19:00; 
+请至少提前1天致电400-611-1217/59534916预订; 
+12月24日-25日（圣诞节）、2012年1月1日（元旦）不可使用美团券; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>当日制作蛋糕，品尝新鲜</li>
+<li>纯进口原材料，健康美味</li>
+<li>精美造型设计，视觉诱惑</li>
+<li>正宗欧式风格，纯美享受</li>
+<li>5环内免费配送，坐享美味</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>十一时</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>400-611-1217/010-59534916</shop_tel>
+                <shop_addr>大兴区西红门镇福宝巷7号</shop_addr>
+                <shop_area>大兴区</shop_area>
+                <shop_long>39.80449</shop_long>
+                <shop_lat>116.355027</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="7">
+		   		 <globalid>34fasefewr4asfdefqewqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>102407</deal_id>
+            <deal_title>仅售79元！最高286元的3000浦烤肉2-3人餐，可升级</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/102407.html</deal_url>
+            <deal_img>http://p0.meituan.net/275.168/deal/201111/21/_1121175755.jpg</deal_img>
+            <deal_cate>餐饮</deal_cate>
+            <deal_subcate>韩国菜</deal_subcate>
+            <deal_desc>仅售79元！最高价值286元的3000浦时尚烤肉2-3人套餐2选1（A.韩式调味牛排+烤培根+烤鸡排+烤鳕鱼+烤熏肠王+烤红薯片+菌菇拼盘+烤馒头片+芥汁木耳等；B.韩式调味猪排+烤牛肉+烤猪五花肉+烤墨鱼仔+烤鸡肉+烤香菇+蔬菜拼盘+紫菜包饭+时蔬大拌等），赠送烤肉配菜1份，还有小菜、饮品自助不限量，2张美团券可享4-6人餐。自在饕餮随您选择，时尚烧烤尽在3000浦~</deal_desc>
+            <value>286</value>
+            <price>79</price>
+            <rebate>2.8</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>1020</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1321891200</start_time>
+            <end_time>1322323199</end_time>
+            <coupon_start_time>1321891200</coupon_start_time>
+            <coupon_end_time>1324655999</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.22 至 2011.12.23; 营业时间：09:00-次日凌晨03:00; 
+请至少提前1天致电67605300咨询; 
+每桌最多可用2张美团券; 
+仅限堂食，不提供餐前外带服务; 
+仅限大厅用餐，不可使用包间; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>时尚快乐，健康环保 </li>
+<li>舒心服务享受快乐就餐经历</li>
+<li>明快环境感受休闲优雅生活</li>
+<li>菜优价廉品味正宗时尚美味</li>
+<li>地铁口旁，交通便利</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>3000浦时尚烤肉</shop_name>
+                <shop_dpid>3929533</shop_dpid>
+                <shop_tel>010-67605300</shop_tel>
+                <shop_addr>南三环中路刘家窑桥西小铁营10号（地铁5号线刘家窑站A口出苏宁电器旁）</shop_addr>
+                <shop_area>刘家窑</shop_area>
+                <shop_long>39.857631</shop_long>
+                <shop_lat>116.41942</shop_lat>
+                <shop_trafficinfo>地铁：乘坐地铁5号线刘家窑站A口出，右行约20米苏宁电器东侧即是
+公交：乘坐公交300快内/300快外/300内/300外/特8内/特8内快/特8外/特8外快在刘家窑桥站下车，步行至地铁刘家窑桥站A口苏宁电器旁即是
+
+可点击车次查看路线详情</shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="8">
+				 <globalid>234sd423dfqewqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>178956</deal_id>
+            <deal_title>仅售29元！价值68元的外婆宴四川美食双人套餐，美味共享</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/178956.html</deal_url>
+            <deal_img>http://p1.meituan.net/275.168/deal/201111/18/_1118155349.jpg</deal_img>
+            <deal_cate>餐饮</deal_cate>
+            <deal_subcate>其他中餐</deal_subcate>
+            <deal_desc>仅售29元！价值68元的外婆宴四川美食双人套餐（粉蒸牛肉+豌豆炸酱面+宜宾燃面+爽口双脆+龙眼酱笼包），四五份地道的成都美食，两三位知心朋友，品一份浓浓四川情~</deal_desc>
+            <value>68</value>
+            <price>29</price>
+            <rebate>4.3</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>2332</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1321804800</start_time>
+            <end_time>1322236799</end_time>
+            <coupon_start_time>1321804800</coupon_start_time>
+            <coupon_end_time>1327161599</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.21 至 2012.1.21; 营业时间：10:00-21:30; 
+无需预约，咨询请致电各分店; 
+仅限堂食，不提供打包外带服务; 
+仅限大厅用餐，不可使用包间; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>四川小吃，天下闻名</li>
+<li>味道独特，口感绝佳</li>
+<li>环境典雅，舒适卫生</li>
+<li>2店通用，就近体验</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>中友店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-57263386</shop_tel>
+                <shop_addr>西城区西单北大街176号中友百货8楼 西侧</shop_addr>
+                <shop_area>西单</shop_area>
+                <shop_long>39.908974</shop_long>
+                <shop_lat>116.375667</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>朝阳大悦城店</shop_name>
+                <shop_dpid>0</shop_dpid>
+                <shop_tel>010-57213519</shop_tel>
+                <shop_addr>朝阳区朝阳北路101号朝阳大悦城8楼25号铺</shop_addr>
+                <shop_area>朝阳区</shop_area>
+                <shop_long>39.923174</shop_long>
+                <shop_lat>116.518405</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="9">
+				 <globalid>ddfasefewr423dfqewqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>315293</deal_id>
+            <deal_title>仅售88元！价值177.5元的首尔城烤肉双人套餐，有赠品</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/315293.html</deal_url>
+            <deal_img>http://p0.meituan.net/275.168/deal/201111/23/_1123193412.jpg</deal_img>
+            <deal_cate>餐饮</deal_cate>
+            <deal_subcate>韩国菜</deal_subcate>
+            <deal_desc>仅售88元！价值177.5元的首尔城烤肉双人套餐（石锅拌饭/大酱汤2选1+烤牛肉+烤五花肉+烤培根+烤腹肉条+烤馒头+鸡蛋玉米沙拉+小料2份+火炉+湿巾），另有小菜4道+小布丁2个+果盘+生菜相送，大麦茶不限量畅饮。漫步首尔城，遍尝韩国菜~</deal_desc>
+            <value>177.5</value>
+            <price>88</price>
+            <rebate>5</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>380</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1322064000</start_time>
+            <end_time>1322495999</end_time>
+            <coupon_start_time>1322064000</coupon_start_time>
+            <coupon_end_time>1327420799</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.24 至 2012.1.24; 营业时间：10:00-22:00; 
+请至少提前1天致电64912783/64918811-1772预约; 
+仅限堂食，不提供餐前外带服务; 
+仅限大厅用餐，不可使用包间; 
+12月24-25日（圣诞节）不可使用美团券; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>对外经贸大学旁，繁华商圈</li>
+<li>环境优雅，服务贴心</li>
+<li>韩式美食，一吃到底</li>
+<li>免费停车，交通便利</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>首尔城</shop_name>
+                <shop_dpid>516059</shop_dpid>
+                <shop_tel>010-64912783/64918811-1772</shop_tel>
+                <shop_addr>朝阳区惠新东街19号惠侨饭店1楼</shop_addr>
+                <shop_area>对外经贸</shop_area>
+                <shop_long>39.978128</shop_long>
+                <shop_lat>116.424243</shop_lat>
+                <shop_trafficinfo>地铁：乘地铁5号/10号线至惠新西街南口站，C口出站前行约800米，至十字路口左拐过马路前行80米即是公交：乘596/119/215/18/125/361/379/406/409/419/422/479/567/62/684/674/984/运通101/运通201路公交车至对外经贸大学站下车南行约300米即是</shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+    <data>
+        <deal id="10">
+				 <globalid>00fasefewr423dfqewqe</globalid>
+            <website>美团网</website>
+            <city_name>北京</city_name>
+            <city_url>http://bj.meituan.com</city_url>
+            <deal_id>346758</deal_id>
+            <deal_title>仅59元！价值136元烤鱼吧2-3人牛蛙欢享套餐</deal_title>
+            <deal_rank>0</deal_rank>
+            <deal_url>http://bj.meituan.com/deal/346758.html</deal_url>
+            <deal_img>http://p1.meituan.net/275.168/deal/201111/18/_1118152533.jpg</deal_img>
+            <deal_cate>餐饮</deal_cate>
+            <deal_subcate>其他中餐</deal_subcate>
+            <deal_desc>仅售59元！价值136元的烤鱼吧2-3人牛蛙欢享套餐（牛蛙+青笋+木耳+菜花+魔芋+酸梅汤1扎+米饭3碗），乐的是味觉，享的是感觉，来烤鱼吧吃牛蛙，不一样的美味。</deal_desc>
+            <value>136</value>
+            <price>59</price>
+            <rebate>4.3</rebate>
+            <sales_min>10</sales_min>
+            <sales_num>1309</sales_num>
+            <sold_out>no</sold_out>
+            <is_post>no</is_post>
+            <start_time>1321804800</start_time>
+            <end_time>1322236799</end_time>
+            <coupon_start_time>1321804800</coupon_start_time>
+            <coupon_end_time>1325347199</coupon_end_time>
+            <deal_tips><![CDATA[有效期 2011.11.21 至 2011.12.31; 营业时间：11:00-23:30; 
+请至少提前1天致电各分店预约; 
+每桌限用1张美团券; 
+仅限堂食，不提供打包外带服务; 
+仅限大厅用餐，不可使用包间; 
+不可同时享受店内其他优惠; ]]></deal_tips>
+            <deal_wow><![CDATA[<li>精选食材，营养美味</li>
+<li>麻辣口味，尽享口福</li> 
+<li>贴心服务，舒适满意</li> 
+<li>8店通用，交通便利</li>]]></deal_wow>
+        </deal>
+        <shops>
+                        <shop>
+                <shop_name>健翔桥店</shop_name>
+                <shop_dpid>4677107</shop_dpid>
+                <shop_tel>010-62361541</shop_tel>
+                <shop_addr>海淀区花园北路甲12号</shop_addr>
+                <shop_area>海淀区</shop_area>
+                <shop_long>39.981706</shop_long>
+                <shop_lat>116.366266</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>亚运村店</shop_name>
+                <shop_dpid>4677114</shop_dpid>
+                <shop_tel>010-64926150</shop_tel>
+                <shop_addr>朝阳区安苑东里1区2号楼</shop_addr>
+                <shop_area>亚运村</shop_area>
+                <shop_long>39.982812</shop_long>
+                <shop_lat>116.408954</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>西坝河店</shop_name>
+                <shop_dpid>4677117</shop_dpid>
+                <shop_tel>010-64299728/60118337</shop_tel>
+                <shop_addr>朝阳区西坝河光熙门北里15号重庆饭店后侧</shop_addr>
+                <shop_area>朝阳区</shop_area>
+                <shop_long>39.966398</shop_long>
+                <shop_lat>116.434607</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>光明楼店</shop_name>
+                <shop_dpid>4663873</shop_dpid>
+                <shop_tel>010-67139928</shop_tel>
+                <shop_addr>崇文区光明路乙12-3号</shop_addr>
+                <shop_area>崇文区</shop_area>
+                <shop_long>39.884263</shop_long>
+                <shop_lat>116.4393</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>紫竹桥店</shop_name>
+                <shop_dpid>4669687</shop_dpid>
+                <shop_tel>010-68464227</shop_tel>
+                <shop_addr>海淀区紫竹桥万寿寺路广源闸90号紫竹院宾馆西侧</shop_addr>
+                <shop_area>紫竹桥</shop_area>
+                <shop_long>39.946165</shop_long>
+                <shop_lat>116.317809</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>刘家窑店</shop_name>
+                <shop_dpid>3486604</shop_dpid>
+                <shop_tel>010-87676966</shop_tel>
+                <shop_addr>丰台区南三环东路29号（5号线刘家窑站B口向东50米）</shop_addr>
+                <shop_area>刘家窑</shop_area>
+                <shop_long>39.858358</shop_long>
+                <shop_lat>116.424563</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>万柳店</shop_name>
+                <shop_dpid>5143307</shop_dpid>
+                <shop_tel>010-83685368</shop_tel>
+                <shop_addr>丰台区万柳桥东</shop_addr>
+                <shop_area>草桥</shop_area>
+                <shop_long>39.84912</shop_long>
+                <shop_lat>116.335181</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                        <shop>
+                <shop_name>大兴店</shop_name>
+                <shop_dpid>4222986</shop_dpid>
+                <shop_tel>010-69234781</shop_tel>
+                <shop_addr>大兴区丽园路彩虹新城(近枣园)</shop_addr>
+                <shop_area>大兴区</shop_area>
+                <shop_long>39.750056</shop_long>
+                <shop_lat>116.333099</shop_lat>
+                <shop_trafficinfo></shop_trafficinfo>
+            </shop>
+                    </shops>
+    </data>
+   
+  
+  </deals>
+</response>
