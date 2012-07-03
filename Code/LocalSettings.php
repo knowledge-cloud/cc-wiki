@@ -43,13 +43,13 @@ $wgEnotifWatchlist     = false; # UPO
 $wgEmailAuthentication = true;
 
 ## Database settings
-$wgDBtype           = "mysql";
-$wgDBserver         = "localhost";
-$wgDBname           = "ccwiki";
-$wgDBuser           = "mw";
-$wgDBpassword       = "ccntgrid";
-$wgDBadminuser           = "mw";
-$wgDBadminpassword       = "ccntgrid";
+$wgDBtype           = "";
+$wgDBserver         = "";
+$wgDBname           = "";
+$wgDBuser           = "";
+$wgDBpassword       = "";
+$wgDBadminuser           = "";
+$wgDBadminpassword       = "";
 # MySQL specific settings
 $wgDBprefix         = "";
 
