@@ -1,0 +1,724 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#hasLocation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#hasShop -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#hasShop">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#knows -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#knows">
+        <rdfs:comment xml:lang="zh">认识</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#localWeather -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#localWeather">
+        <rdfs:label xml:lang="zh">当地天气</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#microBlogRelatedDeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#microBlogRelatedDeal">
+        <rdfs:label xml:lang="zh">微博相关的团购
+</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#participated -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#participated">
+        <rdfs:label xml:lang="zh">参加</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#photoRelatedDeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#photoRelatedDeal">
+        <rdfs:label xml:lang="zh">图片相关的团购</rdfs:label>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#productRelatedDeal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#productRelatedDeal">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#published -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#published">
+        <rdfs:comment xml:lang="zh">发布者</rdfs:comment>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#support -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#support">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#unsupport -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#unsupport">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#address">
+        <rdfs:label xml:lang="zh">地址</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#avatar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#avatar">
+        <rdfs:label xml:lang="zh">头像</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#campus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#campus">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#category -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#category">
+        <rdfs:label xml:lang="zh">类别</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#city -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#city">
+        <rdfs:label xml:lang="zh">城市</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#description">
+        <rdfs:label xml:lang="zh">描述</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#discount_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#discount_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#hasBrand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#hasBrand">
+        <rdfs:label xml:lang="zh">品牌</rdfs:label>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#id">
+        <rdfs:label xml:lang="zh">唯一标识</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#latitude">
+        <rdfs:label xml:lang="zh">纬度</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#longitude">
+        <rdfs:label xml:lang="zh">经度</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#m_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#m_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#name">
+        <rdfs:label xml:lang="zh">用户名</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#num_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#num_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#original_price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#original_price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#photo_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#photo_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#pic_url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#pic_url">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#picture -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#picture">
+        <rdfs:label xml:lang="zh">图片</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#present_price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#present_price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#price">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#published_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#published_time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#score -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#score">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_discount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_discount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_photo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_photo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_telphone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#shop_telphone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#sns_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#sns_id">
+        <rdfs:label xml:lang="zh">社交网络的用户标识</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#source -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#source">
+        <rdfs:label xml:lang="zh">来源</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#status">
+        <rdfs:label xml:lang="zh">微博</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#theDayAfterTomorrow_condition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#theDayAfterTomorrow_condition">
+        <rdfs:label xml:lang="zh">后天天气</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#theDayAfterTomorrow_high_temparature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#theDayAfterTomorrow_high_temparature">
+        <rdfs:label xml:lang="zh">后天最高气温</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#theDayAfterTomorrow_low_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#theDayAfterTomorrow_low_temperature">
+        <rdfs:label xml:lang="zh">后天最低气温</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#timestamp">
+        <rdfs:label xml:lang="zh">时间</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:domain rdf:resource="&owl;Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#title">
+        <rdfs:label xml:lang="zh">主题</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#today_condition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#today_condition">
+        <rdfs:label xml:lang="zh">今天天气</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#today_high_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#today_high_temperature">
+        <rdfs:label xml:lang="zh">今天最高气温</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#today_low_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#today_low_temperature">
+        <rdfs:label xml:lang="zh">今天最低气温</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#tomorrow_condition -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#tomorrow_condition">
+        <rdfs:label xml:lang="zh">明天天气</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#tomorrow_high_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#tomorrow_high_temperature">
+        <rdfs:label xml:lang="zh">明天最高气温</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#tomorrow_low_temperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#tomorrow_low_temperature">
+        <rdfs:label xml:lang="zh">明天最低气温</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#url -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#url">
+        <rdfs:label xml:lang="zh">链接</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&rdfs;Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#validFrom -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#validFrom">
+        <rdfs:label xml:lang="zh">开始时间</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#validThrough -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#validThrough">
+        <rdfs:label xml:lang="zh">结束时间</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#volume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#volume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Deal">
+        <rdfs:label xml:lang="zh">团购商品</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Location">
+        <rdfs:label xml:lang="zh">地点</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Microblog"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Person">
+        <rdfs:label xml:lang="zh">人</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Photo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Shop">
+        <rdfs:comment>商铺</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#TaobaoDeal">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl#Weather"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
