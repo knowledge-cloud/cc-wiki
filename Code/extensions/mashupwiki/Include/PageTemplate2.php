@@ -340,17 +340,6 @@ $CCPageAskQuery=Array(
 | ?Ontology/City=city
 | ?Ontology/PhotoUrl=url
 | format=bijiepang
-|}}',
-'Taobao'=>'{{#ask: [[Category:Ontology/TaobaoDeal]]
-[[Ontology/TaobaoRelatedPage::{|PageName|}]]
-| ?Ontology/TaobaoDealId=id
-| ?Ontology/Volume=volume
-| ?Ontology/Price=price
-| ?Ontology/TaobaoDealPicture=picture
-| ?Ontology/TaobaoDealUrl=url
-| ?Ontology/TaobaoDealTitle=title
-| ?Ontology/TaobaoDealScore=score
-| format=bitaobao
 |}}'
 );
     

@@ -5,65 +5,44 @@ jQuery17(function($){
     $(".gblist li .qukankan").live("click",function(){
         var $deal=$(this).parent().children(".hcurrname").val();
         var $url=$(this).parent().children(".hcurrurl").val();
-        part=$.dialog({
-                id: 'part',
-                title:"抢购",
-                content: 'url:'+mediaWiki.config.values.wgServer+mediaWiki.config.values.wgScriptPath+
-                    '/extensions/mashupwiki/Interface/CreatePage2.php?ltype=part&deal='+encodeURI($deal)+
-                    '&url='+encodeURI($url),
-                lock:true,
-                min:false,
-                max:false,
-                padding:'2px 1px 25px 10x',
-                background:'#ccc',
-                close:function(){ccwiki.dealpartici.getpage($deal,"participview");}
-            });
+	window.open(encodeURI($url));
     });
-     $(".gblist li .toupiao").live("click",function(){
-        var $deal=$(this).parent().children(".hcurrname").val();
-        var $url=$(this).parent().children(".hcurrurl").val();
-        part=$.dialog({
-                id: 'part',
-                title:"投票",
-                content: 'url:'+mediaWiki.config.values.wgServer+mediaWiki.config.values.wgScriptPath+
-                    '/extensions/mashupwiki/Interface/CreatePage2.php?ltype=inter&deal='+encodeURI($deal)+
-                    '&url='+encodeURI($url),
-                lock:true,
-                min:false,
-                max:false,
-                padding:'2px 1px 25px 10x',
-                background:'#ccc',
-                close:function(){ccwiki.dealintere.getpage($deal,"interepview");}
-            });
-    });
+
     $("#partclick").live("click",function(){
+            	var $url=mediaWiki.config.values.wgServer+mediaWiki.config.values.wgScriptPath+'/extensions/mashupwiki/Interface/CreatePage2.php?ltype=part&deal='+encodeURI($("#currdealname").val())+'&url='+encodeURI($("#currdealhref").val());
+		window.open(encodeURI($url));	
+        });
+
+        $("#supportclick").live("click",function(){
             part=$.dialog({
                 id: 'part',
-                title:"抢购",
+                title:"顶一下",
                 content: 'url:'+mediaWiki.config.values.wgServer+mediaWiki.config.values.wgScriptPath+
-                    '/extensions/mashupwiki/Interface/CreatePage2.php?ltype=part&deal='+encodeURI($("#currdealname").val())+
+                    '/extensions/mashupwiki/Interface/CreatePage2.php?ltype=support&deal='+encodeURI($("#currdealname").val())+
                     '&url='+encodeURI($("#currdealhref").val()),
                 lock:true,
                 min:false,
                 max:false,
                 padding:'2px 1px 25px 10x',
                 background:'#ccc',
-                close:function(){ccwiki.dealpartici.getpage($("#currdealname").val(),"participview");}
+   //              close:function(){ccwiki.dealintere.getpage($("#currdealname").val(),"interepview");}
+                close:function(){}
             });
         });
-        $("#intclick").live("click",function(){
+        $("#unsupportclick").live("click",function(){
             part=$.dialog({
                 id: 'part',
-                title:"投票",
+                title:"踩一下",
                 content: 'url:'+mediaWiki.config.values.wgServer+mediaWiki.config.values.wgScriptPath+
-                    '/extensions/mashupwiki/Interface/CreatePage2.php?ltype=inter&deal='+encodeURI($("#currdealname").val())+
+                    '/extensions/mashupwiki/Interface/CreatePage2.php?ltype=unsupport&deal='+encodeURI($("#currdealname").val())+
                     '&url='+encodeURI($("#currdealhref").val()),
                 lock:true,
                 min:false,
                 max:false,
                 padding:'2px 1px 25px 10x',
                 background:'#ccc',
-                 close:function(){ccwiki.dealintere.getpage($("#currdealname").val(),"interepview");}
+//                 close:function(){ccwiki.dealintere.getpage($("#currdealname").val(),"interepview");}
+                close:function(){}
             });
         });
 });

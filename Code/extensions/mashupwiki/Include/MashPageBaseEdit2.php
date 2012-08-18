@@ -62,42 +62,32 @@ class MashPageBaseEdit{
                 $pagecode=$CCPageAskQuery["Participant"];
                 $subpagename="participview ";
                 $pagecode= preg_replace("|{\|(\w+)\|}|",$this->PageName,$pagecode);
-        	$pagecode.="[[Category:ParticipSubpage]]";
                 break;
             case "aboutgb":
                 $pagecode=$CCPageAskQuery["DealDetial"];
                 $subpagename="detailview ";
                 $pagecode= preg_replace("|{\|(\w+)\|}|","[[".$this->PageName."]]",$pagecode);
-        	$pagecode.="[[Category:DetailSubpage]]";
                 break;
             case "weibo":
                 $pagecode=$CCPageAskQuery["Weibo"];
                 $subpagename="Weiboview_";
                 $pagecode= preg_replace("|{\|(\w+)\|}|",$this->PageName,$pagecode);
-        	$pagecode.="[[Category:WeiboSubpage]]";
-                break;
-            case "taobao":
-                $pagecode=$CCPageAskQuery["Taobao"];
-                $subpagename="Taobaoview_";
-                $pagecode= preg_replace("|{\|(\w+)\|}|",$this->PageName,$pagecode);
-        	$pagecode.="[[Category:TaobaoSubpage]]";
                 break;
             case "comment":
                 $pagecode=$CCPageAskQuery["Comment"];
                 $subpagename="Commentview_";
                 $pagecode= preg_replace("|{\|(\w+)\|}|",$this->PageName,$pagecode);
-        	$pagecode.="[[Category:CommentSubpage]]";
                 break;
             case "jiepang":
                 $pagecode=$CCPageAskQuery["Jiepang"];
                 $subpagename="Jiepangview_";
                 $pagecode= preg_replace("|{\|(\w+)\|}|",$this->PageName,$pagecode);
-        	$pagecode.="[[Category:JiepangSubpage]]";
                 break;
 	    default:
 		return false;
 		break;
         }
+        $pagecode.="[[Category:Subpage]]";
         $subpagename.=$this->PageName;
         return $this->wpImport->savePage($subpagename,$pagecode);
     }

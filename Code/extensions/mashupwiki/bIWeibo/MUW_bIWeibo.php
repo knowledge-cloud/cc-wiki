@@ -34,7 +34,7 @@ class MUWbiWeibo extends SMWResultPrinter {
             global  $wgStylePath;
             $page=false;
             $html='<div class="weibobox"><textarea name="weibocontent" id="weibocontent" class="text2"></textarea>
-            <input type="button" class="wbbtn" name="Sina" value="新浪登陆" onclick="loginSina()"/> <input type="button" class="wbbtn" name="Tecent" value="腾讯登陆" onclick="loginQQ()"/> <input type="submit" class="wbbtn" value="发布" onclick="postWeibo()" />
+            <input type="button" class="wbbtn" name="Sina" value="发布新浪微" onclick="postSinaWeibo()"/> <input type="button" class="wbbtn" name="Tecent" value="发布腾讯微博" onclick="postQQWeibo()"/>
             </div>';
 
             if(count($results)==1 && is_array($results[0]['avatar'])){

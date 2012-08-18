@@ -8,7 +8,6 @@
  * @ingroup MashupWiki
  * 
  * @licence GNU GPL v3+
- * @author sling ma < masling@gmail.com >
  */
 
 /**
@@ -36,7 +35,7 @@ define( 'MUW_VERSION', '0.1' );
 }*/
 
 
-$srfgFormats = array( 'bigallery','bsns','bidetail');
+$srfgFormats = array( 'bidetail','bigallery','bisns','biweibo');
 
 $srfgScriptPath = ( $wgExtensionAssetsPath === false ? $wgScriptPath . '/extensions' : $wgExtensionAssetsPath ) . '/mashupwiki'; 
 $srfgIP = dirname( __FILE__ );
@@ -55,15 +54,13 @@ $wgExtensionCredits['semantic'][] = array(
 
 $formatDir = dirname( __FILE__ ) . '/';
 
-$wgAutoloadClasses['bIGallery'] = $formatDir . 'bIGallery/MUW_bIGallery.php';
-$wgAutoloadClasses['bIDetail'] = $formatDir . 'bIDetail/MUW_bIDetail.php';
-$wgAutoloadClasses['WeiBo'] = $formatDir . 'Weibo/MUW_Weibo.php';
 
+include_once $formatDir . 'DynamicArticleList.php';
 unset( $formatDir );
 
 $wgExtensionFunctions[] = 'muwInitFormats';
-
 $wgExtensionFunctions[] = 'efMUWSetup';
+
 
 function muwInitFormats() {
 	global $srfgFormats, $smwgResultFormats, $wgAutoloadClasses;
@@ -72,13 +69,13 @@ function muwInitFormats() {
 	
 	$wgAutoloadClasses['MUWbIGallery'] = $formatDir . 'bIGallery/MUW_bIGallery.php';
         $wgAutoloadClasses['MUWbIDetail'] = $formatDir . 'bIDetail/MUW_bIDetail.php';
-        $wgAutoloadClasses['MUWbWeiBo'] = $formatDir . 'Weibo/MUW_Weibo.php';
-       $wgAutoloadClasses['MUWbSns'] = $formatDir . 'sns/MUW_sns.php';
+        $wgAutoloadClasses['MUWbIWeiBo'] = $formatDir . 'bIWeibo/MUW_bIWeibo.php';
+        $wgAutoloadClasses['MUWbISns'] = $formatDir . 'bISns/MUW_bISns.php';
 	$formatClasses = array(
 		'bigallery' => 'MUWbIGallery',
 		'bidetail' => 'MUWbIDetail',
-		'bweibo' => 'MUWbWeiBo',
-                'bsns'=>'MUWbSns'
+		'biweibo' => 'MUWbIWeiBo',
+                'bisns'=>'MUWbISns'
 	);
 
  
@@ -86,6 +83,10 @@ function muwInitFormats() {
 	foreach ( $srfgFormats as $format ) {
 		if ( array_key_exists( $format, $formatClasses ) ) {
 			$smwgResultFormats[$format] = $formatClasses[$format];
+                        
+                        if ( defined( 'MW_SUPPORTS_RESOURCE_MODULES' ) && method_exists( $formatClasses[$format], 'registerResourceModules' ) ) {
+                                    call_user_func( array( $formatClasses[$format], 'registerResourceModules' ) );
+                        }
 		}
 		else {
 			wfDebug( "There is not result format class associated with the format '$format'." );
@@ -95,12 +96,11 @@ function muwInitFormats() {
         
 }
 function efMUWSetup() {
-	global $wgVersion;
-	
+	global $wgVersion,$wgParser;
 	// This function has been deprecated in 1.16, but needed for earlier versions.
 	if ( version_compare( $wgVersion, '1.16', '<' ) ) {
 		wfLoadExtensionMessages( 'MashupWiki' );
-	}	
-	
+	}
+        $wgParser->setHook("dynamicarticlelist", "DynamicArticleListRender" );
 	return true;
 }

@@ -1,9 +1,10 @@
 <?php
 $CCPageTemplate=Array(
-    '0'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+//购物
+    'Shopping'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -17,21 +18,20 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:Shopping]]',
-    '1'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+
+//餐饮
+    'Restaurant'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -45,21 +45,19 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:Restaurant]]',
-    '2'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+//旅游
+    'Travelling'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -73,21 +71,19 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:Travelling]]',
-    '3'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+//娱乐
+    'Entertainment'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -101,21 +97,19 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:Entertainment]]',
-    '4'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+//其它
+    'Others'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -129,21 +123,19 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
-[[Category:Movies]]',
-    '5'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+[[Category:Others]]',
+//健康
+    'HealthCare'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -157,21 +149,19 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:HealthCare]]',
-    '6'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+//生活
+    'LifeService'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -185,21 +175,19 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:LifeService]]',
-    '7'=>'<!--Cateory={|Cateory|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
+// 美容
+    'Cosmetology'=>'<!--Category={|Category|}--><!--KeyWords={|KeyWords|}--><!--PageName={|PageName|}--><!--CreatePage={|CreatePage|}--><!--DealWhere={|DealWhere|}-->
 <div id="selfpagename" style="display:none">{|PageName|}</div>
-<div class="fll">{|Creater|}<div class="participant" id="particip"></div><div class="interestor" id="interep">
-</div></div>
+<div class="fll">{|Creater|}<div class="participant" id="particip"></div>
+</div>
 <div class="frr">
 <div class="frtitle">
 <h2>{|PageName|}</h2>
@@ -213,42 +201,30 @@ $CCPageTemplate=Array(
 <div class="fll">
 <ul class="tabs">
 	<li class="curr">关于本团购</li>
-	<li>相关图片</li>
 	<li>公交查询</li>
 	<li>微博互动</li>
 </ul>
-<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="pic">{|Photo|}</i><i id="bus"></i><i id="weibo">{|Weibo|}</i></ul>
-</div>
-<div class="frr" id="map">
+<ul class="tabc"><i id="aboutgb" style="display:block">{|DealDetial|}</i><i id="bus"></i><i id="weibo"></i></ul>
 </div>
 </div>
 </div>
 [[Category:Cosmetology]]');
 
 $CCPageAskQuery=Array(
-        "Photo"=>'{{ #ask:[[Category:Ontology 0/Photo]]
-[[Ontology 0/userpage::{|PageName|}]]
-| ?Ontology 0/title=title
-| ?Ontology 0/description=description
-| ?Ontology 0/picture=picture
-| ?Ontology 0/photo_id=id
-| format=biphoto
-| limit=12
-}}',
-        "Weibo"=>'{{ #ask: [[Category:Ontology 0/Microblog]]
-[[Ontology 0/userpage::{|PageName|}]]
-| ?Ontology 0/avatar=avatar
-| ?Ontology 0/name=name
-| ?Ontology 0/status=status
-| ?Ontology 0/published_time=published time
-| ?Ontology 0/source=source
+        "Weibo"=>'{{ #ask: [[Category:Ontology/Microblog]]
+[[Ontology/MicroblogRelatedPage::{|PageName|}]]
+| ?Ontology/Avatar=avatar
+| ?Ontology/MicroblogId=name
+| ?Ontology/Status=status
+| ?Ontology/MicroblogPublishedTime=published time
+| ?Ontology/MicroblogSource=source
 | format=biweibo
 }}',
         "Creater"=>'{{#ask: 
             {|CreateWhere|}
-| ?Ontology 0/avatar=avatar
-| ?Ontology 0/name=name
-| ?Ontology 0/sns_id=id
+| ?Ontology/Avatar=avatar
+| ?Ontology/Name=name
+| ?Ontology/PersonId=id
 | format=bisns
 | source=html
 | merge=false
@@ -257,11 +233,11 @@ $CCPageAskQuery=Array(
 | link=none
 | stype=m
 |}}',
-        "Participant"=>'<div id="participheader" class="hd"><p>参与者：</p></div>{{#ask: [[Category:Ontology 0/Person]]
-[[Ontology 0/participated::{|PageName|}]]
-| ?Ontology 0/avatar=avatar
-| ?Ontology 0/name=name
-| ?Ontology 0/sns_id=id
+        "Participant"=>'<div id="participheader" class="hd"><p>参与者：</p></div>{{#ask: [[Category:Ontology/Person]]
+[[Ontology/Participated::{|PageName|}]]
+| ?Ontology/Avatar=avatar
+| ?Ontology/Name=name
+| ?Ontology/PersonId=id
 | format=bisns
 | source=html
 | merge=false
@@ -269,61 +245,58 @@ $CCPageAskQuery=Array(
 | link=none
 | stype=p
 |}}',
-        "Interested"=>'<div id="interestorheader" class="hd"><p>感兴趣的人：</p></div>{{#ask: [[Category:Ontology 0/Person]]
-[[Ontology 0/interested::{|PageName|}]]
-| ?Ontology 0/avatar=avatar
-| ?Ontology 0/name=name
-| ?Ontology 0/sns_id=id
-| format=bisns
-| source=html
-|}}',
         'Deal'=>'{{#ask: {|DealWhere|}
-| ?Ontology 0/title=title
-| ?Ontology 0/picture=picture
-| ?Ontology 0/id=id
-| ?Ontology 0/url=url
-| ?Ontology 0/original price=orgprice
-| ?Ontology 0/source=source
-| ?Ontology 0/present price=currprice
-| ?Ontology 0/description=desc
-| ?Ontology 0/validFrom=timefrom
-| ?Ontology 0/validThrough=timeend
+| ?Ontology/Title=title
+| ?Ontology/Picture=picture
+| ?Ontology/Id=id
+| ?Ontology/Url=url
+| ?Ontology/Original price=orgprice
+| ?Ontology/Source=source
+| ?Ontology/Present price=currprice
+| ?Ontology/Dscription=desc
+| ?Ontology/ValidFrom=timefrom
+| ?Ontology/ValidThrough=timeend
 | format=bigallery
 | limit=21
-| sort=Ontology 0/validTime
+| sort=Ontology/ValidThrough
 | link=subject
 | order=ascending
 | source=html
 |}}',
         'DealDetial'=>'{{#ask: {|DealWhere|}
-| ?Ontology 0/title=title
-| ?Ontology 0/picture=picture
-| ?Ontology 0/id=id
-| ?Ontology 0/url=url
-| ?Ontology 0/original price=orgprice
-| ?Ontology 0/source=source
-| ?Ontology 0/present price=currprice
-| ?Ontology 0/description=desc
-| ?Ontology 0/validFrom=timefrom
-| ?Ontology 0/validThrough=timeend
-| ?Ontology 0/id=id
+| ?Ontology/Title=title
+| ?Ontology/Picture=picture
+| ?Ontology/Id=id
+| ?Ontology/Url=url
+| ?Ontology/Original price=orgprice
+| ?Ontology/Source=source
+| ?Ontology/Present price=currprice
+| ?Ontology/Description=desc
+| ?Ontology/ValidFrom=timefrom
+| ?Ontology/ValidThrough=timeend
+| ?Ontology/Address=address
+| ?Ontology/City=city
+| ?Ontology/Latitude=latitude
+| ?Ontology/Longitude=longitude
+| ?Ontology/Campus=campus
 | format=bidetail
 | limit=1
-| sort=Ontology 0/validTime
+| sort=Ontology/ValidThrough
 | link=subject
 | order=ascending
 | source=html
 |}}',
-      'DealMap'=>'{{#ask: {|DealWhere|}
-| ?Ontology 0/address=address
-| ?Ontology 0/city=city
-| ?Ontology 0/latitude=latitude
-| ?Ontology 0/longitude=longitude
+'DealMap'=>'{{#ask: {|DealWhere|}
+| ?Ontology/Address=address
+| ?Ontology/City=city
+| ?Ontology/Latitude=latitude
+| ?Ontology/Longitude=longitude
+| ?Ontology/Campus=campus
 | format=bimap
 | limit=1
-| sort=Ontology 0/validTime
 | link=subject
 | order=ascending
 | source=html
-|}}');
+|}}'
+);
     

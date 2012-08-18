@@ -16,9 +16,35 @@ class MUWbIGallery extends SMWResultPrinter {
 		return wfMsg( 'muw_printername_bigallery' );
 	}
         
+        static public function addJavascriptAndCSS() {
+
+		global $wgOut, $smwgJQueryIncluded, $srfgbIGalleryIncluded,$srfBaiduApiIncluded,$srfgbMapncluded;
+		global $srfgScriptPath;
+
+		$scripts = array();
+                 if(!$srfBaiduApiIncluded){
+                         $scripts[]='http://api.map.baidu.com/api?v=1.2';
+                         $scripts[]='http://api.map.baidu.com/library/CityList/1.2/src/CityList_min.js';
+                         $srfBaiduApiIncluded=true;
+                }
+		
+                $wgOut->addStyle($srfgScriptPath."/js/map.css");
+		if ( !$srfgbMapncluded ) {
+                    $scripts[] = "$srfgScriptPath/js/mapjs.js";
+                    $srfgbMapncluded = true;
+		}
+		foreach ( $scripts as $script ) {
+			$wgOut->addScriptFile( $script );
+		}
+	}
         public function getResultText( SMWQueryResult $results, $outputmode ) {
 		global $wgOut,$wgUser,$wgParser,$wgScriptPath;
+//		self::addJavascriptAndCSS();
                 $this->isHTML=true;
+ //               $wgOut->addScriptFile( $wgScriptPath."/extensions/mashupwiki/js/bIGallery.js");
+ //               $wgOut->addScriptFile( $wgScriptPath."/extensions/mashupwiki/js/bIDetail.js");
+  //              $wgOut->addScriptFile( $wgScriptPath."/extensions/mashupwiki/js/weibo.js");
+ //               $wgOut->addScriptFile( $wgScriptPath."/extensions/ccgroup/conf.js" );
 		$resultArray=$this->getArray($results, $outputmode);
                 $biGallery=$this->getIndexUI($resultArray,$outputmode);
                 return $biGallery;
@@ -52,6 +78,11 @@ class MUWbIGallery extends SMWResultPrinter {
             $html.= '</ul>';
            
             
+            /*if(count($results)>$this->mSep){
+                $html.='<div class="fanye">'.
+                    '<span class="back">上一页</span> <span class="curr">1</span> <a href="#" hidefocus="true">2</a> <a href="#" hidefocus="true">3</a> <a href="#" hidefocus="true">4</a> <a href="#" hidefocus="true">5</a> <a href="#" class="next" hidefocus="true">下一页</a>'.
+                '</div>';
+            }*/ 
             return $html;
         }
         protected function getArray(SMWQueryResult $res, $outputmode){

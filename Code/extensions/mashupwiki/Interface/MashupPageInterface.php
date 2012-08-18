@@ -4,38 +4,33 @@ require_once dirname( __FILE__ ) .'/../Include/WikiPageImport.php';
 require_once dirname( __FILE__ ) .'/../Include/MashPageBaseEdit.php';
 /*
  * CCwiki对外接口
- * @author maguibo
  */
 $action=$_REQUEST["a"];
-$wkIm=new WikiPageImport();
 $back=false;
+$wkIm=new WikiPageImport();
 switch ($action) {
+    case "exist":
+	if($wkIm->checkPage($_REQUEST["pagename"])==-1)	
+           	$back=false;
+	else
+		$back=true;
+	echo json_encode($back);
+        break;
     case "checkpage":
         if($wkIm->checkPage($_POST["pagename"])==-1)
            $back=true;
         break;
-//Called when the the user logged in sucessfully
+
     case "savePage":
-        $varrr=new MashPageBaseEdit($_SESSION["c_pagename"]);
         $pagename=$_SESSION["c_pagename"];
-        if($varrr->createPage($_SESSION["c_cateory"], $_SESSION["c_keywords"], $_SESSION["c_createdatapage"]))
-	{
-             $back=true;
-             header("Location:../../../index.php/Special:ConfigureGB?pagename=".rawurlencode($pagename));
-             exit();
-	}
-        break;
-//Called when the page is configured
-    case "configPage":
-        //var_dump($_REQUEST);
-        $varrr=new MashPageBaseEdit($_REQUEST["pagename"]);
-        $varrr->configPage("Deal",$_REQUEST["DealAskWhere"]);
-        if($varrr->configFinish())
-	{
-	    header("Location:../../../index.php/".$_REQUEST["pagename"]);
-            $back=true;
+	$varrr=new MashPageBaseEdit($pagename);
+	if($varrr->createPage($_SESSION["c_category"], $_SESSION["c_keywords"], $_SESSION["c_createdatapage"],$_SESSION["c_DealAskWhere"])){
+            	$back=true;
+         	header("Location:../../../index.php/".$pagename);
         }
+	echo json_encode($back);
         break;
+
     case "createsubpage":
         $varrr=new MashPageBaseEdit($_REQUEST["id"]);
 	if($_REQUEST["cate"]=="aboutgb")
@@ -49,6 +44,7 @@ switch ($action) {
 	} 
         if($varrr->createSub($_REQUEST["cate"]))
             $back=true;
+	echo json_encode($back);
         break;
     case "purgePage";
         $varrr=new WikiPageImport();
@@ -56,13 +52,17 @@ switch ($action) {
         $deal=$_SESSION["deal"];
         switch($mode){
             case "part":
+		echo 'deal: '.$deal.'<br/>';
                 $varrr->purgePage("participview Deal ".$deal);
+        	header("Location:".$_SESSION["url"]);
                 break;
-            case "inter":
-                $varrr->purgePage("interepview Deal ".$deal);
+            case "support":
+//                $varrr->purgePage("interepview Deal ".$deal);
+		  echo "顶成功!感谢您的投票!"."</br>";
                 break;
+            case "unsupport":
+//                $varrr->purgePage("interepview Deal ".$deal);
+		echo "踩成功!感谢您的投票!"."</br>";
         }
-        header("Location:".$_SESSION["url"]);
         break;        
 }
-echo json_encode($back);

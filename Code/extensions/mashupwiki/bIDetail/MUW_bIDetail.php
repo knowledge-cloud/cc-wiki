@@ -7,37 +7,14 @@
  * @ingroup MashupWiki
  *
  *
- * @author sling ma
  */
 class MUWbiDetail extends SMWResultPrinter {
     
         public function getName() {
 		return wfMsg( 'muw_printername_bidetail' );
 	}
-
-         static public function addJavascriptAndCSS() {
-		// MW 1.17 +
-                global $wgOut, $smwgJQueryIncluded,$srfgScriptPath,$srfBaiduApiIncluded,$srfgbMapncluded;
-                $scripts = array();
-                if(!$srfBaiduApiIncluded){
-                         $scripts[]='http://api.map.baidu.com/api?v=1.2';
-                         $scripts[]='http://api.map.baidu.com/library/CityList/1.2/src/CityList_min.js';
-                         $srfBaiduApiIncluded=true;
-                }
-		
-                $wgOut->addStyle($srfgScriptPath."/js/map.css");
-		if ( !$srfgbMapncluded ) {
-                    $scripts[] = "$srfgScriptPath/js/mapjs.js";
-                    $srfgbMapncluded = true;
-		}
-		foreach ( $scripts as $script ) {
-			$wgOut->addScriptFile( $script );
-		}
-	}
-
 	public function getResultText( SMWQueryResult $results, $outputmode ) {
 		global $wgUser, $wgParser,$wgStylePath,$wgOut,$wgServer,$wgScriptPath;
-		self::addJavascriptAndCSS();
                 $this->isHTML = true;
 		$resultArray=$this->getArray($results, $outputmode);
                 $pagename="";
@@ -48,6 +25,27 @@ class MUWbiDetail extends SMWResultPrinter {
                 }
                 $thispageurl=$wgServer.Skin::makeUrl("detailview ".$pagename);
                 $thispageurl="$pagename";
+                
+                date_default_timezone_set('PRC');
+                $now_time=time();
+                //$end_time=strtotime("{timeend}");
+                $end_time=strtotime($resultArray[0]['timeend']);
+                $total_second=$end_time-$now_time;
+                $remain_time="";
+               
+                if($now_time <= $end_time){
+                  $remain_day=floor($total_second/(60*60*24));
+                  $remain_hour=floor(($total_second-$remain_day*60*60*24)/(60*60));
+                  $remain_minute=floor(($total_second-$remain_day*60*60*24-$remain_hour*60*60)/60);
+                  $remain_second=floor($total_second-$remain_day*60*60*24-$remain_hour*60*60-$remain_minute*60);
+                  $remain_time=$remain_day.'天'.$remain_hour.'小时'.$remain_minute.'分钟'.$remain_second.'秒';
+                }
+                
+                if($now_time > $end_time)
+                  $remain_time="团购已结束，谢谢关注！";
+                  
+                  
+                
                 $html='<div class="aboutgb">
 <table width="725" border="0" cellspacing="0" cellpadding="0">
       <tr>
@@ -62,15 +60,20 @@ class MUWbiDetail extends SMWResultPrinter {
             <td height="29" align="center" ><span class="cuti delx">原价{orgprice}</span></td>
           </tr>
           <tr>
-            <td height="50" align="center"><a href="javascript:;" id="partclick"><img src="'.$wgStylePath.'/ccwiki/images/btn_ljqg.png" width="78" height="32" ></a> <a href="javascript:;" id="intclick"><img src="'.$wgStylePath.'/ccwiki/images/btn_wgxq.png" width="78" height="32" /><a>
-          </td>
+            <td height="38" align="center"><a href="javascript:;" id="partclick"><img src="'.$wgStylePath.'/ccwiki/images/btn_ljqg.png" width="78" height="32" ></a></td>
+          </tr>
+          <tr>
+            <td height="50" align="center"><a href="javascript:;" id="supportclick"><img src="'.$wgStylePath.'/ccwiki/images/btn_dyx.png" width="78" height="32" ></a><a href="javascript:;" id="unsupportclick"> <img src="'.$wgStylePath.'/ccwiki/images/btn_cyx.png" width="78" height="32" ></a></td>
           </tr>
           <tr>
             <td height="57" align="center"><span class="px14"><span class="red"> </span> 人已购买</span><br />
               数量有限，下单要快哟</td>
           </tr>
           <tr>
-            <td height="27" align="center" bgcolor="#e7e7e7" class="px14"><span class="gray">剩余时间</span> {timeend}</td>
+            <td height="27" align="center" bgcolor="#e7e7e7" class="px14"><span class="gray">截止时间：</span> {timeend}</td>
+          </tr>
+          <tr> 
+            <td height="27" align="center" bgcolor="#e7e7e7" class="px14"><span class="gray">剩余时间：</span> '.$remain_time.'</td>
           </tr>
         </table></td>
       </tr>

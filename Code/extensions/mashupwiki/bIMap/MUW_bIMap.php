@@ -97,17 +97,17 @@ class MUWbIMap extends SMWResultPrinter {
             }
             if(strlen($jsitem)>1)$jsitem=  substr ($jsitem,0,(strlen($jsitem)-1));
             $jsitem.="]";
-            $html.='<div style="display:none" id="bimapbushtml"><div class="busmap" id="buscontainer"></div>
+            $html.='<div style="display:none" id="bimapbushtml"><div class="busmap" id="container"></div>
 <div class="busfrom">
 
-起点：<input type="text" id="from" class="input150"/>&nbsp;&nbsp;终点：<input type="text" id="to" class="input150"/>&nbsp;&nbsp;<input id="findway" name="" type="image" src="'.$wgStylePath.'/ccwiki/images/btn_search.png" />
+起点： <input type="text" id="from" class="input150"/>&nbsp;&nbsp;终点： <input type="text" id="to" class="input150"/>&nbsp;&nbsp;<input id="findway" name="" type="image" src="'.$wgStylePath.'/ccwiki/images/btn_search.png" />
 
 </div>
 
 
 <div id="dvPolicy">
 
-<input id="policy0" checked="true" type="radio" name="pickPolicy" class="radiobox "/><label for="policy0">较便捷</label>&nbsp;&nbsp;<input id="policy1" type="radio" name="pickPolicy" class="radiobox"/><label for="policy1">可换乘</label>&nbsp;&nbsp;<input id="policy2" type="radio" name="pickPolicy" class="radiobox"/><label for="policy2">少步行</label>
+<input id="policy0" checked="true" type="radio" name="pickPolicy" class="radiobox "/><label for="policy0">较便捷 </label>&nbsp;&nbsp;<input id="policy1" type="radio" name="pickPolicy" class="radiobox"/><label for="policy1">可换乘 </label>&nbsp;&nbsp;<input id="policy2" type="radio" name="pickPolicy" class="radiobox"/><label for="policy2">少步行 </label>
 
 
 </div> 

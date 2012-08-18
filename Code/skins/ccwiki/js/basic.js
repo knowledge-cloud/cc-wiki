@@ -1,12 +1,5 @@
 // JavaScript Document
 jQuery17(function($){
-        $('<input>',{
-                    "type": "button",
-                    "value":"编辑页面",
-                    click: function(){
-                       location.href=mediaWiki.config.values.wgServer+mediaWiki.config.values.wgScriptPath+'/index.php/Special:ConfigureGB?pagename='+encodeURI($("#selfpagename").html());
-                    }
-                }).appendTo(".frtitle");
 	$(".xlk").click(function(){
 		$(".xxlk").show();
 	});

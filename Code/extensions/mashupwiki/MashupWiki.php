@@ -8,7 +8,6 @@
  * @ingroup MashupWiki
  * 
  * @licence GNU GPL v3+
- * @author sling ma < masling@gmail.com >
  */
 
 /**
@@ -36,7 +35,7 @@ define( 'MUW_VERSION', '0.1' );
 }*/
 
 
-$srfgFormats = array( 'bidetail','bigallery','bimap','bisns','biweibo',"biphoto");
+$srfgFormats = array( 'bidetail','bigallery','bisns','biweibo','bicomment','bijiepang','bitaobao','biperson');
 
 $srfgScriptPath = ( $wgExtensionAssetsPath === false ? $wgScriptPath . '/extensions' : $wgExtensionAssetsPath ) . '/mashupwiki'; 
 $srfgIP = dirname( __FILE__ );
@@ -55,11 +54,6 @@ $wgExtensionCredits['semantic'][] = array(
 
 $formatDir = dirname( __FILE__ ) . '/';
 
-/*$wgAutoloadClasses['bIGallery'] = $formatDir . 'bIGallery/MUW_bIGallery.php';
-$wgAutoloadClasses['bIDetail'] = $formatDir . 'bIDetail/MUW_bIDetail.php';
-$wgAutoloadClasses['bIWeiBo'] = $formatDir . 'bIWeibo/MUW_bIWeibo.php';
-$wgAutoloadClasses['bIMap'] = $formatDir . 'bIMap/MUW_bIMap.php';
-$wgAutoloadClasses['bISns'] = $formatDir . 'bIWeibo/MUW_bISns.php';*/
 
 include_once $formatDir . 'DynamicArticleList.php';
 unset( $formatDir );
@@ -77,16 +71,20 @@ function muwInitFormats() {
         $wgAutoloadClasses['MUWbIDetail'] = $formatDir . 'bIDetail/MUW_bIDetail.php';
         $wgAutoloadClasses['MUWbIWeiBo'] = $formatDir . 'bIWeibo/MUW_bIWeibo.php';
         $wgAutoloadClasses['MUWbISns'] = $formatDir . 'bISns/MUW_bISns.php';
-        $wgAutoloadClasses['MUWbIMap'] = $formatDir . 'bIMap/MUW_bIMap.php';
-        $wgAutoloadClasses['MUWbIMap'] = $formatDir . 'bIMap/MUW_bIMap.php';
-        $wgAutoloadClasses['MUWbIPhoto'] = $formatDir . 'bIPhoto/MUW_bIPhoto.php';
+        $wgAutoloadClasses['MUWbIComment'] = $formatDir . 'bIComment/MUW_bIComment.php';
+        $wgAutoloadClasses['MUWbIJiepang'] = $formatDir . 'bIJiepang/MUW_bIJiepang.php';
+		$wgAutoloadClasses['MUWbITaobao'] = $formatDir . 'bITaobao/MUW_bITaobao.php'; //liuna
+		$wgAutoloadClasses['MUWbIPerson'] = $formatDir . 'bIPerson/MUW_bIPerson.php';
+
 	$formatClasses = array(
 		'bigallery' => 'MUWbIGallery',
 		'bidetail' => 'MUWbIDetail',
 		'biweibo' => 'MUWbIWeiBo',
-                'bisns'=>'MUWbISns',
-                'bimap'=>'MUWbIMap',
-                'biphoto'=>'MUWbIPhoto'
+        'bisns'=>'MUWbISns',
+        'bicomment'=>'MUWbIComment',
+        'bijiepang'=>'MUWbIJiepang',
+		'bitaobao'=>'MUWbITaobao',
+		'biperson'=>'MUWbIPerson',
 	);
 
  

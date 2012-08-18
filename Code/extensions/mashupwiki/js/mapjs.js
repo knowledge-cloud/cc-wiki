@@ -8,6 +8,8 @@ var smakers;
 var makers
 function InitS(){
     smap = new BMap.Map("container");
+    if(sPoints==null || sPoints.length==0)
+    window.alert("无法获得该商家地址数据，请关注商家详情！");
     if(sPoints!=null){
     smakers=new Array(sPoints.length);
     makers=new Array(sPoints.length) 
@@ -49,7 +51,7 @@ function search(start,end,route){
         policy: route,	 
         onSearchComplete: function(result) {
             if (transit.getStatus()!=BMAP_STATUS_SUCCESS) {
-                $("#results").html("没有找到指定的公交导航路线");
+                $("#results").html("没有找到指定的公交导航路线，详情请访问: <a href='http://map.baidu.com' target='_blank'>百度地图</a>");
             }
         }			
     });
@@ -76,7 +78,8 @@ function biaddMarkers(points,varmap){
             mmmaker[i]= biaddMarker(varmap,new BMap.Point(points[i][1],points[i][0]),points[i][2]);
     }
 }
-$("#findway").live('click',function(){
+
+jQuery("#findway").live('click',function(){
     var start = $("#from").val() ,end = $("#to").val() ,routePolicy = [BMAP_TRANSIT_POLICY_LEAST_TIME,BMAP_TRANSIT_POLICY_LEAST_TRANSFER,BMAP_TRANSIT_POLICY_LEAST_WALKING];
     var arrInput = document.getElementById("dvPolicy").getElementsByTagName("input");
     search(start,end,routePolicy[0]);
@@ -85,7 +88,7 @@ $("#findway").live('click',function(){
         var elem = e.srcElement || e.target , policyIndex;       
         if(elem.tagName.toLowerCase() == "input"){
             policyIndex = elem.getAttribute("id").replace("policy","");             
-            map.clearOverlays();
+            smap.clearOverlays();
             search(start,end,routePolicy[policyIndex]);             
         }
     }

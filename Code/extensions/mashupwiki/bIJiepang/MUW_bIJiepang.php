@@ -1,81 +1,99 @@
 <?php
-
-/**
+include_once ( dirname(__FILE__).'/../../ccgroup/conf.php');
+/*
  * Result printer that prints query results as a gallery.
  *
- * @file MUW_biGallery.php
+ * @file MUW_Weibo.php
  * @ingroup MashupWiki
  *
  * @author sling ma
  */
-class MUWbiSns extends SMWResultPrinter {
-     protected $types = array( '_wpg' => 'text', '_num' => 'number', '_dat' => 'date', '_geo' => 'text', '_str' => 'text' );
-     protected $mSep   =10;
-     protected $stype  ="n";
-     public function getName() {
-		return wfMsg( 'muw_printername_bisns' );
-      }
-
-      protected function handleParameters( array $params, $outputmode ) {
+class MUWbiJiepang  extends SMWResultPrinter {
+ 
+        public function getName() {
+		return wfMsg( 'muw_printername_biJiepang' );
+	}
+        protected function handleParameters( array $params, $outputmode ) {
 		parent::handleParameters( $params, $outputmode );
                 $this->readParameters($params,$outputmode);
       }
 	/*public function getResult( SMWQueryResult $results, array $params, $outputmode ) {
 		//$this->handleParameters( $params, $outputmode );
-               
 		return $this->getResultText( $results, SMW_OUTPUT_HTML );
 	}*/
         public function getResultText( SMWQueryResult $results, $outputmode ) {
-                //$this->readParameters($params,$outputmode);
-		global $wgOut,$wgUser, $wgParser;
-                $bSns="";
+		global $wgOut,$wgUser, $wgParser,$wgScriptPath;
+                $biJiepang="";
                 $this->isHTML = true;
+		//echo "test1";
 		$resultArray=$this->getArray($results, $outputmode);
-                $fill=array();
-                foreach ($resultArray as $key => $value) {
-                    if(key_exists("id",$value) && !is_array($value["id"])){  
-                        if(!key_exists($value["id"], $fill)){
-                            $fill[]=$value;
-                        }
-                    }
-                }
-                $bSns.=$this->getIndexUI($fill,$outputmode);
-                //$wgOut->addScript("<Script>var bigalleryitem=".json_encode($resultArray).";</script>");
-                return $bSns;
-                //return array( $bSns, 'nowiki' => true, 'isHTML' => true );
+		//echo "test2";
+                $biJiepang.=$this->getIndexUI($resultArray,$outputmode);
+                return $biJiepang;
 	}
        
         public function getIndexUI($results,$outputmode){
-            global $wgStylePath,$wgScriptPath;
-            $html="";
-            if($this->stype=="m"){
-                if(count($results)>0){
-                    $info=$results[0];  
-                    $html='<ul class="builder">
-                    <li class="title">创建者：<a href="'.$wgScriptPath.'/index.php/Person '.$info['id'].'">'.$info['name'].'</a></li>
-                    <li class="ta-c"><img src="'.$info['avatar'].'" width="120" height="120" class="img_b3" /></li>
-                    </ul>';
-                }else{
-                   $html='<ul class="builder">
-                    <li class="title">创建者：没有</li>
-                    <li class="ta-c"><img src="'.$wgStylePath.'/ccwiki/images/photo.jpg" width="120" height="120" class="img_b3" /></li>
-                    </ul>'; 
-                }
-            }else{
-		$results = array_unique($results);
-                $page=false;
-                $html.='<ul class="bd">'	;
-                $imax=(count($results)>$this->mSep)==true?$this->mSep:count($results);
-                for($i=0;$i<$this->mSep;$i++){ 
-                    if($i<$imax){
-                        $info=$results[$i];  
-                        $html.= '<li><img src="'.$info['avatar'].'" width="40" height="40" class="img_b" /><br /><a href="'.$wgScriptPath.'/index.php/Person '.$info['id'].'">'.$info['name'].'</a> </li>'; 
-                    }
-                }
-                $html.= '</ul>';
-            }
+            global  $wgStylePath,$ccHost,$ccWiki,$ccPort;
+			$mSep=2; //显示店铺数量
+			$pic_show=4;//显示图片的数量
+			$src_no_pic='http://'.$ccHost.':'.$ccPort.'/ccwiki/extensions/mashupwiki/bIJiepang/pic/no_pic.jpg';	
+			$html="";
+			if($results==null||count($results)==0)
+			{
+				$html.="暂无相关街旁数据！";
+				return $html;
+			}
+            		$imax=count($results)>$mSep?$mSep:count($results);
+			//echo count($results);
+			//echo "<br/>";
+			//echo $imax;
+			for($i=0;$i<$imax;$i++)
+			{
+				$info=$results[$i];	
+				$pic_num=count($info['url']);
+				$src=array();
+				$ipic=$pic_num<$pic_show?$pic_num:$pic_show;
+				if($pic_num==1)
+				{
+					$src[0]=$info['url'];$src[1]=$src_no_pic;$src[2]=$src_no_pic;$src[3]=$src_no_pic;
+				}
+				else
+					{
+						//echo $ipic;
+						for($j=0;$j<$ipic;$j++)
+						{
+							$src[$j]=$info['url'][$j];
+						//	var_dump($src[$j]);
+						//	echo "<br/>";
+						}
+						for($j=$ipic;$j<$pic_show;$j++)
+						{
+							$src[$j]=$src_no_pic;
+						}
+				}
+
+				$html.= '<div style="width:744px; height:260px;">
+					<table width="725" height="60">
+					<tr><td>商家名称：'.$info['name'].'</td><td>所在城市：'.$info['city'].'</td></tr>
+					 <tr><td>商家地址：'.$info['address'].'</td></tr>
+					</table>
+
+					<table width="725" height="200">
+					<tr><td><img src="'.$src[0].'" width="170" height="160" /></td>
+					<td><img src="'.$src[1].'" width="170" height="160" /></td>
+					<td><img src="'.$src[2].'" width="170" height="160" /></td>
+					<td><img src="'.$src[3].'" width="170" height="160" /></td> </tr>
+					</table>
+				    </div>';
+			}
+                   
+
             return $html;
         }
+
+
+
+
         protected function getArray(SMWQueryResult $res, $outputmode){
                 $perPage_items = array();
 		//for each page:
@@ -83,17 +101,27 @@ class MUWbiSns extends SMWResultPrinter {
 			$perProperty_items = array();
 			$isPageTitle = true; //first field is always the page title;
 			//for each property on that page:
+                        $i=0;
 			foreach( $row as $field ) { // $row is array(), $field of type SMWResultArray;
 				$manyValues = $field->getContent();
                                 $pr=$field->getPrintRequest();
                                 $item=$pr->getLabel();
+                                if($item=="")
+                                {
+                                    $item=$i;
+                                    $i++;
+                                }
 				//If property is not set (has no value) on a page:
 				if( count( $manyValues ) < 1 ) {
                                     $delivery='';
 				} else{
                                     $value_items = array();
                                     while( $obj = efSRFGetNextDV( $field ) ) { // $manyValues of type SMWResultArray, contains many values (or just one) of one property of type SMWDataValue				
-                                        if( $obj instanceof SMWRecordValue ) {		
+                                        //if( $isPageTitle ) {
+                                            //$isPageTitle = false;			
+                                            //continue 2; //next property						
+                                        //} else
+                                            if( $obj instanceof SMWRecordValue ) {		
                                             $record = $obj->getDVs();
                                             $recordLength = count( $obj->getTypeValues() );
                                             $items_value_items=array();
@@ -110,20 +138,15 @@ class MUWbiSns extends SMWResultPrinter {
                                 }
                                 $perProperty_items[$item] = is_array($delivery)?((count($delivery)==1)?$delivery[0]:$delivery):$delivery;
 			} // foreach...		
-                        //if($perProperty_items['orgprice']!="0" && $perProperty_items['orgprice']!=NULL)
-                           //$perProperty_items['dis']=($perProperty_items['currprice']*10/$perProperty_items['orgprice']);
-                        //else
-                           //$perProperty_items['dis'] =10;
-			$perPage_items = $this->fillDeliveryArray( $perPage_items, $perProperty_items ,true);
+			$perPage_items = $this->fillDeliveryArray( $perPage_items, $perProperty_items );
 		} // while...
 		return $perPage_items;
         }
-        protected function fillDeliveryArray( $array = array(), $value = null,$foce=false ) {
+        protected function fillDeliveryArray( $array = array(), $value = null ) {
 		if( ! is_null( $value ) ) { 
-                    if(is_array($value) && $foce==false){
-                        if (count($value)==1 ){
+                    if(is_array($value)){
+                        if (count($value)==1){
                             $array[] = $value[0];
-                            var_dump($value);
                         }else if(count($value)==0)
                            return $array;
                         else 
@@ -145,15 +168,10 @@ class MUWbiSns extends SMWResultPrinter {
                     $this->mSep     = trim( $params['sep'] );
                 else 
                     $this->mSep     = 10;
-                if( array_key_exists('stype', $params) )
-                    $this->stype     = trim( $params['stype'] );
-                else 
-                    $this->stype     = "n";
 	}
         public function getParameters() {
 		return array (
-			array( 'name' => 'sep',     'type' => 'int', 'description' => wfMsg( 'smw_paramdesc_sep' ) ),
-                        array( 'name'=>'stype',    'type'=>'enumeration', 'description' => wfMsg( 'smw_paramdesc_stype' ), 'values'=> array( 'm', 'p','i' ) )
+			array( 'name' => 'sep',     'type' => 'int', 'description' => wfMsg( 'smw_paramdesc_sep' ) ),	
 			);
 	}
 }

@@ -1,0 +1,94 @@
+<?php
+
+/*
+ * Result printer that prints query results as a gallery.
+ *
+ * @file MUW_Weibo.php
+ * @ingroup MashupWiki
+ *
+ * @author sling ma
+ */
+class MUWbiDetail {
+        public function getName() {
+		return wfMsg( 'muw_printername_bigallery' );
+	}
+
+	public function getResult( SMWQueryResult $results, array $params, $outputmode ) {
+		$this->handleParameters( $params, $outputmode );
+		return $this->getResultText( $results, SMW_OUTPUT_HTML );
+	}
+
+	public function getResultText( SMWQueryResult $results, $outputmode ) {
+		global $wgUser, $wgParser;
+                $biGallery.=$this->getIndexUl($results,$outputmode);
+		       
+               return array( $biGallery, 'nowiki' => true, 'isHTML' => true );
+		//return $biGallery;
+	}
+        public function getIndexUl($results,$outputmode){
+            $page=false;
+            $html='<ul class="gblist">'	;
+            /*for($i=0;$i<3;$i++){
+                if($subject = $results->getNext()){
+                    $imgsrc=$this->getTextValue($subject["2"],$outputmode);
+                    $href=$this->getTextValue($subject["8"],$outputmode);
+                    $titledesc=$this->getTextValue($subject["10"],$outputmode);
+                    $discount=$this->getTextValue($subject["6"],$outputmode);
+                    //var_dump($href);
+                   
+                    $html.= '<li>'.
+                    '<div class="gbtitle"><a href="#" class="cuti orange">大众点评团</a>丨<a href="'.$href.'" class="dblue">'.$titledesc.'</a></div>'.
+                    '<div class="gbpic"><a href="'.$href.'"><img src="'.$imgsrc.'" width="220" height="138" class="img_b3" /></a></div>'.
+                    '<div class="gbrebate">原价：<em>￥480</em> <span>'.$discount.'折</span></div>'.
+                    '<div class="gbprice"> <em>48</em> <input name="" type="button" value="去看看" class="btn_qkk" /></div>'.
+                    '</li>'; 
+                }else{
+                    $html.= '<li>'.
+                    '<div class="gbtitle"><a href="#" class="cuti orange">大众点评团</a>丨<a href="#" class="dblue">灶丰年间!仅售78元,价值177元2-3人午市套餐!阳光庭院,小径花香,旧时</a></div>'.
+                    '<div class="gbpic"><a href="#"><img src="images/photo3.jpg" width="220" height="138" class="img_b3" /></a></div>'.
+                    '<div class="gbrebate">原价：<em>￥480</em> <span>1折</span></div>'.
+                    '<div class="gbprice"> <em>48</em> <input name="" type="button" value="去看看" class="btn_qkk" /></div>'.
+                    '</li>'; 
+                }
+            }
+	
+            $html.= '</ul>';
+            while($subject = $results->getNext() ){
+                $page=true;
+            }
+            if($page==true){
+            $html/='<div class="fanye">'.
+                '<span class="back">上一页</span> <span class="curr">1</span> <a href="#" hidefocus="true">2</a> <a href="#" hidefocus="true">3</a> <a href="#" hidefocus="true">4</a> <a href="#" hidefocus="true">5</a> <a href="#" class="next" hidefocus="true">下一页</a>'.
+            '</div>';
+            }*/
+            return $html;
+        }
+        public function getTextValue( $resultArray, $outputmode){
+                $values = array();
+		$isFirst = true;
+		if($resultArray==null) return "";
+		while ( ( $dv = $resultArray->getNextDataValue() ) !== false ) {
+			$sortKey = '';
+			
+			if ( $isFirst ) {
+				$isFirst = false;
+				$sortkey = $dv->getDataItem()->getSortKey();
+				
+				if ( is_numeric( $sortkey ) ) { // additional hidden sortkey for numeric entries
+					$this->columnsWithSortKey[$resultArray->getPrintRequest()->getHash()] = true;
+					$sortKey .= '<span class="smwsortkey">' . $sortkey . '</span>';
+				}
+			}
+			
+			$isSubject = $resultArray->getPrintRequest()->getMode() == SMWPrintRequest::PRINT_THIS;
+			$value = ( ( $dv->getTypeID() == '_wpg' ) || ( $dv->getTypeID() == '__sin' ) ) ?
+				   $dv->getLongText( $outputmode, $this->getLinker( $isSubject ) ) :
+				   $dv->getShortText( $outputmode, $this->getLinker( $isSubject ) );
+			
+			$values[] = $sortKey . $value;
+		}
+		
+		return implode( '<br />', $values );   
+        }
+
+}

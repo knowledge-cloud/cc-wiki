@@ -2,7 +2,6 @@
 /**
  * Description of WikiPageImport
  *
- * @author masling
  */
 class WikiPageImport {
     protected   $settings = Array();
@@ -16,8 +15,10 @@ class WikiPageImport {
         $this->httpRequest($this->settings['wikiroot']."/api.php?action=purge&titles=".$pages);	
     }
        ///保存一个wiki文件
-    public function savaPage($pageTitle,$pageContent){
+    public function savePage($pageTitle,$pageContent){
        try {
+//		echo 'pageTitle: '.$pageTitle.'<br/>';
+//		echo 'pageContent: '.$pageContent.'<br/>';
                 $token = $this->login($this->settings['user'], $this->settings['pass']);
                 $this->login($this->settings['user'], $this->settings['pass'], $token);
 		$xml=$this->httpRequest($this->settings['wikiroot']."/api.php?action=query&prop=info|revisions&intoken=edit&titles=Main%20Page","");
@@ -36,6 +37,7 @@ class WikiPageImport {
 	        return true;
 				
         } catch (Exception $e) {
+		echo "Failed in save page: ".$e->getMessage()."<br/>";
               return false;
         }
     }
@@ -115,7 +117,7 @@ class WikiPageImport {
     function __construct() {
         $this->settings['wikiroot'] = "http://10.214.0.147/ccwiki";
         $this->settings['user'] = "Root";
-        $this->settings['pass'] = "ccntgrid";
+        $this->settings['pass'] = "ccwiki";
         $this->settings['cookiefile'] = "cookies.tmp";
     }
 }

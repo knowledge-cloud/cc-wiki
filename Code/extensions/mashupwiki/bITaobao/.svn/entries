@@ -2,9 +2,9 @@
 
 dir
 1
-svn://mashupwiki.net/mashupwiki/Weibo
+svn://mashupwiki.net/mashupwiki/bIWeibo
 svn://mashupwiki.net/mashupwiki
-delete
+add
 
 
 2012-03-19T07:43:10.053668Z
@@ -18,9 +18,9 @@ has-props
 
 
 
-
-
-
+copied
+svn://mashupwiki.net/mashupwiki/Weibo
+1
 
 
 
@@ -59,4 +59,27 @@ mgb
 
 
 4272
+
+MUW_bIWeibo.php
+file
+
+
+
+add
+
+0787af75b9e07d3d28caf0e3f4b5819c
+
+
+
+
+
+
+
+
+
+
+
+copied
+svn://mashupwiki.net/mashupwiki/Weibo/MUW_Weibo.php
+1
 
