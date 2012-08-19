@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weathers>
+  <weather>
+    <weather_name>Weather_杭州_20120811</weather_name>
+    <today_condition>可能有雨</today_condition>
+    <today_low_temperature>24</today_low_temperature>
+    <today_high_temperature>31</today_high_temperature>
+    <tomorrow_condition>可能有暴风雨</tomorrow_condition>
+    <tomorrow_low_temperature>25</tomorrow_low_temperature>
+    <tomorrow_high_temperature>35</tomorrow_high_temperature>
+    <thirdday_condition>可能有暴风雨</thirdday_condition>
+    <thirdday_low_temperature>25</thirdday_low_temperature>
+    <thirdday_high_temperature>33</thirdday_high_temperature>
+  </weather>
+</weathers>

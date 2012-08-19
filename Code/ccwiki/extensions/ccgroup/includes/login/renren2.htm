@@ -1,0 +1,44 @@
+<html>
+
+<head>
+
+<title>log in successfully </title>
+<script type="text/javascript" src="../../conf.js"></script>
+<script type="text/javascript" src="../../scripts/function.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+var authorization_code=getArg(1);     
+var url="http://graph.renren.com/oauth/token";   
+var client_id=renren_key;  
+var client_secret=renren_secret;
+var redirect_uri=renren_redirect;
+grant_type="authorization_code";
+url=url+"&"+"client_id="+client_id+"&"+"client_secret="+client_secret+"&"+"redirect_uri="+redirect_uri+"&"+"grant_type="+grant_type+"&"+authorization_code;
+
+ /* ∑µªÿ÷µ£∫
+	"access_token": "10000|5.a6b7dbd428f731035f771b8d15063f61.86400.1292922000-222209506",
+    "expires_in": 87063,
+    "refresh_token": "10000|0.385d55f8615fdfd9edb7c4b5ebdc3e39-222209506",
+    "scope": "read_user_album read_user_feed"
+ */
+var result=getContent(url,proxy);            
+var obj=eval('('+result+')');        
+document.write("loading...");
+//document.write("result:");
+//document.write(result);
+
+//document.write("renrenkey:");
+//document.write(renren_key);
+//document.write("renrensecret:");
+//document.write(renren_secret);
+</script>
+
+</script>
+<script type="text/javascript">
+window.location.href="http://"+ccHost+":"+ccPort+"/"+ccWiki+"/includes/snsLogin.php?sns=renren&access_token="+obj.access_token+"&expires_in="+obj.expires_in+"&refresh_token="+obj.refresh_token;
+</script>
+</body>
+
+</html>
+

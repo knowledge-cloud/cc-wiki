@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deals>
+  <data>
+    <id>bdd75963ea5013d6</id>
+    <title>【杭州全区免费配送】仅9.9元！享最高原价20元爱订饭外卖1份！全城免费配送！饭来张口，做欢乐“宅”人！限量200份哦！有效期长达1个月！</title>
+    <category>未知</category>
+    <description></description>
+    <validThrough>2012-09-07T23:59:00+08:00</validThrough>
+    <validFrom>2012-08-10T00:00:00+08:00</validFrom>
+    <original_price>20.0</original_price>
+    <present_price>9.9</present_price>
+    <discount_value>4.95</discount_value>
+    <url>http://www.55tuan.com/goods-bdd75963ea5013d6.html?from=daohang-kfapi</url>
+    <picture>http://p0.55tuan.com/static/goods/goods/2012/05/15/10/goods_1337049008_3131.jpg</picture>
+    <source>窝窝团</source>
+    <gbcity>杭州</gbcity>
+    <timestamp>2012-08-10 11:44:37</timestamp>
+    <shops>
+      <shop>
+        <city>杭州</city>
+        <address></address>
+        <latitude></latitude>
+        <longitude></longitude>
+      </shop>
+    </shops>
+  </data>
+  <data>
+    <id>7a793af4ae2a7071</id>
+    <title>第一波，金曲武林旗舰店。自助美味大餐，超低价格。仅39元，享原价188元【金曲.优时尚】自助餐1位！高档海鲜、美味烧烤、特色热菜、精致冷菜、经典小吃、西式甜点、缤纷水果，200多种单品自助，全时段通兑！金曲.优时尚，绝对给力的美食集结地！至于你信不信，反正我是信了！</title>
+    <category>未知</category>
+    <description></description>
+    <validThrough>2012-08-30T23:59:00+08:00</validThrough>
+    <validFrom>2012-07-31T00:00:00+08:00</validFrom>
+    <original_price>188.0</original_price>
+    <present_price>39.0</present_price>
+    <discount_value>2.07</discount_value>
+    <url>http://www.55tuan.com/goods-7a793af4ae2a7071.html?from=daohang-kfapi</url>
+    <picture>http://p0.55tuan.com/static/goods/goods/2012/07/30/14/goods_1343628082_1989.jpg</picture>
+    <source>窝窝团</source>
+    <gbcity>杭州</gbcity>
+    <timestamp>2012-08-10 11:44:37</timestamp>
+    <shops>
+      <shop>
+        <city>杭州</city>
+        <address></address>
+        <latitude></latitude>
+        <longitude></longitude>
+      </shop>
+    </shops>
+  </data>
+  </deals>

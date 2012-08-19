@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shops>
+  <shop>
+    <deal_id>oecxxxaj</deal_id>
+    <shop_name>农夫烤鱼</shop_name>
+    <shop_id>5C4B1DF88C5F4C8C</shop_id>
+    <location>
+      <latitude>30.288190841675</latitude>
+      <longitude>120.15957641602</longitude>
+      <address>河东路233-2号(近潮王路)  </address>
+      <city>杭州</city>
+    </location>
+    <photos>
+      <photo>
+        <pic_id>51821155</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/86fa22ea8362c075b47dc1fb2c2cd1f4</pic_url>
+        <pic_discription>除了烤鱼还能入口 其他根本没能吃的 果断换地!</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>48269465</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/6275a2d26426dc3664f25c28fbb0dd52</pic_url>
+        <pic_discription>忙完一天，刚吃上饭！累死人了！</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>44962719</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/2ebe33a137276282ea0532a28a5e56b8</pic_url>
+        <pic_discription>夜宵继续</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>44911969</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/0a313e528348d93f70ab9b9c5aae47e2</pic_url>
+        <pic_discription></pic_discription>
+      </photo>
+    </photos>
+  </shop>
+  <shop>
+    <deal_id>8xgflgis</deal_id>
+    <shop_name>浙江大学紫金港校区东五教学楼201</shop_name>
+    <shop_id>BB9BA2F3FE5394FCD8BDF017A8B41034</shop_id>
+    <location>
+      <latitude>30.300801085095</latitude>
+      <longitude>120.09426688297</longitude>
+      <address>浙江省杭州市余杭塘路866号浙江大学紫金港校区</address>
+      <city>杭州</city>
+    </location>
+    <photos/>
+  </shop>
+</shops>

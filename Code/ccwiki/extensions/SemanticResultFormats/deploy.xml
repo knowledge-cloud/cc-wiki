@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploydescriptor>
+    <global>
+        <id>semanticresultformats</id>
+        <title>Semantic Result Formats</title>
+        <version>1.6.2</version>
+        <patchlevel>1</patchlevel>
+        <license>GPL-v2</license>
+        <vendor>ontoprise GmbH</vendor>
+        <maintainer>Jeroen de Dauw et al.</maintainer>
+        <instdir>extensions/SemanticResultFormats</instdir>
+        <description>
+            Semantic Result Formats is an extension to MediaWiki and bundles a number of result formats for inline queries. The individual formats such as timelines can be added to the installation independently.
+        </description>
+		<helpurl>http://www.mediawiki.org/wiki/Extension:Semantic_Result_Formats</helpurl>
+        <dependencies>
+            <dependency from="1.6.0" to="1.6.9">smw</dependency>
+        </dependencies>
+    </global>
+    
+    <codefiles>
+        <!-- empty -->
+    </codefiles>
+    
+    <wikidumps>
+        <!-- empty -->
+    </wikidumps>
+    
+    <resources>
+        <!-- empty -->
+    </resources>
+    
+    <configs>
+        <successor ext="smw" />
+        <new>
+            <require name="srf"
+                file="extensions/SemanticResultFormats/SemanticResultFormats.php" />
+        </new>
+        <uninstall>
+    		<!-- empty -->
+		</uninstall>
+    </configs>
+</deploydescriptor>

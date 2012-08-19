@@ -1,0 +1,15 @@
+.cityList{height: 320px;width:372px;overflow-y:auto;}
+
+    .sel_container{position:absolute;top:0;font-size:12px;}
+
+    .map_popup {position: absolute;z-index: 200000;width: 382px;height: 344px;top:20px;}
+
+    .map_popup .popup_main { background:#fff;border: 1px solid #8BA4D8;height: 100%;overflow: hidden;position: absolute;width: 100%;z-index: 2;}
+
+    .map_popup .title {background: url("http://map.baidu.com/img/popup_title.gif") repeat scroll 0 0 transparent;
+
+    color: #6688CC;font-size: 12px;font-weight: bold;height: 24px;line-height: 25px;padding-left: 7px;}
+
+    .map_popup button {background: url("http://map.baidu.com/img/popup_close.gif") no-repeat scroll 0 0 transparent;
+
+    border: 0 none;cursor: pointer;height: 12px;position: absolute;right: 4px;top: 6px;width: 12px;}	

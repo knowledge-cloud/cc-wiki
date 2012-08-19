@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploydescriptor>
+	<global>
+		<id>semanticgardening</id>
+		<title>Semantic Gardening extension</title>
+		<version>1.3.6</version>
+        <patchlevel>3</patchlevel>
+		<vendor>ontoprise GmbH</vendor>
+		<maintainer>ontoprise GmbH</maintainer>
+		<instdir>extensions/SemanticGardening</instdir>
+		<description>
+			The Semantic Gardening extension lets you detect and clean inconsistencies in the structure of SMW+ via automatic bots. It further provides an export functionality for OWL ontologies.
+		</description>
+		<helpurl>http://www.smwplus.com/index.php/Help:Semantic_Gardening_Extension</helpurl>
+		<dependencies>
+			<dependency from="1.6.0" to="1.6.0">smwhalo</dependency>
+		</dependencies>
+		<license>GPL v2</license>
+	</global>
+
+	<codefiles>
+		<file loc="deploy.xml" />
+	</codefiles>
+
+	<wikidumps>
+		<!-- empty -->
+	</wikidumps>
+
+	<resources>
+		<!-- empty -->
+	</resources>
+
+	<configs>
+		<precedes ext="SMWHalo" />
+
+		<new>
+			<require name="sga"
+				file="extensions/SemanticGardening/includes/SGA_GardeningInitialize.php" />
+		    <php name="GardeningRights">
+    			// Gardening privileges for the WikiSysop
+                $wgGroupPermissions['sysop']['gardening'] = true;
+                #Enable upload of owl files
+                $wgVerifyMimeType=false;
+                array_push($wgFileExtensions, "owl");
+                array_push($wgFileExtensions, "obl");
+			</php>
+			<variable name="phpInterpreter">
+				<string name="phpInterpreterPath"
+					userValueRequired="true"
+					description="Path of PHP interpreter (executebale)"
+					proposal="search: php" />
+			</variable>
+			<script file="maintenance/SGA_setup.php" params="" />
+		</new>
+		<update from="135">
+		  <script file="maintenance/SGA_setup.php" params="--update" />
+		</update>
+		<uninstall>
+			<script file="maintenance/SGA_setup.php" params="--delete" />
+    	</uninstall>
+	</configs>
+</deploydescriptor>

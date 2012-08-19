@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploydescriptor>
+	<global>
+		<version>1.1.1</version>
+		<id>nuke</id>
+		<vendor>Ontoprise GmbH</vendor>
+		<maintainer>Brion Vibber</maintainer>
+		<instdir>extensions/Nuke</instdir>
+		<description>
+				Gives sysops the ability to mass delete pages.
+		</description>
+		<helpurl>http://www.mediawiki.org/wiki/Extension:Nuke</helpurl>
+        <license>GPL-v2</license>
+		<dependencies>
+		</dependencies>
+		<patchlevel>0</patchlevel>
+		<notice>
+		</notice> 
+	</global>
+	<codefiles>
+		<file loc="deploy.xml" />
+	</codefiles>
+	<wikidumps>
+		<!-- empty -->
+	</wikidumps>
+	<resources>
+		<!-- empty -->
+	</resources>
+	<configs>
+		<new>
+			<require name="enableNuke" file="extensions/Nuke/SpecialNuke.php"/>
+		</new>
+		<uninstall>
+		</uninstall>
+	</configs>
+</deploydescriptor>
+

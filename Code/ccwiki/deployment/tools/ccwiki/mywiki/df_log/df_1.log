@@ -1,0 +1,652 @@
+
+[INFO] Tue, 13 Mar 2012 16:52:02 -0400: Start install package 'enhancedretrieval'
+[INFO] Tue, 13 Mar 2012 16:52:07 -0400: Download enhancedretrieval-1.6.0.zip
+[INFO] Tue, 13 Mar 2012 16:52:14 -0400: Unzip enhancedretrieval-1.6.0.zip
+[INFO] Tue, 13 Mar 2012 16:52:15 -0400: Apply configs for enhancedretrieval-1.6.0.zip
+[INFO] Tue, 13 Mar 2012 16:52:15 -0400: Added to LocalSettings.php: 
+/*start-enhancedretrieval*/ . 
+require_once('extensions/EnhancedRetrieval/includes/EnhancedRetrieval.php'); . 
+/*end-enhancedretrieval*/
+
+[INFO] Tue, 13 Mar 2012 16:52:15 -0400: Apply patches for enhancedretrieval
+[INFO] Tue, 13 Mar 2012 16:52:15 -0400: End install package 'enhancedretrieval'
+[INFO] Tue, 13 Mar 2012 16:52:21 -0400: Start initializing packages
+[INFO] Tue, 13 Mar 2012 16:52:21 -0400: Apply setups for: enhancedretrieval
+[INFO] Tue, 13 Mar 2012 16:52:21 -0400: Run script: extensions/EnhancedRetrieval/maintenance/setup.php
+[INFO] Tue, 13 Mar 2012 16:52:22 -0400: Mark extension as initialized: enhancedretrieval
+[INFO] Tue, 13 Mar 2012 16:52:22 -0400: End initializing packages
+[INFO] Tue, 13 Mar 2012 17:11:07 -0400: Start install package 'semanticforms'
+[INFO] Tue, 13 Mar 2012 17:11:10 -0400: Download semanticforms-2.2.1.zip
+[INFO] Tue, 13 Mar 2012 17:11:12 -0400: Unzip semanticforms-2.2.1.zip
+[INFO] Tue, 13 Mar 2012 17:11:12 -0400: Apply configs for semanticforms-2.2.1.zip
+[INFO] Tue, 13 Mar 2012 17:11:12 -0400: Added to LocalSettings.php: 
+/*start-semanticforms*/ . 
+require_once('extensions/SemanticForms/SemanticForms.php'); . 
+/*end-semanticforms*/
+
+[INFO] Tue, 13 Mar 2012 17:11:12 -0400: Apply patches for semanticforms
+[INFO] Tue, 13 Mar 2012 17:11:27 -0400: Apply patch: extensions/SemanticForms/patch.txt
+[INFO] Tue, 13 Mar 2012 17:11:32 -0400: Apply patch: extensions/SemanticForms/patches/WYSIWYG/patch_for_SF_2.2.1.txt
+[INFO] Tue, 13 Mar 2012 17:11:36 -0400: End install package 'semanticforms'
+[INFO] Tue, 13 Mar 2012 17:11:39 -0400: Start initializing packages
+[INFO] Tue, 13 Mar 2012 17:11:39 -0400: Apply setups for: semanticforms
+[INFO] Tue, 13 Mar 2012 17:11:39 -0400: Mark extension as initialized: semanticforms
+[INFO] Tue, 13 Mar 2012 17:11:39 -0400: End initializing packages
+[INFO] Tue, 13 Mar 2012 17:16:08 -0400: Start install package 'automaticsemanticforms'
+[INFO] Tue, 13 Mar 2012 17:16:43 -0400: Start install package 'automaticsemanticforms'
+[INFO] Tue, 13 Mar 2012 17:17:13 -0400: Download automaticsemanticforms-1.3.0.zip
+[INFO] Tue, 13 Mar 2012 17:17:15 -0400: Unzip automaticsemanticforms-1.3.0.zip
+[INFO] Tue, 13 Mar 2012 17:17:15 -0400: Apply configs for automaticsemanticforms-1.3.0.zip
+[INFO] Tue, 13 Mar 2012 17:17:15 -0400: Added to LocalSettings.php: 
+/*start-automaticsemanticforms*/ . 
+require_once('extensions/AutomaticSemanticForms/includes/ASF_Initialize.php');
+enableAutomaticSemanticForms(/*param-start-enableAutomaticSemanticForms*//*param-end-enableAutomaticSemanticForms*/); . 
+/*end-automaticsemanticforms*/
+
+[INFO] Tue, 13 Mar 2012 17:17:15 -0400: Apply patches for automaticsemanticforms
+[INFO] Tue, 13 Mar 2012 17:17:15 -0400: End install package 'automaticsemanticforms'
+[INFO] Tue, 13 Mar 2012 17:17:18 -0400: Start initializing packages
+[INFO] Tue, 13 Mar 2012 17:17:19 -0400: Apply setups for: automaticsemanticforms
+[INFO] Tue, 13 Mar 2012 17:17:19 -0400: Import ontology: import/dump.xml
+[INFO] Tue, 13 Mar 2012 17:17:26 -0400: Imported page: ASF sandbox
+[INFO] Tue, 13 Mar 2012 17:17:28 -0400: Imported page: Property:Autocomplete on
+[INFO] Tue, 13 Mar 2012 17:17:28 -0400: Imported page: Automaticsemanticforms
+[INFO] Tue, 13 Mar 2012 17:17:29 -0400: Imported page: Property:Call
+[INFO] Tue, 13 Mar 2012 17:17:30 -0400: Imported page: Property:Delimiter
+[INFO] Tue, 13 Mar 2012 17:17:30 -0400: Imported page: Property:Field sequence number
+[INFO] Tue, 13 Mar 2012 17:17:30 -0400: Imported page: Property:Form input help
+[INFO] Tue, 13 Mar 2012 17:17:31 -0400: Imported page: Property:Form input label
+[INFO] Tue, 13 Mar 2012 17:17:31 -0400: Imported page: Property:Hide free text
+[INFO] Tue, 13 Mar 2012 17:17:32 -0400: Imported page: Property:Is uploadable
+[INFO] Tue, 13 Mar 2012 17:17:32 -0400: Imported page: Property:No automatic formedit
+[INFO] Tue, 13 Mar 2012 17:17:32 -0400: Imported page: Template:Phone call
+[INFO] Tue, 13 Mar 2012 17:17:32 -0400: Imported page: Category:Phone call
+[INFO] Tue, 13 Mar 2012 17:17:32 -0400: Imported page: Property:Use autogrow
+[INFO] Tue, 13 Mar 2012 17:17:32 -0400: Imported page: Property:Use class
+[INFO] Tue, 13 Mar 2012 17:17:33 -0400: Imported page: Property:Use default input
+[INFO] Tue, 13 Mar 2012 17:17:33 -0400: Imported page: Property:Use display template
+[INFO] Tue, 13 Mar 2012 17:17:34 -0400: Imported page: Property:Use input type
+[INFO] Tue, 13 Mar 2012 17:17:34 -0400: Imported page: Property:Use page name template
+[INFO] Tue, 13 Mar 2012 17:17:34 -0400: Imported page: Property:Use preload article
+[INFO] Tue, 13 Mar 2012 17:17:34 -0400: Imported page: Property:Validator
+[INFO] Tue, 13 Mar 2012 17:17:35 -0400: Refreshing ontology: import/dump.xml
+[INFO] Tue, 13 Mar 2012 17:17:39 -0400: Refreshing ontology: /var/www/html/repos/mediawiki-1.17.0/extensions/AutomaticSemanticForms/import/dump.xml
+[INFO] Tue, 13 Mar 2012 17:17:41 -0400: (1) ASF sandbox refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:41 -0400: (2) Property:Autocomplete on refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (3) Automaticsemanticforms refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (4) Property:Call refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (5) Property:Delimiter refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (6) Property:Field sequence number refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (7) Property:Form input help refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (8) Property:Form input label refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (9) Property:Hide free text refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (10) Property:Is uploadable refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:42 -0400: (11) Property:No automatic formedit refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (12) Template:Phone call refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (13) Category:Phone call refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (14) Property:Use autogrow refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (15) Property:Use class refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (16) Property:Use default input refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (17) Property:Use display template refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (18) Property:Use input type refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:43 -0400: (19) Property:Use page name template refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:44 -0400: (20) Property:Use preload article refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:44 -0400: (21) Property:Validator refreshed.
+[INFO] Tue, 13 Mar 2012 17:17:45 -0400: Mark extension as initialized: automaticsemanticforms
+[INFO] Tue, 13 Mar 2012 17:17:45 -0400: End initializing packages
+[INFO] Tue, 13 Mar 2012 17:26:31 -0400: Start install package 'semanticformsinputs'
+[INFO] Tue, 13 Mar 2012 17:26:33 -0400: Download semanticformsinputs-0.4.1.zip
+[INFO] Tue, 13 Mar 2012 17:26:34 -0400: Unzip semanticformsinputs-0.4.1.zip
+[INFO] Tue, 13 Mar 2012 17:26:34 -0400: Apply configs for semanticformsinputs-0.4.1.zip
+[INFO] Tue, 13 Mar 2012 17:26:34 -0400: Added to LocalSettings.php: 
+/*start-semanticformsinputs*/ . 
+require_once('extensions/SemanticFormsInputs/SemanticFormsInputs.php'); . 
+/*end-semanticformsinputs*/
+
+[INFO] Tue, 13 Mar 2012 17:26:34 -0400: Apply patches for semanticformsinputs
+[INFO] Tue, 13 Mar 2012 17:26:34 -0400: End install package 'semanticformsinputs'
+[INFO] Tue, 13 Mar 2012 17:26:36 -0400: Start initializing packages
+[INFO] Tue, 13 Mar 2012 17:26:36 -0400: Apply setups for: semanticformsinputs
+[INFO] Tue, 13 Mar 2012 17:26:36 -0400: Mark extension as initialized: semanticformsinputs
+[INFO] Tue, 13 Mar 2012 17:26:36 -0400: End initializing packages
+[INFO] Wed, 14 Mar 2012 01:42:45 -0400: Start install package 'semanticgardening'
+[INFO] Wed, 14 Mar 2012 01:42:49 -0400: Download semanticgardening-1.3.6.zip
+[INFO] Wed, 14 Mar 2012 01:42:51 -0400: Unzip semanticgardening-1.3.6.zip
+[INFO] Wed, 14 Mar 2012 01:42:51 -0400: Apply configs for semanticgardening-1.3.6.zip
+[INFO] Wed, 14 Mar 2012 01:42:51 -0400: Added to LocalSettings.php: 
+/*start-semanticgardening*/ . 
+require_once('extensions/SemanticGardening/includes/SGA_GardeningInitialize.php');
+/*php-start-GardeningRights*/
+// Gardening privileges for the WikiSysop
+                $wgGroupPermissions['sysop']['gardening'] = true;
+                #Enable upload of owl files
+                $wgVerifyMimeType=false;
+                array_push($wgFileExtensions, "owl");
+                array_push($wgFileExtensions, "obl");
+/*php-end-GardeningRights*/
+$phpInterpreter = /*start-variable-phpInterpreter*/ '/usr/bin/php';/*end-variable-phpInterpreter*/ . 
+/*end-semanticgardening*/
+
+[INFO] Wed, 14 Mar 2012 01:42:51 -0400: Apply patches for semanticgardening
+[INFO] Wed, 14 Mar 2012 01:42:51 -0400: End install package 'semanticgardening'
+[INFO] Wed, 14 Mar 2012 01:43:00 -0400: Start initializing packages
+[INFO] Wed, 14 Mar 2012 01:43:00 -0400: Apply setups for: semanticgardening
+[INFO] Wed, 14 Mar 2012 01:43:00 -0400: Run script: extensions/SemanticGardening/maintenance/SGA_setup.php
+[INFO] Wed, 14 Mar 2012 01:43:12 -0400: Mark extension as initialized: semanticgardening
+[INFO] Wed, 14 Mar 2012 01:43:12 -0400: End initializing packages
+[INFO] Wed, 14 Mar 2012 01:46:53 -0400: Start install package 'semanticresultformats'
+[INFO] Wed, 14 Mar 2012 01:46:55 -0400: Download semanticresultformats-1.6.2.zip
+[INFO] Wed, 14 Mar 2012 01:47:01 -0400: Unzip semanticresultformats-1.6.2.zip
+[INFO] Wed, 14 Mar 2012 01:47:02 -0400: Apply configs for semanticresultformats-1.6.2.zip
+[INFO] Wed, 14 Mar 2012 01:47:02 -0400: Added to LocalSettings.php: 
+/*start-semanticresultformats*/ . 
+require_once('extensions/SemanticResultFormats/SemanticResultFormats.php'); . 
+/*end-semanticresultformats*/
+
+[INFO] Wed, 14 Mar 2012 01:47:02 -0400: Apply patches for semanticresultformats
+[INFO] Wed, 14 Mar 2012 01:47:02 -0400: End install package 'semanticresultformats'
+[INFO] Wed, 14 Mar 2012 01:47:06 -0400: Start initializing packages
+[INFO] Wed, 14 Mar 2012 01:47:06 -0400: Apply setups for: semanticresultformats
+[INFO] Wed, 14 Mar 2012 01:47:06 -0400: Mark extension as initialized: semanticresultformats
+[INFO] Wed, 14 Mar 2012 01:47:06 -0400: End initializing packages
+[INFO] Wed, 14 Mar 2012 02:10:53 -0400: Start install package 'treeview'
+[INFO] Wed, 14 Mar 2012 02:10:55 -0400: Download treeview-2.0.0.zip
+[INFO] Wed, 14 Mar 2012 02:10:57 -0400: Unzip treeview-2.0.0.zip
+[INFO] Wed, 14 Mar 2012 02:10:57 -0400: Apply configs for treeview-2.0.0.zip
+[INFO] Wed, 14 Mar 2012 02:10:57 -0400: Added to LocalSettings.php: 
+/*start-treeview*/ . 
+require_once('extensions/Treeview/includes/TV_Initialize.php');
+enableTreeView(/*param-start-enableTreeView*//*param-end-enableTreeView*/); . 
+/*end-treeview*/
+
+[INFO] Wed, 14 Mar 2012 02:10:57 -0400: Apply patches for treeview
+[INFO] Wed, 14 Mar 2012 02:10:57 -0400: End install package 'treeview'
+[INFO] Wed, 14 Mar 2012 02:11:03 -0400: Start initializing packages
+[INFO] Wed, 14 Mar 2012 02:11:03 -0400: Apply setups for: treeview
+[INFO] Wed, 14 Mar 2012 02:11:03 -0400: Mark extension as initialized: treeview
+[INFO] Wed, 14 Mar 2012 02:11:03 -0400: End initializing packages
+[INFO] Fri, 16 Mar 2012 15:46:40 +0800: Start install package 'tsc'
+[INFO] Fri, 16 Mar 2012 15:47:54 +0800: Start install package 'tsc'
+[INFO] Fri, 16 Mar 2012 15:47:59 +0800: Download tsc-1.6.0.zip
+[INFO] Fri, 16 Mar 2012 15:52:36 +0800: Unzip tsc-1.6.0.zip
+[INFO] Fri, 16 Mar 2012 15:52:36 +0800: Apply configs for tsc-1.6.0.zip
+[INFO] Fri, 16 Mar 2012 15:52:37 +0800: Added to LocalSettings.php: 
+/*start-tsc*/ . 
+$smwgHaloWebserviceEndpoint = /*start-variable-smwgHaloWebserviceEndpoint*/ 'localhost:8080';/*end-variable-smwgHaloWebserviceEndpoint*/ . 
+/*end-tsc*/
+
+[INFO] Fri, 16 Mar 2012 15:52:37 +0800: Apply patches for tsc
+[INFO] Fri, 16 Mar 2012 15:52:37 +0800: End install package 'tsc'
+[INFO] Fri, 16 Mar 2012 15:52:41 +0800: Start initializing packages
+[INFO] Fri, 16 Mar 2012 15:52:41 +0800: Apply setups for: tsc
+[INFO] Fri, 16 Mar 2012 15:52:41 +0800: Mark extension as initialized: tsc
+[INFO] Fri, 16 Mar 2012 15:52:41 +0800: End initializing packages
+[INFO] Sat, 17 Mar 2012 11:18:38 +0800: Imported page: Category:Ontology1331620885468/Time
+[INFO] Sat, 17 Mar 2012 11:18:38 +0800: Imported page: Category:Ontology1331620885468/Person
+[INFO] Sat, 17 Mar 2012 11:18:39 +0800: Imported page: Category:Ontology1331620885468/Location
+[INFO] Sat, 17 Mar 2012 11:18:39 +0800: Imported page: Category:Ontology1331620885468/Discount
+[INFO] Sat, 17 Mar 2012 11:18:40 +0800: Imported page: Category:Ontology1331620885468/Deal
+[INFO] Sat, 17 Mar 2012 11:18:40 +0800: Imported page: Property:Ontology1331620885468/city
+[INFO] Sat, 17 Mar 2012 11:18:41 +0800: Imported page: Property:Ontology1331620885468/purchase count
+[INFO] Sat, 17 Mar 2012 11:18:41 +0800: Imported page: Property:Ontology1331620885468/original price
+[INFO] Sat, 17 Mar 2012 11:18:42 +0800: Imported page: Property:Ontology1331620885468/latitude
+[INFO] Sat, 17 Mar 2012 11:18:43 +0800: Imported page: Property:Ontology1331620885468/name
+[INFO] Sat, 17 Mar 2012 11:18:44 +0800: Imported page: Property:Ontology1331620885468/present price
+[INFO] Sat, 17 Mar 2012 11:18:44 +0800: Imported page: Property:Ontology1331620885468/validThrough
+[INFO] Sat, 17 Mar 2012 11:18:45 +0800: Imported page: Property:Ontology1331620885468/id
+[INFO] Sat, 17 Mar 2012 11:18:45 +0800: Imported page: Property:Ontology1331620885468/validFrom
+[INFO] Sat, 17 Mar 2012 11:18:46 +0800: Imported page: Property:Ontology1331620885468/title
+[INFO] Sat, 17 Mar 2012 11:18:47 +0800: Imported page: Property:Ontology1331620885468/email
+[INFO] Sat, 17 Mar 2012 11:18:47 +0800: Imported page: Property:Ontology1331620885468/address
+[INFO] Sat, 17 Mar 2012 11:18:48 +0800: Imported page: Property:Ontology1331620885468/description
+[INFO] Sat, 17 Mar 2012 11:18:48 +0800: Imported page: Property:Ontology1331620885468/url
+[INFO] Sat, 17 Mar 2012 11:18:49 +0800: Imported page: Property:Ontology1331620885468/longitude
+[INFO] Sat, 17 Mar 2012 11:18:49 +0800: Imported page: Property:Ontology1331620885468/picture
+[INFO] Sat, 17 Mar 2012 11:18:50 +0800: Imported page: Property:Ontology1331620885468/category
+[INFO] Sat, 17 Mar 2012 11:18:51 +0800: Imported page: Property:Ontology1331620885468/avatar
+[INFO] Sat, 17 Mar 2012 11:18:51 +0800: Imported page: Property:Ontology1331620885468/validTime
+[INFO] Sat, 17 Mar 2012 11:18:52 +0800: Imported page: Property:Ontology1331620885468/participated
+[INFO] Sat, 17 Mar 2012 11:18:52 +0800: Imported page: Property:Ontology1331620885468/interested
+[INFO] Sat, 17 Mar 2012 11:18:53 +0800: Imported page: Property:Ontology1331620885468/hasDiscount
+[INFO] Sat, 17 Mar 2012 11:18:53 +0800: Imported page: Property:Ontology1331620885468/availableAtOrFrom
+[INFO] Sat, 17 Mar 2012 11:18:54 +0800: Imported page: Property:Rdfs/label
+[INFO] Sat, 17 Mar 2012 11:18:55 +0800: Imported new revision of page: MediaWiki:NamespaceMappings
+[INFO] Sat, 17 Mar 2012 11:18:56 +0800: Imported page: Http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl
+[INFO] Sat, 17 Mar 2012 11:18:59 +0800: Start initializing packages
+[INFO] Sat, 17 Mar 2012 11:18:59 +0800: End initializing packages
+[INFO] Sat, 17 Mar 2012 11:45:51 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Sat, 17 Mar 2012 11:45:51 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[ERROR] Sat, 17 Mar 2012 11:45:51 +0800: Could not find configuration for http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Sat, 17 Mar 2012 11:45:51 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Sat, 17 Mar 2012 11:45:51 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Sat, 17 Mar 2012 11:45:51 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl'-1.0.0
+[INFO] Sat, 17 Mar 2012 11:45:51 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[ERROR] Sat, 17 Mar 2012 11:46:45 +0800: Package does not exist http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[FATAL] Sat, 17 Mar 2012 11:46:45 +0800: exception 'InstallationError' in /var/www/html/ccwiki/deployment/tools/smwadmin/DF_Installer.php:255
+Stack trace:
+#0 /var/www/html/ccwiki/deployment/tools/smwadmin/smwadmin.php(633): Installer->deInstall('http://www.sema...')
+#1 {main}
+[ERROR] Sat, 17 Mar 2012 11:48:12 +0800: Package does not exist http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[FATAL] Sat, 17 Mar 2012 11:48:12 +0800: exception 'InstallationError' in /var/www/html/ccwiki/deployment/tools/smwadmin/DF_Installer.php:255
+Stack trace:
+#0 /var/www/html/ccwiki/deployment/tools/smwadmin/smwadmin.php(633): Installer->deInstall('http://www.sema...')
+#1 {main}
+[INFO] Sat, 17 Mar 2012 14:41:16 +0800: Imported page: Category:Ontology 0/Time
+[INFO] Sat, 17 Mar 2012 14:41:16 +0800: Imported page: Category:Ontology 0/Product
+[INFO] Sat, 17 Mar 2012 14:41:17 +0800: Imported page: Category:Ontology 0/Photo
+[INFO] Sat, 17 Mar 2012 14:41:17 +0800: Imported page: Category:Ontology 0/Person
+[INFO] Sat, 17 Mar 2012 14:41:17 +0800: Imported page: Category:Ontology 0/Microblog
+[INFO] Sat, 17 Mar 2012 14:41:17 +0800: Imported page: Category:Ontology 0/Location
+[INFO] Sat, 17 Mar 2012 14:41:17 +0800: Imported page: Category:Ontology 0/Discount
+[INFO] Sat, 17 Mar 2012 14:41:18 +0800: Imported page: Category:Ontology 0/Deal
+[INFO] Sat, 17 Mar 2012 14:41:18 +0800: Imported page: Property:Ontology 0/picture
+[INFO] Sat, 17 Mar 2012 14:41:18 +0800: Imported page: Property:Ontology 0/validThrough
+[INFO] Sat, 17 Mar 2012 14:41:18 +0800: Imported page: Property:Ontology 0/longitude
+[INFO] Sat, 17 Mar 2012 14:41:19 +0800: Imported page: Property:Ontology 0/original price
+[INFO] Sat, 17 Mar 2012 14:41:19 +0800: Imported page: Property:Ontology 0/latitude
+[INFO] Sat, 17 Mar 2012 14:41:19 +0800: Imported page: Property:Ontology 0/id
+[INFO] Sat, 17 Mar 2012 14:41:20 +0800: Imported page: Property:Ontology 0/description
+[INFO] Sat, 17 Mar 2012 14:41:20 +0800: Imported page: Property:Owl/topDataProperty
+[INFO] Sat, 17 Mar 2012 14:41:21 +0800: Imported page: Property:Ontology 0/purchase count
+[INFO] Sat, 17 Mar 2012 14:41:21 +0800: Imported page: Property:Ontology 0/validFrom
+[INFO] Sat, 17 Mar 2012 14:41:21 +0800: Imported page: Property:Ontology 0/name
+[INFO] Sat, 17 Mar 2012 14:41:22 +0800: Imported page: Property:Ontology 0/url
+[INFO] Sat, 17 Mar 2012 14:41:22 +0800: Imported page: Property:Ontology 0/hasBrand
+[INFO] Sat, 17 Mar 2012 14:41:22 +0800: Imported page: Property:Ontology 0/present price
+[INFO] Sat, 17 Mar 2012 14:41:22 +0800: Imported page: Property:Ontology 0/title
+[INFO] Sat, 17 Mar 2012 14:41:22 +0800: Imported page: Property:Ontology 0/category
+[INFO] Sat, 17 Mar 2012 14:41:23 +0800: Imported page: Property:Ontology 0/status
+[INFO] Sat, 17 Mar 2012 14:41:23 +0800: Imported page: Property:Ontology 0/sns id
+[INFO] Sat, 17 Mar 2012 14:41:23 +0800: Imported page: Property:Ontology 0/tag
+[INFO] Sat, 17 Mar 2012 14:41:23 +0800: Imported page: Property:Ontology 0/city
+[INFO] Sat, 17 Mar 2012 14:41:24 +0800: Imported page: Property:Ontology 0/source
+[INFO] Sat, 17 Mar 2012 14:41:24 +0800: Imported page: Property:Ontology 0/publish time
+[INFO] Sat, 17 Mar 2012 14:41:24 +0800: Imported page: Property:Ontology 0/address
+[INFO] Sat, 17 Mar 2012 14:41:24 +0800: Imported page: Property:Ontology 0/avatar
+[INFO] Sat, 17 Mar 2012 14:41:25 +0800: Imported page: Property:Ontology 0/hasPhotoCollection
+[INFO] Sat, 17 Mar 2012 14:41:25 +0800: Imported page: Property:Ontology 0/availableAtOrFrom
+[INFO] Sat, 17 Mar 2012 14:41:25 +0800: Imported page: Property:Ontology 0/published
+[INFO] Sat, 17 Mar 2012 14:41:25 +0800: Imported page: Property:Ontology 0/hasDiscount
+[INFO] Sat, 17 Mar 2012 14:41:26 +0800: Imported page: Property:Ontology 0/validTime
+[INFO] Sat, 17 Mar 2012 14:41:26 +0800: Imported page: Property:Ontology 0/knows
+[INFO] Sat, 17 Mar 2012 14:41:26 +0800: Imported page: Property:Ontology 0/interested
+[INFO] Sat, 17 Mar 2012 14:41:26 +0800: Imported page: Property:Owl/topObjectProperty
+[INFO] Sat, 17 Mar 2012 14:41:26 +0800: Imported page: Property:Ontology 0/hasProductCollection
+[INFO] Sat, 17 Mar 2012 14:41:27 +0800: Imported page: Property:Ontology 0/participated
+[INFO] Sat, 17 Mar 2012 14:41:27 +0800: Imported page: Property:Rdfs/comment
+[INFO] Sat, 17 Mar 2012 14:41:27 +0800: Imported new revision of page: Property:Rdfs/label
+[INFO] Sat, 17 Mar 2012 14:41:28 +0800: Imported new revision of page: MediaWiki:NamespaceMappings
+[INFO] Sat, 17 Mar 2012 14:41:29 +0800: Imported page: Http://www.semanticweb.org/ontologies/2012/2/montology.owl
+[INFO] Sat, 17 Mar 2012 14:41:39 +0800: Start initializing packages
+[INFO] Sat, 17 Mar 2012 14:41:39 +0800: End initializing packages
+[INFO] Sun, 18 Mar 2012 09:14:33 +0800: Start install package 'nuke'
+[INFO] Sun, 18 Mar 2012 09:14:36 +0800: Download nuke-1.1.1.zip
+[INFO] Sun, 18 Mar 2012 09:14:38 +0800: Unzip nuke-1.1.1.zip
+[INFO] Sun, 18 Mar 2012 09:14:38 +0800: Apply configs for nuke-1.1.1.zip
+[INFO] Sun, 18 Mar 2012 09:14:38 +0800: Added to LocalSettings.php: 
+/*start-nuke*/ . 
+require_once('extensions/Nuke/SpecialNuke.php'); . 
+/*end-nuke*/
+
+[INFO] Sun, 18 Mar 2012 09:14:38 +0800: Apply patches for nuke
+[INFO] Sun, 18 Mar 2012 09:14:38 +0800: End install package 'nuke'
+[INFO] Sun, 18 Mar 2012 09:14:41 +0800: Start initializing packages
+[INFO] Sun, 18 Mar 2012 09:14:41 +0800: Apply setups for: nuke
+[INFO] Sun, 18 Mar 2012 09:14:41 +0800: Mark extension as initialized: nuke
+[INFO] Sun, 18 Mar 2012 09:14:41 +0800: End initializing packages
+[INFO] Sun, 18 Mar 2012 09:24:44 +0800: Imported new revision of page: Category:Ontology 0/Time
+[INFO] Sun, 18 Mar 2012 09:24:44 +0800: Imported new revision of page: Category:Ontology 0/Product
+[INFO] Sun, 18 Mar 2012 09:24:45 +0800: Imported new revision of page: Category:Ontology 0/Photo
+[INFO] Sun, 18 Mar 2012 09:24:45 +0800: Imported new revision of page: Category:Ontology 0/Person
+[INFO] Sun, 18 Mar 2012 09:24:46 +0800: Imported new revision of page: Category:Ontology 0/Microblog
+[INFO] Sun, 18 Mar 2012 09:24:46 +0800: Imported new revision of page: Category:Ontology 0/Location
+[INFO] Sun, 18 Mar 2012 09:24:47 +0800: Imported new revision of page: Category:Ontology 0/Discount
+[INFO] Sun, 18 Mar 2012 09:24:48 +0800: Imported new revision of page: Category:Ontology 0/Deal
+[INFO] Sun, 18 Mar 2012 09:24:48 +0800: Imported new revision of page: Property:Ontology 0/picture
+[INFO] Sun, 18 Mar 2012 09:24:49 +0800: Imported new revision of page: Property:Ontology 0/present price
+[INFO] Sun, 18 Mar 2012 09:24:49 +0800: Imported new revision of page: Property:Ontology 0/tag
+[INFO] Sun, 18 Mar 2012 09:24:50 +0800: Imported new revision of page: Property:Ontology 0/sns id
+[INFO] Sun, 18 Mar 2012 09:24:51 +0800: Imported new revision of page: Property:Ontology 0/original price
+[INFO] Sun, 18 Mar 2012 09:24:51 +0800: Imported new revision of page: Property:Ontology 0/publish time
+[INFO] Sun, 18 Mar 2012 09:24:52 +0800: Imported new revision of page: Property:Owl/topDataProperty
+[INFO] Sun, 18 Mar 2012 09:24:52 +0800: Imported new revision of page: Property:Ontology 0/category
+[INFO] Sun, 18 Mar 2012 09:24:54 +0800: Imported new revision of page: Property:Ontology 0/description
+[INFO] Sun, 18 Mar 2012 09:24:54 +0800: Imported new revision of page: Property:Ontology 0/title
+[INFO] Sun, 18 Mar 2012 09:24:55 +0800: Imported new revision of page: Property:Ontology 0/latitude
+[INFO] Sun, 18 Mar 2012 09:24:55 +0800: Imported new revision of page: Property:Ontology 0/name
+[INFO] Sun, 18 Mar 2012 09:24:56 +0800: Imported new revision of page: Property:Ontology 0/validFrom
+[INFO] Sun, 18 Mar 2012 09:24:57 +0800: Imported new revision of page: Property:Ontology 0/purchase count
+[INFO] Sun, 18 Mar 2012 09:24:57 +0800: Imported new revision of page: Property:Ontology 0/avatar
+[INFO] Sun, 18 Mar 2012 09:24:58 +0800: Imported new revision of page: Property:Ontology 0/validThrough
+[INFO] Sun, 18 Mar 2012 09:24:58 +0800: Imported new revision of page: Property:Ontology 0/hasBrand
+[INFO] Sun, 18 Mar 2012 09:24:59 +0800: Imported new revision of page: Property:Ontology 0/source
+[INFO] Sun, 18 Mar 2012 09:25:00 +0800: Imported new revision of page: Property:Ontology 0/status
+[INFO] Sun, 18 Mar 2012 09:25:00 +0800: Imported new revision of page: Property:Ontology 0/id
+[INFO] Sun, 18 Mar 2012 09:25:01 +0800: Imported new revision of page: Property:Ontology 0/longitude
+[INFO] Sun, 18 Mar 2012 09:25:01 +0800: Imported new revision of page: Property:Ontology 0/address
+[INFO] Sun, 18 Mar 2012 09:25:02 +0800: Imported new revision of page: Property:Ontology 0/url
+[INFO] Sun, 18 Mar 2012 09:25:03 +0800: Imported new revision of page: Property:Ontology 0/city
+[INFO] Sun, 18 Mar 2012 09:25:03 +0800: Imported new revision of page: Property:Ontology 0/hasPhotoCollection
+[INFO] Sun, 18 Mar 2012 09:25:04 +0800: Imported new revision of page: Property:Ontology 0/availableAtOrFrom
+[INFO] Sun, 18 Mar 2012 09:25:05 +0800: Imported new revision of page: Property:Ontology 0/hasProductCollection
+[INFO] Sun, 18 Mar 2012 09:25:06 +0800: Imported new revision of page: Property:Ontology 0/participated
+[INFO] Sun, 18 Mar 2012 09:25:06 +0800: Imported new revision of page: Property:Ontology 0/hasDiscount
+[INFO] Sun, 18 Mar 2012 09:25:07 +0800: Imported new revision of page: Property:Ontology 0/interested
+[INFO] Sun, 18 Mar 2012 09:25:08 +0800: Imported new revision of page: Property:Ontology 0/knows
+[INFO] Sun, 18 Mar 2012 09:25:08 +0800: Imported new revision of page: Property:Ontology 0/published
+[INFO] Sun, 18 Mar 2012 09:25:09 +0800: Imported new revision of page: Property:Ontology 0/validTime
+[INFO] Sun, 18 Mar 2012 09:25:09 +0800: Imported new revision of page: Property:Owl/topObjectProperty
+[INFO] Sun, 18 Mar 2012 09:25:10 +0800: Imported new revision of page: Property:Rdfs/comment
+[INFO] Sun, 18 Mar 2012 09:25:10 +0800: Imported new revision of page: Property:Rdfs/label
+[INFO] Sun, 18 Mar 2012 09:25:11 +0800: Imported new revision of page: MediaWiki:NamespaceMappings
+[INFO] Sun, 18 Mar 2012 09:25:12 +0800: Imported page: Http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Sun, 18 Mar 2012 09:25:15 +0800: Start initializing packages
+[INFO] Sun, 18 Mar 2012 09:25:15 +0800: End initializing packages
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: Remove from LocalSettings.php: /*start-http://www.semanticweb.org/ontologies/2012/2/mo.owl*/
+/*end-http://www.semanticweb.org/ontologies/2012/2/mo.owl*/
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/mo.owl'-1.0.0
+[INFO] Mon, 19 Mar 2012 11:59:41 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/montology.owl
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/montology.owl
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: Remove from LocalSettings.php: /*start-http://www.semanticweb.org/ontologies/2012/2/montology.owl*/
+/*end-http://www.semanticweb.org/ontologies/2012/2/montology.owl*/
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/montology.owl
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/montology.owl
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/montology.owl'-1.0.0
+[INFO] Mon, 19 Mar 2012 12:00:44 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/montology.owl
+[INFO] Mon, 19 Mar 2012 12:04:39 +0800: Imported page: Category:Ontology 0/Location
+[INFO] Mon, 19 Mar 2012 12:04:39 +0800: Imported page: Category:Ontology 0/Discount
+[INFO] Mon, 19 Mar 2012 12:04:40 +0800: Imported page: Category:Ontology 0/Microblog
+[INFO] Mon, 19 Mar 2012 12:04:40 +0800: Imported page: Category:Ontology 0/Time
+[INFO] Mon, 19 Mar 2012 12:04:41 +0800: Imported page: Category:Ontology 0/Weather
+[INFO] Mon, 19 Mar 2012 12:04:41 +0800: Imported page: Category:Ontology 0/Deal
+[INFO] Mon, 19 Mar 2012 12:04:42 +0800: Imported page: Category:Ontology 0/WeatherForecast
+[INFO] Mon, 19 Mar 2012 12:04:43 +0800: Imported page: Category:Ontology 0/Person
+[INFO] Mon, 19 Mar 2012 12:04:44 +0800: Imported page: Category:Ontology 0/Product
+[INFO] Mon, 19 Mar 2012 12:04:44 +0800: Imported page: Category:Ontology 0/Photo
+[INFO] Mon, 19 Mar 2012 12:04:45 +0800: Imported page: Property:Ontology 0/picture
+[INFO] Mon, 19 Mar 2012 12:04:45 +0800: Imported page: Property:Ontology 0/present price
+[INFO] Mon, 19 Mar 2012 12:04:46 +0800: Imported page: Property:Ontology 0/tag
+[INFO] Mon, 19 Mar 2012 12:04:46 +0800: Imported page: Property:Ontology 0/sns id
+[INFO] Mon, 19 Mar 2012 12:04:47 +0800: Imported page: Property:Ontology 0/original price
+[INFO] Mon, 19 Mar 2012 12:04:47 +0800: Imported page: Property:Ontology 0/publish time
+[INFO] Mon, 19 Mar 2012 12:04:48 +0800: Imported page: Property:Owl/topDataProperty
+[INFO] Mon, 19 Mar 2012 12:04:49 +0800: Imported page: Property:Ontology 0/high temperature
+[INFO] Mon, 19 Mar 2012 12:04:49 +0800: Imported page: Property:Ontology 0/category
+[INFO] Mon, 19 Mar 2012 12:04:50 +0800: Imported page: Property:Ontology 0/description
+[INFO] Mon, 19 Mar 2012 12:04:50 +0800: Imported page: Property:Ontology 0/title
+[INFO] Mon, 19 Mar 2012 12:04:51 +0800: Imported page: Property:Ontology 0/condition
+[INFO] Mon, 19 Mar 2012 12:04:51 +0800: Imported page: Property:Ontology 0/name
+[INFO] Mon, 19 Mar 2012 12:04:52 +0800: Imported page: Property:Ontology 0/latitude
+[INFO] Mon, 19 Mar 2012 12:04:52 +0800: Imported page: Property:Ontology 0/validFrom
+[INFO] Mon, 19 Mar 2012 12:04:53 +0800: Imported page: Property:Ontology 0/purchase count
+[INFO] Mon, 19 Mar 2012 12:04:54 +0800: Imported page: Property:Ontology 0/avatar
+[INFO] Mon, 19 Mar 2012 12:04:55 +0800: Imported page: Property:Ontology 0/validThrough
+[INFO] Mon, 19 Mar 2012 12:04:55 +0800: Imported page: Property:Ontology 0/hasBrand
+[INFO] Mon, 19 Mar 2012 12:04:56 +0800: Imported page: Property:Ontology 0/source
+[INFO] Mon, 19 Mar 2012 12:04:56 +0800: Imported page: Property:Ontology 0/status
+[INFO] Mon, 19 Mar 2012 12:04:57 +0800: Imported page: Property:Ontology 0/id
+[INFO] Mon, 19 Mar 2012 12:04:57 +0800: Imported page: Property:Ontology 0/longitude
+[INFO] Mon, 19 Mar 2012 12:04:58 +0800: Imported page: Property:Ontology 0/url
+[INFO] Mon, 19 Mar 2012 12:04:58 +0800: Imported page: Property:Ontology 0/address
+[INFO] Mon, 19 Mar 2012 12:04:59 +0800: Imported page: Property:Ontology 0/low temperature
+[INFO] Mon, 19 Mar 2012 12:04:59 +0800: Imported page: Property:Ontology 0/city
+[INFO] Mon, 19 Mar 2012 12:05:00 +0800: Imported page: Property:Ontology 0/time
+[INFO] Mon, 19 Mar 2012 12:05:01 +0800: Imported page: Property:Ontology 0/hasPhotoCollection
+[INFO] Mon, 19 Mar 2012 12:05:01 +0800: Imported page: Property:Ontology 0/tomorrow weather
+[INFO] Mon, 19 Mar 2012 12:05:02 +0800: Imported page: Property:Ontology 0/availableAtOrFrom
+[INFO] Mon, 19 Mar 2012 12:05:03 +0800: Imported page: Property:Ontology 0/current weather
+[INFO] Mon, 19 Mar 2012 12:05:04 +0800: Imported page: Property:Ontology 0/hasProductCollection
+[INFO] Mon, 19 Mar 2012 12:05:06 +0800: Imported page: Property:Ontology 0/participated
+[INFO] Mon, 19 Mar 2012 12:05:07 +0800: Imported page: Property:Ontology 0/hasDiscount
+[INFO] Mon, 19 Mar 2012 12:05:07 +0800: Imported page: Property:Ontology 0/interested
+[INFO] Mon, 19 Mar 2012 12:05:08 +0800: Imported page: Property:Ontology 0/knows
+[INFO] Mon, 19 Mar 2012 12:05:09 +0800: Imported page: Property:Ontology 0/published
+[INFO] Mon, 19 Mar 2012 12:05:11 +0800: Imported page: Property:Ontology 0/validTime
+[INFO] Mon, 19 Mar 2012 12:05:11 +0800: Imported page: Property:Owl/topObjectProperty
+[INFO] Mon, 19 Mar 2012 12:05:12 +0800: Imported page: Property:Ontology 0/localWeather
+[INFO] Mon, 19 Mar 2012 12:05:12 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow weather
+[INFO] Mon, 19 Mar 2012 12:05:13 +0800: Imported new revision of page: Property:Ontology 0/relatedBlog
+[INFO] Mon, 19 Mar 2012 12:05:13 +0800: Imported page: Property:Rdfs/comment
+[INFO] Mon, 19 Mar 2012 12:05:14 +0800: Imported page: Property:Rdfs/label
+[INFO] Mon, 19 Mar 2012 12:05:14 +0800: Imported new revision of page: MediaWiki:NamespaceMappings
+[INFO] Mon, 19 Mar 2012 12:05:16 +0800: Imported page: Http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Mon, 19 Mar 2012 12:05:19 +0800: Start initializing packages
+[INFO] Mon, 19 Mar 2012 12:05:19 +0800: End initializing packages
+[INFO] Tue, 20 Mar 2012 16:53:01 +0800: Start install package 'maps'
+[INFO] Tue, 20 Mar 2012 16:53:03 +0800: Download maps-1.0.3.zip
+[INFO] Tue, 20 Mar 2012 16:53:14 +0800: Unzip maps-1.0.3.zip
+[INFO] Tue, 20 Mar 2012 16:53:14 +0800: Apply configs for maps-1.0.3.zip
+[INFO] Tue, 20 Mar 2012 16:53:14 +0800: Added to LocalSettings.php: 
+/*start-maps*/ . 
+require_once('extensions/Maps/Maps.php'); . 
+/*end-maps*/
+
+[INFO] Tue, 20 Mar 2012 16:53:14 +0800: Apply patches for maps
+[INFO] Tue, 20 Mar 2012 16:53:14 +0800: End install package 'maps'
+[INFO] Tue, 20 Mar 2012 16:53:17 +0800: Start initializing packages
+[INFO] Tue, 20 Mar 2012 16:53:17 +0800: Apply setups for: maps
+[INFO] Tue, 20 Mar 2012 16:53:17 +0800: Mark extension as initialized: maps
+[INFO] Tue, 20 Mar 2012 16:53:17 +0800: End initializing packages
+[INFO] Tue, 20 Mar 2012 16:55:57 +0800: Start install package 'semanticmaps'
+[INFO] Tue, 20 Mar 2012 16:55:59 +0800: Download semanticmaps-1.0.3.zip
+[INFO] Tue, 20 Mar 2012 16:56:03 +0800: Unzip semanticmaps-1.0.3.zip
+[INFO] Tue, 20 Mar 2012 16:56:03 +0800: Apply configs for semanticmaps-1.0.3.zip
+[INFO] Tue, 20 Mar 2012 16:56:03 +0800: Added to LocalSettings.php: 
+/*start-semanticmaps*/ . 
+require_once('extensions/SemanticMaps/SemanticMaps.php'); . 
+/*end-semanticmaps*/
+
+[INFO] Tue, 20 Mar 2012 16:56:03 +0800: Apply patches for semanticmaps
+[INFO] Tue, 20 Mar 2012 16:56:03 +0800: End install package 'semanticmaps'
+[INFO] Tue, 20 Mar 2012 16:56:09 +0800: Start initializing packages
+[INFO] Tue, 20 Mar 2012 16:56:09 +0800: Apply setups for: semanticmaps
+[INFO] Tue, 20 Mar 2012 16:56:09 +0800: Mark extension as initialized: semanticmaps
+[INFO] Tue, 20 Mar 2012 16:56:09 +0800: End initializing packages
+[INFO] Thu, 29 Mar 2012 21:02:12 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 29 Mar 2012 21:02:12 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 29 Mar 2012 21:02:12 +0800: Remove from LocalSettings.php: /*start-http://www.semanticweb.org/ontologies/2012/2/mo.owl*/
+/*end-http://www.semanticweb.org/ontologies/2012/2/mo.owl*/
+[INFO] Thu, 29 Mar 2012 21:02:12 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 29 Mar 2012 21:02:12 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 29 Mar 2012 21:02:13 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/mo.owl'-1.0.0
+[INFO] Thu, 29 Mar 2012 21:02:13 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Removing page: Property:Ontology 0/relatedBlog
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Ontology 0/Location
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Ontology 0/Discount
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Owl/Thing
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Ontology 0/Microblog
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Ontology 0/Time
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Ontology 0/Weather
+[INFO] Thu, 29 Mar 2012 21:03:28 +0800: Imported page: Category:Ontology 0/Deal
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Category:Ontology 0/Person
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Category:Ontology 0/Product
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Category:Ontology 0/Photo
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/picture
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/present price
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow high temparature
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/photo id
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/sns id
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/tomorrow low temperature
+[INFO] Thu, 29 Mar 2012 21:03:29 +0800: Imported page: Property:Ontology 0/original price
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow condition
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Owl/topDataProperty
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/today low temperature
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/published time
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/category
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/description
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/today condition
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/title
+[INFO] Thu, 29 Mar 2012 21:03:30 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow low temperature
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/name
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/latitude
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/validFrom
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/avatar
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/validThrough
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/tomorrow high temperature
+[INFO] Thu, 29 Mar 2012 21:03:31 +0800: Imported page: Property:Ontology 0/timestamp
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/tomorrow condition
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/hasBrand
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/source
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/status
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/today high temperature
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/id
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/longitude
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/mid
+[INFO] Thu, 29 Mar 2012 21:03:32 +0800: Imported page: Property:Ontology 0/address
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/url
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/city
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/availableAtOrFrom
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/participated
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/hasDiscount
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/interested
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/knows
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/productRelatedDeal
+[INFO] Thu, 29 Mar 2012 21:03:33 +0800: Imported page: Property:Ontology 0/published
+[INFO] Thu, 29 Mar 2012 21:03:34 +0800: Imported page: Property:Ontology 0/validTime
+[INFO] Thu, 29 Mar 2012 21:03:34 +0800: Imported page: Property:Owl/topObjectProperty
+[INFO] Thu, 29 Mar 2012 21:03:34 +0800: Imported page: Property:Ontology 0/localWeather
+[INFO] Thu, 29 Mar 2012 21:03:34 +0800: Imported page: Property:Rdfs/comment
+[INFO] Thu, 29 Mar 2012 21:03:34 +0800: Imported page: Property:Rdfs/label
+[INFO] Thu, 29 Mar 2012 21:03:34 +0800: Imported new revision of page: MediaWiki:NamespaceMappings
+[INFO] Thu, 29 Mar 2012 21:03:35 +0800: Imported page: Http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 29 Mar 2012 21:03:38 +0800: Start initializing packages
+[INFO] Thu, 29 Mar 2012 21:03:38 +0800: End initializing packages
+[INFO] Sun, 15 Apr 2012 13:22:05 +0800: Start install package 'widgets'
+[INFO] Sun, 15 Apr 2012 13:22:09 +0800: Download widgets-0.9.2.zip
+[INFO] Sun, 15 Apr 2012 13:22:11 +0800: Unzip widgets-0.9.2.zip
+[INFO] Sun, 15 Apr 2012 13:22:11 +0800: Apply configs for widgets-0.9.2.zip
+[INFO] Sun, 15 Apr 2012 13:22:11 +0800: Added to LocalSettings.php: 
+/*start-widgets*/ . 
+require_once('extensions/Widgets/Widgets.php');
+/*php-start-group_permissions*/
+$wgGroupPermissions['sysop']['editwidgets']=true;
+/*php-end-group_permissions*/ . 
+/*end-widgets*/
+
+[INFO] Sun, 15 Apr 2012 13:22:11 +0800: Apply patches for widgets
+[INFO] Sun, 15 Apr 2012 13:22:11 +0800: End install package 'widgets'
+[INFO] Sun, 15 Apr 2012 13:22:14 +0800: Start initializing packages
+[INFO] Sun, 15 Apr 2012 13:22:14 +0800: Apply setups for: widgets
+[INFO] Sun, 15 Apr 2012 13:22:14 +0800: Import ontology: widgets.xml
+[WARN] Sun, 15 Apr 2012 13:22:14 +0800: dump file '/var/www/html/ccwiki/extensions/Widgets/widgets.xml' does not exist.
+[INFO] Sun, 15 Apr 2012 13:22:14 +0800: Refreshing ontology: widgets.xml
+[INFO] Sun, 15 Apr 2012 13:22:18 +0800: Mark extension as initialized: widgets
+[INFO] Sun, 15 Apr 2012 13:22:18 +0800: End initializing packages
+[INFO] Wed, 11 Jul 2012 23:14:36 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Wed, 11 Jul 2012 23:14:36 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[ERROR] Wed, 11 Jul 2012 23:14:36 +0800: Could not find configuration for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Wed, 11 Jul 2012 23:14:36 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Wed, 11 Jul 2012 23:14:36 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Wed, 11 Jul 2012 23:14:36 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/mo.owl'-1.0.0
+[INFO] Wed, 11 Jul 2012 23:14:36 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 08:54:59 +0800: Imported page: Category:Ontology 0/Microblog
+[INFO] Thu, 12 Jul 2012 08:54:59 +0800: Imported page: Category:Ontology 0/Location
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Deal
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Owl/Thing
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Weather
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Comment
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Person
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Shop
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/TaobaoDeal
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Photo
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Category:Ontology 0/Activity
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Property:Ontology 0/tomorrow low temperature
+[INFO] Thu, 12 Jul 2012 08:55:00 +0800: Imported page: Property:Ontology 0/address
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/sns id
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/photo id
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/title
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/picture
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/today low temperature
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/score
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/city
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/present price
+[INFO] Thu, 12 Jul 2012 08:55:01 +0800: Imported page: Property:Ontology 0/volume
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/name
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported new revision of page: Property:Ontology 0/url
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/timestamp
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/avatar
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/tomorrow high temperature
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/description
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/gbcity
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/status
+[INFO] Thu, 12 Jul 2012 08:55:02 +0800: Imported page: Property:Ontology 0/content
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported new revision of page: Property:Owl/topDataProperty
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/m id
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/source
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow condition
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow low temperature
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/today condition
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported new revision of page: Property:Ontology 0/id
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/campus
+[INFO] Thu, 12 Jul 2012 08:55:03 +0800: Imported page: Property:Ontology 0/category
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/discount value
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/longitude
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/today high temperature
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/pic url
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/hasBrand
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/shop name
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/validThrough
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/validFrom
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/latitude
+[INFO] Thu, 12 Jul 2012 08:55:04 +0800: Imported page: Property:Ontology 0/theDayAfterTomorrow high temparature
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/num id
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/original price
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/price
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/tomorrow condition
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/published time
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/unsupported
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/hasPhoto
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/commentRelatedDeal
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/participated
+[INFO] Thu, 12 Jul 2012 08:55:05 +0800: Imported page: Property:Ontology 0/hasLocation
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/productRelatedDeal
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/shopRelatedDeal
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/supported
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/knows
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported new revision of page: Property:Owl/topObjectProperty
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/hasWeather
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/microBlogRelatedDeal
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/published
+[INFO] Thu, 12 Jul 2012 08:55:06 +0800: Imported page: Property:Ontology 0/activityRelatedShop
+[INFO] Thu, 12 Jul 2012 08:55:07 +0800: Imported new revision of page: Property:Rdfs/comment
+[INFO] Thu, 12 Jul 2012 08:55:07 +0800: Imported new revision of page: Property:Rdfs/label
+[INFO] Thu, 12 Jul 2012 08:55:07 +0800: Imported new revision of page: MediaWiki:NamespaceMappings
+[INFO] Thu, 12 Jul 2012 08:55:08 +0800: Imported page: Http://www.semanticweb.org/ontologies/2012/2/Ontology1331620885468.owl
+[INFO] Thu, 12 Jul 2012 08:55:10 +0800: Start initializing packages
+[INFO] Thu, 12 Jul 2012 08:55:10 +0800: End initializing packages
+[INFO] Thu, 12 Jul 2012 15:39:11 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Thu, 12 Jul 2012 15:39:11 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[ERROR] Thu, 12 Jul 2012 15:39:11 +0800: Could not find configuration for http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Thu, 12 Jul 2012 15:39:11 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Thu, 12 Jul 2012 15:39:11 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[INFO] Thu, 12 Jul 2012 15:39:11 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl'-1.0.0
+[INFO] Thu, 12 Jul 2012 15:39:11 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[ERROR] Thu, 12 Jul 2012 15:56:03 +0800: Package does not exist http://www.semanticweb.org/ontologies/2012/2/ontology1331620885468.owl
+[FATAL] Thu, 12 Jul 2012 15:56:03 +0800: exception 'InstallationError' in /var/www/html/ccwiki/deployment/tools/smwadmin/DF_Installer.php:255
+Stack trace:
+#0 /var/www/html/ccwiki/deployment/tools/smwadmin/smwadmin.php(633): Installer->deInstall('http://www.sema...')
+#1 {main}
+[INFO] Thu, 12 Jul 2012 16:36:23 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:36:23 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[ERROR] Thu, 12 Jul 2012 16:36:23 +0800: Could not find configuration for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:36:23 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:36:23 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:36:23 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/mo.owl'-1.0.0
+[INFO] Thu, 12 Jul 2012 16:36:23 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:44:13 +0800: Unapply setups for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:44:13 +0800: Unapply configs for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[ERROR] Thu, 12 Jul 2012 16:44:13 +0800: Could not find configuration for http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:44:13 +0800: Remove code of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:44:13 +0800: Delete external codefiles of http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[INFO] Thu, 12 Jul 2012 16:44:14 +0800: Start un-install package 'http://www.semanticweb.org/ontologies/2012/2/mo.owl'-1.0.0
+[INFO] Thu, 12 Jul 2012 16:44:14 +0800: De-installing ontologies: http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[ERROR] Thu, 12 Jul 2012 16:47:10 +0800: Package does not exist http://www.semanticweb.org/ontologies/2012/2/mo.owl
+[FATAL] Thu, 12 Jul 2012 16:47:10 +0800: exception 'InstallationError' in /var/www/html/ccwiki/deployment/tools/smwadmin/DF_Installer.php:255
+Stack trace:
+#0 /var/www/html/ccwiki/deployment/tools/smwadmin/smwadmin.php(633): Installer->deInstall('http://www.sema...')
+#1 {main}

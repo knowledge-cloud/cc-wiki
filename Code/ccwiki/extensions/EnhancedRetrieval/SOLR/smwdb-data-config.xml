@@ -1,0 +1,222 @@
+<!DOCTYPE dataConfig [
+    <!ENTITY DBPREFIX ""> <!-- You can specify a MediaWiki database prefix here. -->
+]>
+<!-- 1.6.0 -->
+<dataConfig>
+	<dataSource 
+		type="JdbcDataSource" 
+		driver="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/ccwiki"
+		user="mw"
+		password="ccntgrid"
+		batchSize="-1" 
+		/>
+	<script language="JavaScript">
+        <![CDATA[
+			var builtinProps = {
+				'_MDAT'     : ['_dat', 'Modification_date'],
+				'___CREA'   : ['_wpg', 'Creator'],
+				'___CREADT' : ['_dat', 'Creation_date'],
+				'___MOD'    : ['_wpg', 'Last_modified_by']
+			};
+          
+        	function Relations(row) {
+				// The values of all properties are stored as string.
+				var prop = row.get('prop');
+				if (builtinProps[prop]) {
+					var bp = builtinProps[prop];
+					prop = bp[1];
+				}
+        	  
+        		prop = 'smwh_'+prop+'_t';
+        		var val = row.get('obj');
+        		var namespace = row.get('namespace');
+        		if (namespace.length() > 0) {
+        		  // Make first letter uppercase
+        		  namespace = namespace.substr(0,1).toUpperCase() + namespace.substr(1);
+        		  val = namespace + ':' + val;
+        		}
+        		row.remove('prop');
+        		row.remove('obj');
+        		row.remove('namespace');
+        		// Add the property and its value
+        		row.put(prop, val);
+        		// Store the names of all properties in the article
+        		row.put('smwh_properties', prop);
+        		return row;
+        	}
+
+        	function TextAttributes(row) {
+        	  // The values of all text attributes are stored as string.
+        		var attr = 'smwh_'+row.get('attr')+'_xsdvalue_t';
+        		var text = row.get('text');
+        		row.remove('attr');
+        		row.remove('text');
+        		// Add the attribute and its value
+        		row.put(attr, text);
+        		// Store the names of all attributes in the article
+        		row.put('smwh_attributes', attr);
+        		return row;
+        	}
+        	
+        	function Attributes(row) {
+				var swivtNS = 'http://semantic-mediawiki.org/swivt/1.0#';
+				var prop    = row.get('prop');
+				var type    = row.get('type');
+				
+				if (builtinProps[prop]) {
+					var bp = builtinProps[prop];
+					prop = bp[1];
+					type = bp[0];
+				} else {
+          if (type && type.indexOf(swivtNS) === 0) {
+						type = type.substr(swivtNS.length);
+					}
+				}
+        
+				var valXSD  = row.get('valueXSD');
+				var valNum  = row.get('valueNum');
+				row.remove('prop');
+				row.remove('valueXSD');
+				row.remove('valueNum');
+				row.remove('type');
+				var typeSuffix = 't';
+				var isNumeric = false;
+				if (type == '_dat') {
+					// Given format of a date: 1995/12/31T23:59:59
+					// Required format: 1995-12-31T23:59:59Z
+					var dateTime = valXSD.split("T");
+					var date = dateTime[0];
+					date = date.replace('/', '-');
+					time = dateTime.length > 1 ? dateTime[1] : '00:00:00';
+					valXSD = date + 'T' + time + 'Z';
+					typeSuffix = 'dt';
+					// Store a date/time also as long e.g. 19951231235959
+					// This is needed for querying statistics for dates
+					// Normalize month and day e.g. 1995-1-1 => 1995-01-01 
+					var ymd = date.split('-');
+					var m = parseInt(ymd[1]);
+					m = (m < 10) ? '0'+m : m.toString();
+					var d = parseInt(ymd[2]);
+					d = (d < 10) ? '0'+d : d.toString();
+					time = time.replace(":", '').replace(":", '');
+					var dateTime = ymd[0]+m+d+time;
+					var propDate = 'smwh_'+prop+'_datevalue_l';
+					row.put(propDate, dateTime);
+//					row.put('smwh_attributes', propDate);
+				} else if (
+					type == '_txt' ||
+					type == '_cod' ||
+					type == '_str' ||
+					type == '_ema' ||
+					type == '_uri' ||
+					type == '_anu' ||
+					type == '_tel' ||
+					type == '_tem' ||
+					type == '_rec') {
+					typeSuffix = 't';
+				} else if (type == '_num') {
+					typeSuffix = 'd';
+					isNumeric = true;
+				} else if (type == '_boo') {
+					typeSuffix = 'b';
+				}
+				
+				var propXSD = 'smwh_'+prop+'_xsdvalue_'+typeSuffix;
+				row.put(propXSD, valXSD);
+				row.put('smwh_attributes', propXSD);
+				if (isNumeric) {
+					row.put('smwh_'+prop+'_numvalue_d', valNum);
+				}
+				
+				return row;
+			}
+        ]]>
+	</script>
+	<document>
+		<!-- Find all pages in the <page> table. They will be our documents. -->
+		<entity 
+			name="pages"
+			query="SELECT p.page_id as pid,
+			              p.page_namespace as pns,
+			              CONVERT(p.page_title USING utf8) as pt
+             FROM &DBPREFIX;page as p
+      ">
+			<field column="pid" name="id" />
+			<field column="pns" name="smwh_namespace_id" />
+			<field column="pt"  name="smwh_title" />
+			
+			<!-- Store the full text of the article -->
+			<entity
+				name="fulltext"
+				query="SELECT CONVERT(t.old_text USING utf8) as ft
+			       FROM &DBPREFIX;text t
+			       LEFT JOIN (&DBPREFIX;revision as r) ON (t.old_id = r.rev_text_id )
+			       LEFT JOIN (&DBPREFIX;page as p) ON ( r.rev_id= p.page_latest)
+			       WHERE p.page_id='${pages.pid}'">
+				<field column="ft" name="smwh_full_text" />
+			</entity>
+			
+			<!-- Store all categories for each subject -->
+			<entity 
+				name="categories"
+				query="SELECT CONVERT(c.cl_to USING utf8) as cat
+               FROM &DBPREFIX;categorylinks c
+               WHERE cl_from='${pages.pid}'">
+				<field column="cat" name="smwh_categories" />
+			</entity>
+			
+			<!-- Store all SMW IDs for pages -->
+			<entity 
+				name="smwids" 
+				query="SELECT s.smw_id as smwID
+               FROM &DBPREFIX;smw_ids s
+               WHERE s.smw_namespace='${pages.pns}' AND 
+                     s.smw_title=CONVERT('${dataimporter.functions.escapeSql(pages.pt)}' USING utf8)">
+				<field column="smwID" name="smwh_smw_id" />
+
+  			<!-- Store all subject, predicate and object names for each subject of a
+             relation. -->
+  			<entity 
+  				name="rels" 
+  				transformer="script:Relations"
+  				query="SELECT CONVERT(pids.smw_title USING utf8) as prop, 
+  				              CONVERT(oids.smw_title USING utf8) as obj,
+  				              CONVERT(nsmap.name USING utf8) as namespace
+  				       FROM &DBPREFIX;smw_rels2 AS r
+  				       LEFT JOIN (&DBPREFIX;smw_ids as pids) ON (pids.smw_id = r.p_id)
+  				       LEFT JOIN (&DBPREFIX;smw_ids as oids) ON (oids.smw_id = r.o_id)
+  				       LEFT JOIN (&DBPREFIX;fs_namespace as nsmap) ON (nsmap.namespace_id = oids.smw_namespace)
+  				       WHERE r.s_id='${smwids.smwID}'">
+  			</entity>
+  			
+  			<!-- Store all subject and attribute names and the values for each subject
+             of an attribute. -->
+  			<entity 
+  				name="atts" 
+  				transformer="script:Attributes"
+  				query="SELECT CONVERT(pids.smw_title USING utf8) as prop,
+                        CONVERT(a.value_xsd USING utf8) as valueXSD,
+                        a.value_num as valueNum,
+                        CONVERT(spec.value_string USING utf8) as type
+                  FROM &DBPREFIX;smw_atts2 AS a
+                  LEFT JOIN (&DBPREFIX;smw_ids as pids) ON (pids.smw_id = a.p_id)
+                  LEFT JOIN (&DBPREFIX;smw_spec2 as spec) ON (a.p_id = spec.s_id)
+                  WHERE a.s_id='${smwids.smwID}'">
+        </entity>
+        
+        <!-- Store all text values for each subject -->
+  			<entity 
+  				name="text"
+  				transformer="script:TextAttributes"
+  				query="SELECT CONVERT(pids.smw_title USING utf8) as attr,
+  				              CONVERT(t.value_blob USING utf8) as text
+  				       FROM &DBPREFIX;smw_text2 AS t
+  				       LEFT JOIN (&DBPREFIX;smw_ids as pids) ON (pids.smw_id = t.p_id)
+  				       WHERE t.s_id='${smwids.smwID}'">
+  			</entity>
+      </entity>
+			
+		</entity>
+	</document>
+</dataConfig>

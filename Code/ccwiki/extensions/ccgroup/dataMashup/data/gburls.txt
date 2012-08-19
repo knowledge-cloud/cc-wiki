@@ -1,0 +1,6 @@
+http://www.meituan.com/api/v2/hangzhou/deals
+http://open.client.lashou.com/api/detail/city/%E6%9D%AD%E5%B7%9E
+http://www.55tuan.com/openAPI.do?city=HangZhou
+http://www.nuomi.com/api/dailydeal?version=1&city=HangZhou
+http://newapi.ftuan.com/api/v2.aspx?city=hangzhou
+http://api.manzuo.com/common_hangzhou.xml

@@ -1,0 +1,107 @@
+<?php
+
+/*
+ * Result printer that prints query results as a gallery.
+ *
+ * @file MUW_bIDetail.php
+ * @ingroup MashupWiki
+ *
+ *
+ * @author sling ma
+ */
+class MUWbiDetail extends SMWResultPrinter {
+        public function getName() {
+		return wfMsg( 'muw_printername_bigallery' );
+	}
+
+	public function getResult( SMWQueryResult $results, array $params, $outputmode ) {
+		$this->handleParameters( $params, $outputmode );
+		return $this->getResultText( $results, SMW_OUTPUT_HTML );
+	}
+
+	public function getResultText( SMWQueryResult $results, $outputmode ) {
+		global $wgUser, $wgParser;
+                $biGallery.=$this->getIndexUl($results,$outputmode);
+		       
+               return array( $biGallery, 'nowiki' => true, 'isHTML' => true );
+	}
+        public function getIndexUl($results,$outputmode){
+            $page=false;
+            $html='<div class="aboutgb">
+<table width="546" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="379"><img src="{0}" width="377" height="248" /></td>
+        <td width="171" bgcolor="#f4f4f4"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td height="85" align="center">
+            <div class="gbyuan">{1}</div>
+            <span class="gbprice2">{2}</span></td>
+          </tr>
+          <tr>
+            <td height="29" align="center" ><span class="cuti delx">原价{3}</span></td>
+          </tr>
+          <tr>
+            <td height="50" align="center"><img src="images/btn_ljqg.png" width="123" height="50" /></td>
+          </tr>
+          <tr>
+            <td height="57" align="center"><span class="px14"><span class="red">{4}</span> 人已购买</span><br />
+              数量有限，下单要快哟</td>
+          </tr>
+          <tr>
+            <td height="27" align="center" bgcolor="#e7e7e7" class="px14"><span class="gray">剩余时间</span> 3天以上</td>
+          </tr>
+        </table></td>
+      </tr>
+    </table>
+    
+    <h2>杭州海底捞</h2>
+    <p class="thisgb">仅售118元,价值329-339元4-6人套餐!丰富菜品大饱口福,美味汇锅捞满心意!(另有售价78元双人套餐可选) </p>
+    <h3>【团购详情】</h3>
+    <p>仅售118元,价值329-339元4-6人套餐!丰富菜品大饱口福,美味汇锅捞满心意!(另有售价78元双人套餐可选) </p>
+    <h3>【特别提示】</h3>
+    <p>仅售118元,价值329-339元4-6人套餐!丰富菜品大饱口福,美味汇锅捞满心意!(另有售价78元双人套餐可选) </p>
+    <h3>【店家介绍】</h3>
+    <p>仅售118元,价值329-339元4-6人套餐!丰富菜品大饱口福,美味汇锅捞满心意!(另有售价78元双人套餐可选) </p>
+	<h3>【菜品介绍】</h3>
+    <p>仅售118元,价值329-339元4-6人套餐!丰富菜品大饱口福,美味汇锅捞满心意!(另有售价78元双人套餐可选) </p>
+</div>'	;
+           
+                if($subject = $results->getNext()){
+                    $imgsrc=$this->getTextValue($subject["2"],$outputmode);
+                    $href=$this->getTextValue($subject["8"],$outputmode);
+                    $titledesc=$this->getTextValue($subject["10"],$outputmode);
+                    $discount=$this->getTextValue($subject["6"],$outputmode);
+                    $html=  str_replace("{0}", $imgsrc, $html);
+                    $html=  str_replace("{2}", $discount, $html); 
+                }
+            return $html;
+        }
+        public function getTextValue( $resultArray, $outputmode){
+                $values = array();
+		$isFirst = true;
+		if($resultArray==null) return "";
+		while ( ( $dv = $resultArray->getNextDataValue() ) !== false ) {
+			$sortKey = '';
+			
+			if ( $isFirst ) {
+				$isFirst = false;
+				$sortkey = $dv->getDataItem()->getSortKey();
+				
+				if ( is_numeric( $sortkey ) ) { // additional hidden sortkey for numeric entries
+					$this->columnsWithSortKey[$resultArray->getPrintRequest()->getHash()] = true;
+					$sortKey .= '<span class="smwsortkey">' . $sortkey . '</span>';
+				}
+			}
+			
+			$isSubject = $resultArray->getPrintRequest()->getMode() == SMWPrintRequest::PRINT_THIS;
+			$value = ( ( $dv->getTypeID() == '_wpg' ) || ( $dv->getTypeID() == '__sin' ) ) ?
+				   $dv->getLongText( $outputmode, $this->getLinker( $isSubject ) ) :
+				   $dv->getShortText( $outputmode, $this->getLinker( $isSubject ) );
+			
+			$values[] = $sortKey . $value;
+		}
+		
+		return implode( '<br />', $values );   
+        }
+
+}

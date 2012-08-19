@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<weathers>
+  <weather>
+    <weather_name>Weather_Location_杭州</weather_name>
+    <today_condition>雷阵雨</today_condition>
+    <today_low_temperature>25</today_low_temperature>
+    <today_high_temperature>35</today_high_temperature>
+    <tomorrow_condition>以晴为主</tomorrow_condition>
+    <tomorrow_low_temperature>24</tomorrow_low_temperature>
+    <tomorrow_high_temperature>35</tomorrow_high_temperature>
+    <thirdday_condition>以晴为主</thirdday_condition>
+    <thirdday_low_temperature>24</thirdday_low_temperature>
+    <thirdday_high_temperature>34</thirdday_high_temperature>
+  </weather>
+</weathers>

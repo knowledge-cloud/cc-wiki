@@ -1,0 +1,19 @@
+<html>
+
+<head>
+
+<title></title>
+</head>
+<body>
+<script type="text/javascript" src="../../conf.js"></script>
+<script type="text/javascript">
+
+//document.write("qqweibo_key:");
+//document.write(qqweibo_key);
+/*请求url的格式https://open.t.qq.com/cgi-bin/oauth2/authorize?client_id=APP_KEY&response_type=code&redirect_uri=http://www.myurl.com/example*/
+
+window.location.href = "https://open.t.qq.com/cgi-bin/oauth2/authorize?response_type=code&client_id="+qqweibo_key+"&redirect_uri="+qqweibo_redirect;
+
+</script>
+</body>
+</html>

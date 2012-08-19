@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shops>
+  <shop>
+    <deal_id>Omnia</deal_id>
+    <shop_name>美团网办公室 Meituan Office</shop_name>
+    <shop_id>DDF64831A96E7ED8455411EDD147AD75</shop_id>
+    <location>
+      <latitude>40.0321604707</latitude>
+      <longitude>116.417402191</longitude>
+      <address>北京朝阳区北苑路甲13号院北辰泰岳大厦(5号线北苑路北地铁站西侧)</address>
+      <city>北京</city>
+    </location>
+    <photos>
+      <photo>
+        <pic_id>54043482</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/e06dbd0e153a0313c31937fcf20d8b58</pic_url>
+        <pic_discription> #Camera360分享图片#</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>53800311</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/ab9f5ee23e076cd686c1abb76124b4b0</pic_url>
+        <pic_discription>串门，溜达～谈事～ #Camera360分享图片#</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>53216365</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/688a65ef22c98c54385211db6b5ae4d1</pic_url>
+        <pic_discription>真心饿成狗了。。爱疼不疼吧，先吃饱了再说！</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>53178291</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/72877654b056e7caa8c966fffa8a5474</pic_url>
+        <pic_discription>大清早荣健童鞋发的喜糖！哇欧！</pic_discription>
+      </photo>
+    </photos>
+  </shop>
+  <shop>
+    <deal_id>244673</deal_id>
+    <shop_name>如家快捷酒店(艮山西路店)</shop_name>
+    <shop_id>E394C10DBA2240</shop_id>
+    <location>
+      <latitude>30.2767584692</latitude>
+      <longitude>120.198306636</longitude>
+      <address>杭州江干区艮山西路184号(宏丽宾馆旁边 近秋涛北路)</address>
+      <city>杭州</city>
+    </location>
+    <photos>
+      <photo>
+        <pic_id>49795226</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/31b01a6848dd42720b5107137f9c6ab7</pic_url>
+        <pic_discription>折腾半天，终于入住了，商务房的空间好浪费</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>40338187</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/3f937f390e230ec6989f0708c5d8168b</pic_url>
+        <pic_discription>刚回酒店,吃了知味观,算是夜宵吧~</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>33894083</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/f23f204e254357b2857a2e4f7074413d</pic_url>
+        <pic_discription>昨晚住的地方</pic_discription>
+      </photo>
+      <photo>
+        <pic_id>16529107</pic_id>
+        <pic_url>http://fs1.jie.pn/get/photo/23ded80daa0d436e2535ef453efa83d2</pic_url>
+        <pic_discription>一个人，哈…无奈的离家出走</pic_discription>
+      </photo>
+    </photos>
+  </shop>
+  <shop>
+    <deal_id>244673</deal_id>
+    <shop_name>中国农业银行秋涛路支行</shop_name>
+    <shop_id>C974404FB22803</shop_id>
+    <location>
+      <latitude>30.251540301823</latitude>
+      <longitude>120.19927484858</longitude>
+      <address>江干区秋涛北路38号</address>
+      <city>杭州</city>
+    </location>
+    <photos/>
+  </shop>
+</shops>

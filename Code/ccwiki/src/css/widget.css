@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* groupbuyinfo */
+.aboutgb { width:546px; margin:0 auto;}
+.aboutgb h2 { font-size:20px; height:30px; line-height:30px; font-weight:bold; margin:5px 0;}
+.thisgb { font-size:16px; color:#7f7f7f;line-height:30px;margin-bottom:5px;}
+.aboutgb p { line-height:22px;}
+.aboutgb h3 { font-size:14px; line-height:25px; font-weight:bold;color:#204c8d;}
+
+.gbyuan { width:39px; height:40px; color:#fff; background: url(../images/gbyuan.png) no-repeat; line-height:40px; text-align:center; margin-left:100px;}
+.gbprice2 { background:url(../images/qian2.png) no-repeat; height:29px; font-size:30px; font-weight:bold; color:#f60; padding-left:20px; line-height:30px; margin:0 auto; }
+
+/* businfo */
+.busmap,.busfrom,#dvPolicy { margin-bottom:10px; font-size:14px; }
+.input150 { width:150px; height:26px; border:0px; background:url(../images/input_back.png) no-repeat left top; text-indent:5px; line-height:26px; vertical-align:middle;border:1px #cdcdcd solid; -moz-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px; border-radius:5px;}
+
+.radiobox,.radiobox{visibility:hidden;width:0;height:0;margin:0;padding:0;}
+.radiobox+label{padding-left:25px;color:#000;height:18px;line-height:18px;display: -moz-inline-stack; display: inline-block; zoom: 1;  *display: inline; cursor:pointer;}
+.radiobox+label:hover{color:#007fc2;cursor:pointer;}
+.radiobox+label.checked{color:#007fc2; }
+.radiobox+label{background:url(../images/checkbox320.png) no-repeat;}
+.radiobox+label.checked{background:url(../images/checkbox320Actived.png) no-repeat;}
+
+/* weiboinfo */
+.weibobox,.weibolist {margin-bottom:10px; font-size:14px;}
+.weibobox { text-align:center;}
+.text2 { width:526px; height:110px; background:url(../images/input_back.png) no-repeat left top;border:1px #cdcdcd solid; -moz-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px; border-radius:5px; overflow:hidden;}
+.weibobox p { margin-top:10px; text-align:right; padding-right:4px;font-size:12px; color:#535353;}
+.weibobox p span { font-size:20px;color:#333; font-family:微软雅黑;}
+
+.weibolist { border-bottom:1px #bcc8cf dotted; overflow:hidden;_zoom:1; height:100px;}
+.weibolist .ffl { float:left; width:70px; text-align:center; }
+.weibolist .ffr { float:right; width:470px;}
+.weibolist .ffr p { line-height:25px;}
+.weibolist .ffr p em { font-weight:bold;}
+.weibolist .ffr span { float:right; font-size:12px; color:#999;}
+
+/* picinfo */
+.picslk {width:350px; height:26px; border:0px; background:url(../images/input_back.png) no-repeat left top; text-indent:5px; line-height:26px; vertical-align:middle;border:1px #cdcdcd solid; -moz-border-radius:5px;-o-border-radius:5px;-webkit-border-radius:5px; border-radius:5px;}

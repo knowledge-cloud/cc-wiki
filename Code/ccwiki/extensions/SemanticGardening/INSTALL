@@ -1,0 +1,87 @@
+Installation instructions for Semantic Gardening extension v1.31
+---------------------------------------------------------------
+
+Install instructions for the latest version of the Semantic Gardening Extension are also online:
+
+ http://smwforum.ontoprise.com/smwforum/index.php?title=Help:Installing_Semantic_Gardening_Extension_1.2&context=Help%3ASemantic+Gardening+Extension+1.3
+ 
+For the full manual of the Semantic Gardening Extension have a look at:
+
+ http://smwforum.ontoprise.com/smwforum/index.php/Help:Semantic_Gardening_Extension
+
+For installations instructions of the Halo Extension take a look at:
+
+ http://smwforum.ontoprise.com/smwforum/index.php/Help:Installing_Halo_Extension_1.5.0
+ 
+For install instructions and further information on Semantic MediaWiki, please visit
+ 
+ http://semantic-mediawiki.org/wiki/Help:Administrator_manual
+
+
+Requirements: 
+=============
+
+	Apache HTTP Server
+	MySQL higher than 4.0.14 (Recommended MySQL 5.x)
+	PHP 5.2.x (PHP 5.3.x is not supported yet)
+	MediaWiki 1.15.x 
+	Semantic MediaWiki 1.5
+	Halo Extension 1.5.0 
+
+
+Installation:
+=============
+   
+(1) Run:
+	php {wiki-path}/extensions/SemanticGardening/maintenance/SGA_setup.php
+
+(2) Add to your LocalSettings.php after you initialized SMWHalo:
+
+    //-----------
+    	$phpInterpreter="<path to php executable>";
+    	require_once("extensions/SemanticGardening/includes/SGA_GardeningInitialize.php");
+	//-----------
+	
+	Note: Please replace <path to php executable> by a path to the PHP executable.
+	
+	Example: 
+	   $phpInterpreter="/usr/bin/php";
+	   
+	  or
+	  
+	   $phpInterpreter="c:/Programme/php/php.exe";
+
+(3) Specify a temporary directory by setting $sgaTempDir to a directory
+    where PHP has read/write access. If none is specified, 
+    then c:\temp\wiki or /tmp/wiki is used on Windows respectively on Linux.
+    
+(4) To specify the gardening privilege for sysops, add:
+
+	$wgGroupPermissions['sysop']['gardening'] = true;
+
+Update:
+=======
+(1) Run:
+        php {wiki-path}/extensions/SemanticGardening/maintenance/SGA_setup.php --update
+        	
+Options:
+========
+
+1.
+$sgagGardeningBotDelay=<time in ms>
+Enforces a delay to diminish the server load. 
+
+2.
+$sgagLocalGardening=true;  
+Enables local gardening. That creates gardening jobs when a page has been saved. 
+We do not recomment to make use of that option since it decreases the Wiki's performance.
+
+3.
+$sgagDedicatedGardeningMachine="<host or IP>";
+Specify a dedicated machine for the gardening bots.
+
+4. (for debugging)
+Keeps the cmd console open on Windows after the bot has terminated.
+$sgagKeepGardeningConsole=true;
+
+

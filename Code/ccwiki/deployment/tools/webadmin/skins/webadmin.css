@@ -1,0 +1,135 @@
+@CHARSET "ISO-8859-1";
+
+#df_header {
+    font-size: 2.5em;
+    font-family: "Arial";
+    margin-bottom: 20px;
+    color: #838383;    
+}
+
+#df_updateavailable {
+	margin-top: 20px;
+	border: 5px solid green;
+	text-align: center;
+	padding: 5px;
+}
+
+#df_statustable {
+	margin-top: 20px;
+}
+
+#df_webadmin_aboutlink {
+    cursor: pointer;	
+}
+
+.df_row_0 {
+	background-color: #AAA;
+}
+
+.df_row_1 {
+	background-color: #CCC;
+}
+
+
+#df_bundlefilelist {
+	margin-top: 20px;
+}
+
+#df_bundlefilelist_table td {
+	 width: 200px;
+	 padding: 5px;
+}
+
+#df_bundlefilelist_table th {
+     border-bottom: 2px solid;
+}
+
+
+
+.df_extension_id {
+	width: 15%;
+}
+
+.df_extension_version {
+	width: 15%;
+	text-align: center;
+}
+
+.df_description {
+	width: 50%;
+}
+
+.df_actions {
+	width: 20%;
+	text-align: center;
+}
+
+.df_enumeration {
+	margin-left: -20px;
+}
+
+.df_extension_id:hover {
+	background-color: yellow;
+	cursor: pointer;
+}
+
+.df_version:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.df_bundlefilelist td {
+	width: 30%;
+	text-align: center;
+}
+
+#df_restorepoint_table {
+	margin-top: 20px;
+}
+
+#df_restorepoint_table th {
+	border-bottom: 2px solid;
+	width: 200px;
+}
+
+#df_restorepoint_table td {
+	width: 200px;
+	text-align: center;
+	padding: 5px;
+}
+
+.df_extension_details td[description] {
+	width: 150px;
+	padding-top: 10px;
+}
+
+.df_extension_details td[value] {
+	color: blue;
+	padding-top: 10px;
+}
+
+#df_existingrepository_section {
+	margin-top: 20px;
+}
+
+.onto2mwxml_error {
+	color: red;
+}
+
+.df_running_process {
+	background: green;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+.df_not_running_process {
+	background: red;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+#df_server_state_table td {
+    height: 40px;
+}

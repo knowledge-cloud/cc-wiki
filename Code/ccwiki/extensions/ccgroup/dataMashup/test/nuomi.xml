@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deals>
+  <data>
+    <id>oecxxxaj</id>
+    <title>【朝晖地区】【农夫烤鱼】仅售89元，价值201元的河东路店4人套餐！鲜香烤鱼加入配菜，调制出最精致的川蜀美味！辣椒在舌尖缠绵，让您麻辣四溢，唇齿留香！</title>
+    <category>餐饮美食</category>
+    <description></description>
+    <validThrough>2012-08-14T23:59:59+08:00</validThrough>
+    <validFrom>2012-08-10T00:00:00+08:00</validFrom>
+    <original_price>201</original_price>
+    <present_price>89</present_price>
+    <discount_value>4.43</discount_value>
+    <url>http://hz.nuomi.com/deal/oecxxxaj.html</url>
+    <picture>http://nuomi.xnimg.cn/upload/deal/2012/7/V_H/88133-1343895267847.jpg</picture>
+    <source>糯米</source>
+    <gbcity>杭州</gbcity>
+    <timestamp>2012-08-10 11:44:42</timestamp>
+    <shops>
+      <shop>
+        <city>杭州</city>
+        <address>河东路233-2号(近潮王路)</address>
+        <latitude>30.2887</latitude>
+        <longitude>120.1593</longitude>
+      </shop>
+    </shops>
+  </data>
+  <data>
+    <id>8xgflgis</id>
+    <title>【凤起路沿线】【红楼人家】仅售128元，价值301元4-5人精致套餐！多种美味菜品，弥漫家乡风味！荤素搭配，营养丰富，汤品鲜美，节假日通用！ </title>
+    <category>餐饮美食</category>
+    <description></description>
+    <validThrough>2012-08-14T23:59:59+08:00</validThrough>
+    <validFrom>2012-08-10T00:00:00+08:00</validFrom>
+    <original_price>301</original_price>
+    <present_price>128</present_price>
+    <discount_value>4.25</discount_value>
+    <url>http://hz.nuomi.com/deal/8xgflgis.html</url>
+    <picture>http://nuomi.xnimg.cn/upload/deal/2012/8/V_H/91169-1344397658769.jpg</picture>
+    <source>糯米</source>
+    <gbcity>杭州</gbcity>
+    <timestamp>2012-08-10 11:44:42</timestamp>
+    <shops>
+      <shop>
+        <city>杭州</city>
+        <address>新华路201号8楼东侧</address>
+        <latitude>30.2642</latitude>
+        <longitude>120.1764</longitude>
+      </shop>
+    </shops>
+  </data>
+  </deals>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root url="http://localhost/mediawiki/deployment/tests/testcases/resources/repository/">
+	<extensions>
+		<extension id="smwhalo">
+			<version
+				url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/SMWHalo/deploy/bin/smwhalo-1.4.4.zip"
+				ver="143" />
+			<version
+				url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/SMWHalo/deploy/bin/smwhalo-1.4.4.zip"
+				ver="144" />
+			
+		</extension>
+		<extension id="smw">
+            <version
+                url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/SMWHalo/deploy/bin/smwhalo-1.4.4.zip"
+                ver="130" />
+            <version
+                url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/SMWHalo/deploy/bin/smwhalo-1.4.4.zip"
+                ver="142" />
+           
+        </extension>
+		<extension id="semanticgardening">
+           
+            <version
+                url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/SemanticGardening/deploy/bin/smwhalo-gardening-1.1.zip"
+                ver="110" />
+            <version
+                url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/SemanticGardening/deploy/bin/smwhalo-gardening-1.1.zip"
+                ver="120" />
+        </extension>
+        <extension id="unifiedsearch">
+           
+            <version
+                url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/UnifiedSearch/deploy/bin/smwhalo-search-1.2.zip"
+                ver="110" />
+            <version
+                url="http://dailywikibuilds.ontoprise.com:8080/job/smwhalo_1_4_4_release/lastSuccessfulBuild/artifact/SMWHaloTrunk/extensions/UnifiedSearch/deploy/bin/smwhalo-search-1.2.zip"
+                ver="120" />
+        </extension>
+	</extensions>
+</root>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploydescriptor>
+	<global>
+		<id>enhancedretrieval</id>
+		<patchlevel>6</patchlevel>
+		<title>Enhanced Retrieval extension</title>
+		<version>1.6.0</version>
+		<vendor>ontoprise GmbH</vendor>
+		<maintainer>ontoprise GmbH</maintainer>
+		<license>GPL-v2</license>
+		<instdir>extensions/EnhancedRetrieval</instdir>
+		<description>
+			The Enhanced Retrieval extension provides the fastest and most precise search engine for MediaWiki based on a SOLR server. The search covers full text contents as well as all elements from the ontology (categories, properties,instances). Search results can be refined stepwise by facets ("Faceted Search").
+		</description>
+		<helpurl>http://www.smwplus.com/index.php/Help:Enhanced_Retrieval_Extension
+		</helpurl>
+		<dependencies>
+            <dependency from="1.6.0" to="1.6.0">smwhalo</dependency>
+		</dependencies>
+		<notice>
+			Please copy the files in /EnhancedRetrieval/SOLR/ 
+			(i.e. schema.xml, smwdb-data-config.xml, solrconfig.xml) to you SOLR
+			installation in {your solr installation path}/solr/wiki/solr/conf.
+			Then replace the variables {{wgDBserver}}, {{wgDBport}}, {{wgDBname}}, 
+			{{wgDBuser}} and {{wgDBpassword}} at the beginning of file smwdb-data-config.xml
+			Typical values:
+			{{wgDBserver}} = localhost (see LocalSettings.php: $wgDBserver)
+			{{wgDBport}} = 3306 (see LocalSettings.php: $wgDBport)
+			{{wgDBname}} = semwiki_en (see LocalSettings.php: $wgDBname)
+			{{wgDBuser}} = root (see LocalSettings.php: $wgDBuser)
+			{{wgDBpassword}} = m8nix (see LocalSettings.php: $wgDBpassword)
+		</notice>
+	</global>
+
+	<codefiles>
+		<file loc="deploy.xml" />
+	</codefiles>
+
+	<wikidumps>
+		<!-- empty -->
+	</wikidumps>
+
+	<resources>
+		<!-- empty -->
+	</resources>
+
+	<configs>
+		<new>
+			<require name="us_init"
+				file="extensions/EnhancedRetrieval/includes/EnhancedRetrieval.php" />
+			<script file="maintenance/setup.php" params="" />
+		</new>
+		<update from="136">
+		    <replace>
+		      <search>extensions/UnifiedSearch/OAI/OAIRepo.php</search>
+		      <replacement>extensions/EnhancedRetrieval/OAI/OAIRepo.php</replacement>
+		    </replace>
+			<replace>
+              <search>extensions/UnifiedSearch/includes/UnifiedSearch.php</search>
+              <replacement>extensions/EnhancedRetrieval/includes/EnhancedRetrieval.php</replacement>
+            </replace>
+		</update>
+		<update from="patchlevel" removeAll="true">
+            <require name="us_init"
+                file="extensions/EnhancedRetrieval/includes/EnhancedRetrieval.php" />
+        </update>
+		<update from="156" removeAll="true">
+			<require name="us_init"
+				file="extensions/EnhancedRetrieval/includes/EnhancedRetrieval.php" />
+		</update>
+		<uninstall>
+			<script file="maintenance/setup.php" params="--delete" />
+		</uninstall>
+	</configs>
+</deploydescriptor>
+

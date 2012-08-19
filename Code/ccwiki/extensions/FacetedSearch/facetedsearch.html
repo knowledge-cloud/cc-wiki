@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>&lt;团购数据页面名称> - ccwiki</title>
+<meta name="generator" content="MediaWiki 1.17.0" /><link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/ccwiki/opensearch_desc.php" title="ccwiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="//ccwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="ccwiki Atom feed" href="/ccwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="/ccwiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=ccwiki&amp;*" />
+<link rel="stylesheet" href="/ccwiki/skins/ccwiki/css/common.css?301" media="screen" />
+<link rel="shortcut icon" href="../favicon.ico" />
+
+<link rel="stylesheet" type="text/css" href="css/base.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/wt.css">
+
+
+<link rel="stylesheet" type="text/css" href="css/tuan.css">
+
+
+
+<link rel="stylesheet" href="http://api.map.baidu.com/res/11/bmap.css">
+
+<link rel="search" type="application/opensearchdescription+xml" href="/ccwiki/opensearch_desc.php" title="ccwiki (en)" />
+<link rel="EditURI" type="application/rsd+xml" href="/ccwiki/api.php?action=rsd" />
+<link rel="alternate" type="application/atom+xml" title="ccwiki Atom feed" href="/ccwiki/index.php?title=Special:RecentChanges&amp;feed=atom" />
+<link rel="stylesheet" href="/ccwiki/load.php?debug=false&amp;lang=en&amp;modules=mediawiki.legacy.commonPrint%2Cshared&amp;only=styles&amp;skin=ccwiki&amp;*" />
+<link rel="stylesheet" href="/ccwiki/skins/ccwiki/css/common.css?301" media="screen" />
+<link rel="stylesheet" href="/ccwiki/skins/ccwiki/css/style.css?301" media="screen" /><meta name="ResourceLoaderDynamicStyles" content="" />
+</head>
+<body class="mediawiki ltr ns--1 ns-special page-Special_ConfigureGB skin-ccwiki">
+<script type="text/javascript" src="/ccwiki/skins/ccwiki/js/jquery-1.7.1.min.js"></script>
+
+<script type="text/javascript" src="/ccwiki/skins/ccwiki/js/lhgdialog.js"></script>
+
+<script>var jQuery17=jQuery.noConflict();</script>
+
+<script type="text/javascript" src="/ccwiki/skins/ccwiki/js/basic.js"></script>
+
+
+
+<script type="text/javascript" src="/ccwiki/skins/ccwiki/js/banner.js"></script>
+<script type="text/javascript" src="js/faceted.js"></script>
+<script type="text/javascript" src="js/makeaskquery.js"></script>
+<style>
+
+	.cityList{height: 320px;width:372px;overflow-y:auto;}
+
+   
+    .map_popup {position: absolute;z-index: 200000;width: 382px;height: 344px;top:220px;}
+
+    .map_popup .popup_main { background:#fff;border: 1px solid #8BA4D8;height: 100%;overflow: hidden;position: absolute;width: 100%;z-index: 2;}
+
+    .map_popup .title {background: url("http://map.baidu.com/img/popup_title.gif") repeat scroll 0 0 transparent;
+
+    color: #6688CC;font-size: 12px;font-weight: bold;height: 24px;line-height: 25px;padding-left: 7px;}
+
+    .map_popup button {background: url("http://map.baidu.com/img/popup_close.gif") no-repeat scroll 0 0 transparent;
+
+    border: 0 none;cursor: pointer;height: 12px;position: absolute;right: 4px;top: 6px;width: 12px;}	
+
+</style>
+<style type="text/css">
+
+#content{
+	width:555px;
+	height: 26px;
+}
+#select {
+	
+	float:left;
+	height:25px;
+	text-align:center;
+margin:0 1px;
+line-height:2;
+}
+#xiaoquselect {
+	background-image: url(img/1.gif);
+	width: 105px;
+ 
+      text-align:center;
+	float:left;
+	height:25px;
+margin:0 1px;
+line-height:2;
+}
+#validdate {
+	background-image: url(img/2.gif);
+	width: 154px;
+       height:25px;
+        text-align:center;
+        margin:0 1px;
+        float:left;line-height:2;
+}
+#shopcredit {
+	background-image: url(img/2.gif);
+	width: 154px;
+	height:25px;
+        margin:0 1px;
+        text-align:center;
+        line-height:2;
+        float:left;
+}
+
+#query{
+	
+	width:160px;
+	height:26px;
+	float:left;
+	}
+#search_button{
+	height:33px;
+	width:95px;
+	}
+</style>
+<style>
+	.btn_submit1{ width:65px; height:25px; background:url(/ccwiki/extensions/EnhancedRetrieval/src/images/btn_back04.png); border:0; color:#fff; margin-top:3px; vertical-align:middle; margin-right:4px; cursor:pointer;}
+	</style>
+	 <link type="text/css" rel="stylesheet" href="/ccwiki/extensions/EnhancedRetrieval/src/css/jscal2.css" />
+    <link type="text/css" rel="stylesheet" href="/ccwiki/extensions/EnhancedRetrieval/src/css/border-radius.css" />
+    <!-- <link type="text/css" rel="stylesheet" href="/ccwiki/extensions/EnhancedRetrieval/src/css/reduce-spacing.css" /> -->
+
+
+    <script src="/ccwiki/extensions/EnhancedRetrieval/src/js/jscal2.js"></script>
+    <script src="/ccwiki/extensions/EnhancedRetrieval/src/js/unicode-letter.js"></script>
+
+
+
+	<script type="text/javascript" src="/ccwiki/extensions/EnhancedRetrieval/src/jquery-1.3.2.min.js"></script>
+	
+	
+	 <link href="/ccwiki/extensions/EnhancedRetrieval/src/css/common.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/ccwiki/extensions/EnhancedRetrieval/src/css/style.css" type="text/css" />
+<link rel="stylesheet" href="/ccwiki/extensions/EnhancedRetrieval/src/css/widget.css" type="text/css" />
+
+<script type="text/javascript" src="/ccwiki/extensions/EnhancedRetrieval/src/js/basic.js"></script>
+<script type="text/javascript" src="/ccwiki/extensions/EnhancedRetrieval/src/js/widget.js"></script>
+	
+	
+
+<script type="text/javascript"> 
+		
+
+  function request(paras)
+    { 
+        var url = location.href; 
+        var paraString = url.substring(url.indexOf("?")+1,url.length).split("&"); 
+        var paraObj = {} ;
+        for (i=0; j=paraString[i]; i++){ 
+        paraObj[j.substring(0,j.indexOf("=")).toLowerCase()] = j.substring(j.indexOf("=")+1,j.length); 
+        } 
+        var returnValue = paraObj[paras.toLowerCase()]; 
+        if(typeof(returnValue)=="undefined"){ 
+        return ""; 
+        }else{ 
+        return returnValue; 
+        } 
+    }
+
+$(document).ready(function(){
+   
+				
+
+GolbalState=5;
+
+
+
+
+		
+});
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<title>&lt;团购数据页面名称> - ccwiki</title>
+<meta name="generator" content="MediaWiki 1.17.0" />
+
+</head>
+
+<body>
+<div style="display:none" id="citycontainer"></div>
+<div id="lockwindow"></div>  
+
+<!--header start -->
+
+<div class="header">
+
+<div class="top">
+
+<h1><a href="/ccwiki/index.php/Main_Page" title="CC维基网">CC维基网</a></h1>
+
+<div class="login">
+
+<a href="javascript:;" class="white" id="login_cjy" >登录</a>丨<a href="#" class="white">帮助中心</a></div>
+
+</div>
+
+
+
+
+<div class="menu"><ul><li ><a href="/ccwiki/index.php/Main_Page">首页</a></li><li><a href="javascript:navigate(0,null)" >餐饮</a></li><li><a href="javascript:navigate(1,null)">购物</a></li><li><a href="javascript:navigate(2,null)">娱乐</a></li><li><a href="javascript:navigate(3,null)">生活</a></li><li><a href="javascript:navigate(5,null)">健康</a></li><li><a href="javascript:navigate(5,null)">美容</a></li><li><a href="javascript:navigate(4,null)">旅游</a></li><li><a href="javascript:navigate(6,null)">其他</a></li><li><a href="javascript:navigate(7,null)">所有</a></li></ul>
+
+<div class="menur"><a href="/ccwiki/index.php/Special:UserInfo" class="createpage">个人主页</a></div>
+
+</div>
+
+</div>
+
+<!-- main start -->
+
+<div class="main">
+
+
+
+
+
+
+<div class="frtitle">
+<h2>团购聚合搜索</h2>
+	
+</div>
+<div class="searchbox">
+<div class="searchbox2">
+ <br>
+
+
+<div class="sel_container"><strong id="curCity">杭州市</strong> [<a id="curCityText" href="javascript:showcity()">更换城市</a>]</div>
+
+<div class="map_popup" id="cityList" style="display:none;">
+
+    <div class="popup_main">
+
+        <div class="title">城市列表</div>
+
+		<div class="cityList" id="citylist_container"></div>
+
+        <button id="popup_close" onclick="closecity()"></button>
+
+    </div>
+
+</div> 
+
+<div style="display:none" id="content">
+
+ 
+<div id="select">您已选择: </div>
+    <div  style="display:none" id="xiaoquselect" onclick="cancel_xiaoqu(this)"></div>
+    <div  style="display:none" id="validdate" onclick="cancel_date(this)"></div>
+    <div  style="display:none" id="shopcredit" onclick="cancel_credit(this)"></div>
+    
+</div>
+<div  style="display:none" id="searchcontent"> </div>  
+    <div class="searchb">
+
+        <input type="text" id="query" name="query"  class="slk" onkeyup="search_enter(this)"/>
+        <input type="image" id="search_button" name="search" src="/ccwiki/extensions/EnhancedRetrieval/src/images/search_btn03.gif" />
+<div  style="display:none" id="topid"><a href='#' class='orange'><strong>热门分类：</strong><a href='javascript:gototop(\"火锅\")' class='orange'>火锅</a>&nbsp&nbsp&nbsp&nbsp<a href='javascript:gototop(\"自助\")' class='orange'>自助&nbsp&nbsp&nbsp&nbsp</a><a href='javascript:gototop(\"西餐\")' class='orange'>西餐&nbsp&nbsp&nbsp&nbsp</a><a href='javascript:gototop(\"海鲜\")' class='orange'>海鲜&nbsp&nbsp&nbsp&nbsp</a><a href='javascript:gototop(\"咖啡茶馆\")' class='orange'>咖啡茶馆</a></span></div>
+    <div  class="panel">
+    </div>
+	
+
+        <input id="pagename" type="hidden" value=""/><br>
+        校区选择:<br>
+        玉泉<input name="xiaoqu" id="yuquan" type="radio" value="玉泉" onclick="xiaoqu_click(this)"/>
+        紫金港<input name="xiaoqu" id="zijingang" type="radio" value="紫金港" onclick="xiaoqu_click(this)"/>
+        之江<input name="xiaoqu" id="zhijiang" type="radio"  value="之江"onclick="xiaoqu_click(this)"/>
+        西溪<input name="xiaoqu" id="xixi" type="radio"  value="西溪"onclick="xiaoqu_click(this)"/>
+        华家池<input name="xiaoqu" id="huajiachi" type="radio"  value="华家池"onclick="xiaoqu_click(this)"/>
+        <br>
+        <br>
+        有效期选择:<br>
+
+        1天以上<input id="1day" type="radio" name="date" value="一天以上" onclick="validdate_click(this)"/>
+        3天以上<input id="3day" type="radio" name="date" value="三天以上" onclick="validdate_click(this)"/>
+        1周以上<input id="1week" type="radio" name="date" value="一周以上" onclick="validdate_click(this)"/>
+        1月以上<input id="1month" type="radio" name="date"value="一月以上" onclick="validdate_click(this)"/><br>
+        商家信用选择:<br>
+
+        2分以上<input id="2" type="radio" value="2分以上" name="credit" onclick="shopcredit_click(this)"/>
+        3分以上<input id="3" type="radio" value="3分以上" name="credit" onclick="shopcredit_click(this)"/>
+        4分以上<input id="4" type="radio" value="4分以上" name="credit" onclick="shopcredit_click(this)"/>
+        5分以上<input id="5" type="radio" value="5分以上" name="credit" onclick="shopcredit_click(this)"/><br>
+       
+
+			<div id="xfsFooter">
+			<ul id="pager"></ul>
+				&nbsp;&nbsp;<input name="" type="button" value="全选" class="btn_submit1" id="btn1" onclick="chooseall()"/>&nbsp;&nbsp;<input name="" type="button" value="重置" class="btn_submit1" id="btn2" onclick="notchooseall()"/>	<a href="javascript:;" class="createvote"><input name="" type="button" value="发起投票" class="btn_submit1" id="addtuangou"  onclick="addtuangou()"/></a>
+			
+		</div>
+
+	
+			 
+			 </div>
+
+
+  
+
+
+
+<div id="create_article"/>
+		</div>
+		<hr class="xfsSeparatorLine">
+		<div id="navigation">
+			<div id="pager-header"></div>
+		</div>
+
+		
+		
+		
+		
+		
+	
+<div id="container">
+
+
+<div class="sort">
+
+
+
+
+
+<div class="sort-left" mon="type=filterTab&amp;category=5"><span class="sort-title float-left">排序：</span><span class="sort-default sort-current float-left">默认</span><a class="sort-price sort-a float-left" href="javascript:paixu(1)" title="点击按时间升序排序" mon="#content=价格">时间<span class="down-tip-un">&nbsp;&nbsp;</span></a><a class="sort-number sort-a float-left" href="javascript:paixu(2)" title="点击按价格升序排序" mon="#content=购买价格">价格<span class="up-tip-un">&nbsp;&nbsp;</span></a><div class="clear"></div></div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+	<div id="docs" style="text-align:center;">
+		数据载入中
+		</div>
+
+
+
+
+
+
+</div>
+		<div id="xfsFooter">
+			<ul id="pager"></ul>
+		</div>
+	</div>
+</div>
+<div class="xfsCurrentSearchLink">
+	<hr class="xfsSeparatorLine">
+	<div id="current_search_link"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+</div>
+
+</div>
+
+<!-- footer start -->
+
+<div class="footer">
+
+
+
+
+<div class="bcontact" >
+
+<a href="#" class="white">关于本站</a> 丨 <a href="#" class="white">法律声明</a> 丨 <a href="#" class="white">联系我们</a> 丨 <a href="#" class="white">友情链接</a><br />
+
+浙江大学 Copyright © 2010-2011 浙ICP备09057645号 
+
+
+
+</div>
+
+
+<script src="/ccwiki/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=ccwiki&amp;*"></script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.config.set({"wgCanonicalNamespace": "Special", "wgCanonicalSpecialPageName": "ConfigureGB", "wgNamespaceNumber": -1, "wgPageName": "Special:ConfigureGB", "wgTitle": "ConfigureGB", "wgAction": "view", "wgArticleId": 0, "wgIsArticle": true, "wgUserName": null, "wgUserGroups": ["*"], "wgCurRevisionId": 0, "wgCategories": [], "wgBreakFrames": false, "wgRestrictionCreate": [], "wgFCKEditorDir": "extensions/WYSIWYG/ckeditor/", "wgFCKEditorExtDir": "extensions/WYSIWYG", "wgFCKEditorToolbarSet": "Wiki", "wgFCKEditorHeight": "0", "wgCKeditorMagicWords": {"wikitags": ["nowiki", "includeonly", "onlyinclude", "noinclude", "dynamicarticlelist", "pre", "gallery", "listerrors", "describe", "smwdoc", "coordinates", "display_map", "display_point", "display_points", "distance", "finddestination", "geocode", "geodistance", "mapsdoc"], "magicwords": ["NOTOC", "FORCETOC", "TOC", "NOEDITSECTION", "NEWSECTIONLINK", "NONEWSECTIONLINK", "NOCONTENTCONVERT", "NOCC", "NOTITLECONVERT", "NOTC", "NOGALLERY", "INDEX", "NOINDEX", "STATICREDIRECT", "NOGALLERY", "HIDDENCAT", "START", "END"], "datevars": ["CURRENTYEAR", "CURRENTMONTH", "CURRENTMONTHNAME", "CURRENTMONTHNAMEGEN", "CURRENTMONTHABBREV", "CURRENTDAY", "CURRENTDAY2", "CURRENTDOW", "CURRENTDAYNAME", "CURRENTTIME", "CURRENTHOUR", "CURRENTWEEK", "CURRENTTIMESTAMP"], "wikivars": ["SITENAME", "SERVER", "SERVERNAME", "DIRMARK", "SCRIPTPATH", "CURRENTVERSION", "CONTENTLANG", "REVISIONID", "REVISIONDAY", "REVISIONDAY2", "REVISIONMONTH", "REVISIONYEAR", "REVISIONTIMESTAMP", "REVISIONUSER", "FULLPAGENAME", "PAGENAME", "BASEPAGENAME", "SUBPAGENAME", "SUBJECTPAGENAME", "TALKPAGENAME", "NAMESPACE", "ARTICLESPACE", "TALKSPACE"], "parserhooks": ["lc", "lcfirst", "uc", "ucfirst", "formatnum", "#dateformat", "padleft", "padright", "plural", "grammar", "#language", "int", "#tag", "#vardefine", "#vardefineecho", "#var", "#varexists", "#arg", "#sourcedefinition", "#int", "#ns", "#nse", "#urlencode", "#lcfirst", "#ucfirst", "#lc", "#uc", "#localurl", "#localurle", "#fullurl", "#fullurle", "#formatnum", "#grammar", "#gender", "#plural", "#numberofpages", "#numberofusers", "#numberofactiveusers", "#numberofarticles", "#numberoffiles", "#numberofadmins", "#numberingroup", "#numberofedits", "#numberofviews", "#padleft", "#padright", "#anchorencode", "#special", "#defaultsort", "#filepath", "#pagesincategory", "#pagesize", "#protectionlevel", "#namespace", "#namespacee", "#talkspace", "#talkspacee", "#subjectspace", "#subjectspacee", "#pagename", "#pagenamee", "#fullpagename", "#fullpagenamee", "#basepagename", "#basepagenamee", "#subpagename", "#subpagenamee", "#talkpagename", "#talkpagenamee", "#subjectpagename", "#subjectpagenamee", "#formatdate", "#displaytitle", "#listerrors", "#describe", "#smwdoc", "#forminput", "#formlink", "#arraymap", "#arraymaptemplate", "#autoedit", "#CreateSilentAnnotations", "#shownow", "#asfforminput", "#collapsableFieldSetStart", "#collapsableFieldSetEnd", "#collapsableFieldSet", "#qTip", "#qTipHelp", "#DataPickerValues", "#calendarstartdate", "#calendarenddate", "#tvtree", "#tvgeneratetree", "#coordinates", "#display_map", "#display_point", "#display_points", "#distance", "#finddestination", "#geocode", "#geodistance", "#mapsdoc", "#widget", "#show", "#info", "#concept", "#set", "#set_recurring_event", "#declare", "#if", "#ifeq", "#switch", "#ifexist", "#ifexpr", "#iferror", "#expr", "#time", "#timel", "#rel2abs", "#titleparts", "#isExtensionInstalled", "#ajaxask", "#ajaxsparql"], "sftags": ["info", "for template", "field", "end template", "standard input"]}, "wgCKeditorUseBuildin4Extensions": ["SMW_HALO_VERSION"], "wgAllowExternalImages": true, "sfgRemoveText": "Remove", "sfgAutocompleteOnAllChars": false, "sfgAutocompleteValues": {}, "sfgShowOnSelect": {}, "sfgFormErrorsHeader": "There were errors with your form input; see below", "sfgBlankErrorStr": "cannot be blank", "sfgBadURLErrorStr": "must have the correct URL format, starting with \"http\"", "sfgBadEmailErrorStr": "must have a valid email address format", "sfgBadNumberErrorStr": "must be a valid number", "sfgBadDateErrorStr": "must be a valid date", "sfgAnonEditWarning": "Warning: You are not logged in. Your IP address will be recorded in this page\'s edit history.", "tvgTreeThemes": "/ccwiki/extensions/Treeview/skin/themes/", "wgFSSolrURL": "http://10.214.0.147", "wgFSSolrServlet": "/ccwiki/extensions/EnhancedRetrieval/includes/FacetedSearch/solrproxy.php", "wgFSCreateNewPageLink": "?todo=createnewarticle\x26newarticletitle={article}", "egMapsDebugJS": false});
+}
+</script>
+<script>if ( window.mediaWiki ) {
+	mediaWiki.loader.load(["ext.wikiadmintool.language", "ext.facetedSearch.special", "mediawiki.util", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax", "ext.ScriptManager.prototype", "ext.jquery.qtip", "ext.jquery.fancybox", "ext.smwhalo.general", "ext.smwhalo.styles", "ext.smwhalo.createNewArticle", "ext.smwtsc.general", "ext.semanticgardening.gardening", "ext.semanticgardening.findwork"]);
+	mediaWiki.loader.go();
+}
+</script>
+
+<script>if ( window.mediaWiki ) {
+	mediaWiki.user.options.set({"ccmeonemails":0,"cols":80,"contextchars":50,"contextlines":5,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":1,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"ccwiki","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,
+	"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"riched_use_toggle":1,"riched_start_disabled":1,"riched_use_popup":1,"riched_toggle_remember_state":1,"riched_load_semantic_toolbar":1,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false,"searchNs102":false,"searchNs103":false,"searchNs106":false,"searchNs107":false,"searchNs108":false,"searchNs109":false,"searchNs274":false,"searchNs275":false});;mediaWiki.loader.state({"user.options":"ready"});
+}
+</script><!-- Served in 0.072 secs. -->
+
+</div>
+
+
+
+</body>
+
+</html><script type="text/javascript" src="http://api.map.baidu.com/api?v=1.3"></script>
+
+<script type="text/javascript" src="http://api.map.baidu.com/library/CityList/1.2/src/CityList_min.js"></script>
+
+
+
+
+<script type="text/javascript" >
+
+// 这段代码必须在html后面 不然api报错测试by张宁豫
+
+var map = new BMap.Map("citycontainer");
+
+var point = new BMap.Point(116.404, 39.915);    // 创建点坐标
+map.centerAndZoom(point,15);                     // 初始化地图,设置中心点坐标和地图级别。
+
+// 创建CityList对象，并放在citylist_container节点内
+
+var myCl = new BMapLib.CityList({container : "citylist_container", map : map});
+
+
+
+// 给城市点击时，添加相关操作
+
+myCl.addEventListener("cityclick", function(e) {
+
+	// 修改当前城市显示
+var oldcity=document.getElementById("curCity").innerHTML;
+	document.getElementById("curCity").innerHTML = e.name;
+var newcity=e.name;
+   var mgr = FacetedSearch.singleton.FacetedSearchInstance.getAjaxSolrManager();
+    mgr.store.removeByValue("fq","smwh_Ontology/Gbcity_xsdvalue_s:"+oldcity);
+	
+	  var tmp="smwh_Ontology/Gbcity_xsdvalue_s:"+newcity;
+	  mgr.store.addByValue("fq", "smwh_attributes:smwh_Ontology/Gbcity_xsdvalue_t");
+      mgr.store.addByValue("fq", tmp);
+  mgr.doRequest(0);
+
+
+
+
+
+
+	// 点击后隐藏城市列表
+
+	document.getElementById("cityList").style.display = "none";
+
+});
+
+
+
+// 给“更换城市”链接添加点击操作
+
+document.getElementById("curCityText").onclick = function() {
+
+	var cl = document.getElementById("cityList");
+
+	if (cl.style.display == "none") {
+
+		cl.style.display = "";
+
+	} else {
+
+		cl.style.display = "none";
+
+	}	
+
+};
+
+
+
+// 给城市列表上的关闭按钮添加点击操作
+
+document.getElementById("popup_close").onclick = function() {
+
+	var cl = document.getElementById("cityList");
+
+	if (cl.style.display == "none") {
+
+		cl.style.display = "";
+
+	} else {
+
+		cl.style.display = "none";
+
+	}	
+
+};
+
+</script>
+
+
