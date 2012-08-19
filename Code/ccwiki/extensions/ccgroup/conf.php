@@ -4,18 +4,18 @@ $ccPort="80";
 $ccWiki="ccwiki/extensions/ccgroup";
 $ccSite="ccwiki";
 
-$ccDB="localhost";
-$ccDBName="ccwiki";
-$ccDBUsername="mw";
-$ccDBPassword="ccntgrid";
-$cc_conf_gb="cc_conf_gb";
-$cc_conf_wb="cc_conf_wb";
+$ccDB="";
+$ccDBName="";
+$ccDBUsername="";
+$ccDBPassword="";
+$cc_conf_gb="";
+$cc_conf_wb="";
 $cc_page="cc_page";
 $cc_account='account';
-$cc_mapping='mapping';
+$cc_mapping='';
 
-$ccUsername="Root";
-$ccPassword="ccwiki";
+$ccUsername="";
+$ccPassword="";
 
 $ccProxy="";
 
